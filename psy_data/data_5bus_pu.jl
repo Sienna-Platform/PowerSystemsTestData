@@ -327,6 +327,9 @@ hydro_inflow_ts_DA = [
     0.190485
 ];
 
+hydro_pump_power_ts_DA = 0.8 * ones(24)
+hydro_pump_cap_ts_DA = 0.9 * ones(24)
+
 thermal_generators5(nodes5) = [
     ThermalStandard(;
         name = "Alta",
@@ -414,6 +417,95 @@ thermal_generators5(nodes5) = [
         base_power = 100.0,
     ),
 ];
+
+thermal_generators5_events(nodes5) = [
+    ThermalStandard(;
+        name = "Alta",
+        available = true,
+        status = true,
+        bus = nodes5[1],
+        active_power = 0.40,
+        reactive_power = 0.010,
+        rating = 0.5,
+        prime_mover_type = PrimeMovers.ST,
+        fuel = ThermalFuels.COAL,
+        active_power_limits = (min = 0.1, max = 0.40),
+        reactive_power_limits = (min = -0.30, max = 0.30),
+        ramp_limits =(up = 0.003, down = 10.0),
+        time_limits = (up = 2.0, down = 4.0),
+        operation_cost = ThermalGenerationCost(CostCurve(LinearCurve(14.0)), 0.0, 4.0, 2.0),
+        base_power = 100.0,
+    ),
+    ThermalStandard(
+        name = "Park City",
+        available = true,
+        status = true,
+        bus = nodes5[1],
+        active_power = 1.70,
+        reactive_power = 0.20,
+        rating = 2.2125,
+        prime_mover_type = PrimeMovers.ST,
+        fuel = ThermalFuels.COAL,
+        active_power_limits = (min = 0.1, max = 1.70),
+        reactive_power_limits = (min = -1.275, max = 1.275),
+        ramp_limits = (up = 0.02 * 2.2125, down = 0.02 * 2.2125),
+        time_limits = (up = 2.0, down = 1.0),
+        operation_cost = ThermalGenerationCost(CostCurve(LinearCurve(15.0)), 0.0, 1.5, 0.75),
+        base_power = 100.0,
+    ),
+    ThermalStandard(
+        name = "Solitude",
+        available = true,
+        status = true,
+        bus = nodes5[3],
+        active_power = 5.2,
+        reactive_power = 1.00,
+        rating = 5.2,
+        prime_mover_type = PrimeMovers.ST,
+        fuel = ThermalFuels.COAL,
+        active_power_limits = (min = 0.1, max = 5.20),
+        reactive_power_limits = (min = -3.90, max = 3.90),
+        ramp_limits = (up = 0.012 * 5.2, down = 0.012 * 5.2),
+        time_limits = (up = 3.0, down = 2.0),
+        operation_cost = ThermalGenerationCost(CostCurve(LinearCurve(30.0)), 0.0, 3.0, 1.5),
+        base_power = 100.0,
+    ),
+    ThermalStandard(
+        name = "Sundance",
+        available = true,
+        status = true,
+        bus = nodes5[4],
+        active_power = 2.0,
+        reactive_power = 0.40,
+        rating = 2.5,
+        prime_mover_type = PrimeMovers.ST,
+        fuel = ThermalFuels.COAL,
+        active_power_limits = (min = 0.1, max = 2.0),
+        reactive_power_limits = (min = -1.5, max = 1.5),
+        ramp_limits = (up = 0.015 * 2.5, down = 0.015 * 2.5),
+        time_limits = (up = 2.0, down = 1.0),
+        operation_cost = ThermalGenerationCost(CostCurve(LinearCurve(40.0)), 0.0, 4.0, 2.0),
+        base_power = 100.0,
+    ),
+    ThermalStandard(
+        name = "Brighton",
+        available = true,
+        status = true,
+        bus = nodes5[5],
+        active_power = 6.0,
+        reactive_power = 1.50,
+        rating = 0.75,
+        prime_mover_type = PrimeMovers.ST,
+        fuel = ThermalFuels.COAL,
+        active_power_limits = (min = 0.1, max = 6.0),
+        reactive_power_limits = (min = -4.50, max = 4.50),
+        ramp_limits = (up = 0.015 * 7.5, down = 0.015 * 7.5),
+        time_limits = (up = 5.0, down = 3.0),
+        operation_cost = ThermalGenerationCost(CostCurve(LinearCurve(10.0)), 0.0, 1.5, 0.75),
+        base_power = 100.0,
+    ),
+];
+
 
 thermal_generators5_pwl(nodes5) = [
     ThermalStandard(
@@ -915,7 +1007,6 @@ interruptible(nodes5) = [InterruptiblePowerLoad(
     "IloadBus4",
     true,
     nodes5[4],
-
     1.00,
     0.0,
     1.00,
@@ -925,6 +1016,19 @@ interruptible(nodes5) = [InterruptiblePowerLoad(
 )]
 # Natural Units: First vector: Power in MW, Second Vector: Slopes in $/MWh
 ORDC_cost = CostCurve(PiecewiseIncrementalCurve(0.0, [0.0, 20.0, 40.0, 60.0, 80.0], [150.0, 27.5, 24.5, 0.5]))
+
+constant_reserve5() =
+    ConstantReserve{ReserveUp}(
+        "ReserveUp",
+        true,
+        300,
+        1.0,
+        3600.0,
+        1.0,
+        1.0,
+        0.0,
+    )
+
 
 reserve5(thermal_generators5) = [
     VariableReserve{ReserveUp}(
@@ -1001,6 +1105,26 @@ hydro_timeseries_DA = [
 hydro_single_timeseries_DA = TimeSeries.TimeArray(
     vcat(TimeSeries.timestamp(hydro_timeseries_DA[1][1]), TimeSeries.timestamp(hydro_timeseries_DA[2][1])),
     vcat(TimeSeries.values(hydro_timeseries_DA[1][1]), TimeSeries.values(hydro_timeseries_DA[2][1]))
+)
+
+hydro_pump_power_timeseries_DA = [
+    [TimeSeries.TimeArray(DayAhead, hydro_pump_power_ts_DA)],
+    [TimeSeries.TimeArray(DayAhead + Day(1), hydro_pump_power_ts_DA)],
+];
+
+hydro_pump_power_single_timeseries_DA = TimeSeries.TimeArray(
+    vcat(TimeSeries.timestamp(hydro_pump_power_timeseries_DA[1][1]), TimeSeries.timestamp(hydro_pump_power_timeseries_DA[2][1])),
+    vcat(TimeSeries.values(hydro_pump_power_timeseries_DA[1][1]), TimeSeries.values(hydro_pump_power_timeseries_DA[2][1]))
+)
+
+hydro_pump_cap_timeseries_DA = [
+    [TimeSeries.TimeArray(DayAhead, hydro_pump_cap_ts_DA)],
+    [TimeSeries.TimeArray(DayAhead + Day(1), hydro_pump_cap_ts_DA)],
+];
+
+hydro_pump_cap_single_timeseries_DA = TimeSeries.TimeArray(
+    vcat(TimeSeries.timestamp(hydro_pump_cap_timeseries_DA[1][1]), TimeSeries.timestamp(hydro_pump_cap_timeseries_DA[2][1])),
+    vcat(TimeSeries.values(hydro_pump_cap_timeseries_DA[1][1]), TimeSeries.values(hydro_pump_cap_timeseries_DA[2][1]))
 )
 
 storage_target = zeros(24)
