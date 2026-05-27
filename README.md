@@ -1,6 +1,6 @@
 # PowerSystemsTestData
 
-This repository contains several data files in modeling packages in [Sienna](https://github.com/NREL-Sienna).
+This repository contains several data files in modeling packages in [Sienna](https://github.com/Sienna-Platform).
 
 ## File directory
 
