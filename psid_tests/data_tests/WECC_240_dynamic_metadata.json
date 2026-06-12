@@ -1,79 +1,77 @@
 {
-    "name": "",
-    "description": "",
-    "frequency": 60,
-    "time_series_resolutions_milliseconds": [
-    ],
-    "component_counts": [
-        {
-            "type": "ACBus",
-            "count": 243
-        },
-        {
-            "type": "Arc",
-            "count": 351
-        },
-        {
-            "type": "Area",
-            "count": 4
-        },
-        {
-            "type": "DynamicGenerator{RoundRotorQuadratic, SingleMass, SEXS, GasTG, IEEEST}",
-            "count": 6
-        },
-        {
-            "type": "DynamicGenerator{RoundRotorQuadratic, SingleMass, SEXS, GasTG, PSSFixed}",
-            "count": 41
-        },
-        {
-            "type": "DynamicGenerator{RoundRotorQuadratic, SingleMass, SEXS, HydroTurbineGov, IEEEST}",
-            "count": 3
-        },
-        {
-            "type": "DynamicGenerator{RoundRotorQuadratic, SingleMass, SEXS, HydroTurbineGov, PSSFixed}",
-            "count": 22
-        },
-        {
-            "type": "DynamicGenerator{RoundRotorQuadratic, SingleMass, SEXS, SteamTurbineGov1, IEEEST}",
-            "count": 1
-        },
-        {
-            "type": "DynamicGenerator{RoundRotorQuadratic, SingleMass, SEXS, SteamTurbineGov1, PSSFixed}",
-            "count": 36
-        },
-        {
-            "type": "DynamicInverter{RenewableEnergyConverterTypeA, OuterControl{ActiveRenewableControllerAB, ReactiveRenewableControllerAB}, RECurrentControlB, FixedDCSource, FixedFrequency, RLFilter, Nothing}",
-            "count": 37
-        },
-        {
-            "type": "FixedAdmittance",
-            "count": 7
-        },
-        {
-            "type": "Line",
-            "count": 329
-        },
-        {
-            "type": "LoadZone",
-            "count": 14
-        },
-        {
-            "type": "StandardLoad",
-            "count": 139
-        },
-        {
-            "type": "TapTransformer",
-            "count": 2
-        },
-        {
-            "type": "ThermalStandard",
-            "count": 146
-        },
-        {
-            "type": "Transformer2W",
-            "count": 120
-        }
-    ],
-    "time_series_counts": [
-    ]
+  "name": "",
+  "description": "",
+  "frequency": 60.0,
+  "time_series_resolutions_milliseconds": [],
+  "component_counts": [
+    {
+      "type": "ACBus",
+      "count": 243
+    },
+    {
+      "type": "Arc",
+      "count": 351
+    },
+    {
+      "type": "Area",
+      "count": 4
+    },
+    {
+      "type": "DynamicGenerator{RoundRotorQuadratic, SingleMass, SEXS, GasTG, IEEEST}",
+      "count": 6
+    },
+    {
+      "type": "DynamicGenerator{RoundRotorQuadratic, SingleMass, SEXS, GasTG, PSSFixed}",
+      "count": 41
+    },
+    {
+      "type": "DynamicGenerator{RoundRotorQuadratic, SingleMass, SEXS, HydroTurbineGov, IEEEST}",
+      "count": 3
+    },
+    {
+      "type": "DynamicGenerator{RoundRotorQuadratic, SingleMass, SEXS, HydroTurbineGov, PSSFixed}",
+      "count": 22
+    },
+    {
+      "type": "DynamicGenerator{RoundRotorQuadratic, SingleMass, SEXS, SteamTurbineGov1, IEEEST}",
+      "count": 1
+    },
+    {
+      "type": "DynamicGenerator{RoundRotorQuadratic, SingleMass, SEXS, SteamTurbineGov1, PSSFixed}",
+      "count": 36
+    },
+    {
+      "type": "DynamicInverter{RenewableEnergyConverterTypeA, OuterControl, RECurrentControlB, FixedDCSource, FixedFrequency, RLFilter, Nothing}",
+      "count": 37
+    },
+    {
+      "type": "FixedAdmittance",
+      "count": 7
+    },
+    {
+      "type": "Line",
+      "count": 329
+    },
+    {
+      "type": "LoadZone",
+      "count": 14
+    },
+    {
+      "type": "StandardLoad",
+      "count": 139
+    },
+    {
+      "type": "TapTransformer",
+      "count": 2
+    },
+    {
+      "type": "ThermalStandard",
+      "count": 146
+    },
+    {
+      "type": "Transformer2W",
+      "count": 120
+    }
+  ],
+  "time_series_counts": []
 }
