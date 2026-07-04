@@ -814,7 +814,7 @@ function phes5(nodes5)
         inflow = 0.0,
         outflow = 0.0,
         level_targets = 0.15,
-        head_to_volume_factor = LinearCurve(1.0),
+        head_to_volume_factor = LinearFunctionData(1.0),
         intake_elevation = 100.0,
         downstream_turbines = [turbine],
     )
@@ -828,7 +828,7 @@ function phes5(nodes5)
         inflow = 0.0,
         outflow = 0.0,
         level_targets = 0.15,
-        head_to_volume_factor = LinearCurve(1.0),
+        head_to_volume_factor = LinearFunctionData(1.0),
         intake_elevation = 0.0,
         upstream_turbines = [turbine],
     )
@@ -1374,7 +1374,7 @@ hydro_reservoir5_energy() = [
         outflow = 0.0, # in MW
         level_targets = 1.0,
         intake_elevation = 0.0,
-        head_to_volume_factor = LinearCurve(0.0),
+        head_to_volume_factor = LinearFunctionData(0.0),
         level_data_type = PowerSystems.ReservoirDataType.ENERGY,
     )
 ]
@@ -1410,7 +1410,7 @@ hydro_reservoir5_head() = [
         outflow = 0.0, # no outflow time series
         level_targets = 1.0,
         intake_elevation = 463.3,
-        head_to_volume_factor = LinearCurve(302376.2), # conversion factor from meters to m³ based on 167.97 million m³ capacity at 555.5 m
+        head_to_volume_factor = LinearFunctionData(302376.2), # conversion factor from meters to m³ based on 167.97 million m³ capacity at 555.5 m
         level_data_type = PowerSystems.ReservoirDataType.HEAD,
     )
 ]
@@ -1461,7 +1461,7 @@ hydro_reservoir5_cascading_energy() = [
         outflow = 0.0, # in MW
         level_targets = 1.0,
         intake_elevation = 0.0,
-        head_to_volume_factor = LinearCurve(0.0),
+        head_to_volume_factor = LinearFunctionData(0.0),
         level_data_type = PowerSystems.ReservoirDataType.ENERGY,
     ),
     HydroReservoir(;
@@ -1474,7 +1474,7 @@ hydro_reservoir5_cascading_energy() = [
         outflow = 0.0, # in MW
         level_targets = 1.0,
         intake_elevation = 0.0,
-        head_to_volume_factor = LinearCurve(0.0),
+        head_to_volume_factor = LinearFunctionData(0.0),
         level_data_type = PowerSystems.ReservoirDataType.ENERGY,
     ),
 ]
@@ -1526,7 +1526,7 @@ hydro_reservoir5_cascading_head() = [
         outflow = 0.0, # no outflow time series
         level_targets = 1.0,
         intake_elevation = 463.3,
-        head_to_volume_factor = LinearCurve(302376.2), # conversion factor from meters to m³ based on 167.97 million m³ capacity at 555.5 m
+        head_to_volume_factor = LinearFunctionData(302376.2), # conversion factor from meters to m³ based on 167.97 million m³ capacity at 555.5 m
         level_data_type = PowerSystems.ReservoirDataType.HEAD,
     ),
     HydroReservoir(;
@@ -1539,7 +1539,7 @@ hydro_reservoir5_cascading_head() = [
         outflow = 0.0, # no outflow time series
         level_targets = 1.0,
         intake_elevation = 180.5,
-        head_to_volume_factor = LinearCurve(302376.2), # conversion factor from meters to m³ based on 167.97 million m³ capacity at 555.5 m
+        head_to_volume_factor = LinearFunctionData(302376.2), # conversion factor from meters to m³ based on 167.97 million m³ capacity at 555.5 m
         level_data_type = PowerSystems.ReservoirDataType.HEAD,
     ),
 ]
