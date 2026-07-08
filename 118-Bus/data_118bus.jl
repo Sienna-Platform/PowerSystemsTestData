@@ -77,16 +77,18 @@ for row in eachrow(line_params)
         );
         push!(lines, line)
     else
-        local tline = Transformer2W(;
+        local tline = TwoWindingTransformer(;
             name = "line$num",
-            available = true,
-            active_power_flow = 0.0,
-            reactive_power_flow = 0.0,
-            arc = Arc(; from = nodes[bus_from], to = nodes[bus_to]),
+            winding = TransformerWinding(;
+                arc = Arc(; from = nodes[bus_from], to = nodes[bus_to]),
+                available = true,
+                active_power_flow = 0.0,
+                reactive_power_flow = 0.0,
+                rating = row["Max Flow (MW)"]/100,
+            ),
             r = row["Resistance (p.u.)"],
             x = row["Reactance (p.u.)"],
-            primary_shunt = 0.0,
-            rating = row["Max Flow (MW)"]/100,
+            magnetizing_shunt = 0.0,
         );
         push!(tlines, tline)
     end
