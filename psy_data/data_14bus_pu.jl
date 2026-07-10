@@ -270,7 +270,6 @@ branches14_dc(nodes14) = [
         r = 0.0,
         x = 0.20912,
         magnetizing_shunt = 0.0,
-        base_power = 100.0,
     ),
     TwoWindingTransformer(;
         name = "Trans1",
@@ -289,7 +288,6 @@ branches14_dc(nodes14) = [
         r = 0.0,
         x = 0.55618,
         magnetizing_shunt = 0.0,
-        base_power = 100.0,
     ),
     TwoWindingTransformer(;
         name = "Trans2",
@@ -308,7 +306,6 @@ branches14_dc(nodes14) = [
         r = 0.0,
         x = 0.25202,
         magnetizing_shunt = 0.0,
-        base_power = 100.0,
     ),
     Line(
         "Line8",
@@ -362,7 +359,6 @@ branches14_dc(nodes14) = [
         r = 0.0,
         x = 0.17615,
         magnetizing_shunt = 0.0,
-        base_power = 100.0,
     ),
     Line(
         "Line16",
@@ -540,7 +536,6 @@ branches14(nodes14) = [
         r = 0.0,
         x = 0.20912,
         magnetizing_shunt = 0.0,
-        base_power = 100.0,
     ),
     TwoWindingTransformer(;
         name = "Trans1",
@@ -559,7 +554,6 @@ branches14(nodes14) = [
         r = 0.0,
         x = 0.55618,
         magnetizing_shunt = 0.0,
-        base_power = 100.0,
     ),
     TwoWindingTransformer(;
         name = "Trans2",
@@ -578,7 +572,6 @@ branches14(nodes14) = [
         r = 0.0,
         x = 0.25202,
         magnetizing_shunt = 0.0,
-        base_power = 100.0,
     ),
     Line(
         "Line8",
@@ -632,7 +625,6 @@ branches14(nodes14) = [
         r = 0.0,
         x = 0.17615,
         magnetizing_shunt = 0.0,
-        base_power = 100.0,
     ),
     Line(
         "Line16",

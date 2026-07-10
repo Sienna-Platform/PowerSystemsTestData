@@ -1750,7 +1750,6 @@
           "imag": 0.0,
           "real": 0.0
         },
-        "base_power": 100.0,
         "base_voltage_secondary": 230.0,
         "services": [],
         "ext": {},
@@ -1795,7 +1794,6 @@
           "imag": 0.0,
           "real": 0.0
         },
-        "base_power": 100.0,
         "base_voltage_secondary": 13.8,
         "services": [],
         "ext": {},
@@ -1840,7 +1838,6 @@
           "imag": 0.0,
           "real": 0.0
         },
-        "base_power": 100.0,
         "base_voltage_secondary": 16.5,
         "services": [],
         "ext": {},
