@@ -1723,10 +1723,10 @@
           "type": "TwoWindingTransformer"
         },
         "name": "Bus 2-Bus 7-i_8",
-        "winding": {
+        "circuit": {
           "__metadata__": {
             "module": "PowerSystems",
-            "type": "TransformerWinding"
+            "type": "TransformerCircuit"
           },
           "arc": {
             "value": "4fef428d-0bc5-4f85-b57d-7b2e72bebc47"
@@ -1734,7 +1734,6 @@
           "tap": 1.0,
           "α": 0.0,
           "winding_group_number": "UNDEFINED",
-          "control": null,
           "available": true,
           "rating": 19.360041057239982,
           "rating_b": null,
@@ -1742,15 +1741,27 @@
           "active_power_flow": 1.630000111324847,
           "reactive_power_flow": 0.0928987553784012,
           "base_power": 100.0,
-          "base_voltage": 18.0
+          "base_voltage_primary": 18.0,
+          "base_voltage_secondary": 230.0,
+          "r": 0.0,
+          "x": 0.0625,
+          "control_objective": "UNDEFINED",
+          "regulated_bus_number": 0,
+          "control_limits": {
+            "min": 0.9,
+            "max": 1.1
+          },
+          "controlled_quantity_limits": {
+            "min": 0.9,
+            "max": 1.1
+          },
+          "number_of_tap_positions": 33
         },
-        "r": 0.0,
-        "x": 0.0625,
         "magnetizing_shunt": {
           "imag": 0.0,
           "real": 0.0
         },
-        "base_voltage_secondary": 230.0,
+        "shunt_location": "PRIMARY",
         "services": [],
         "ext": {},
         "internal": {
@@ -1767,10 +1778,10 @@
           "type": "TwoWindingTransformer"
         },
         "name": "Bus 9-Bus 3-i_9",
-        "winding": {
+        "circuit": {
           "__metadata__": {
             "module": "PowerSystems",
-            "type": "TransformerWinding"
+            "type": "TransformerCircuit"
           },
           "arc": {
             "value": "5d7bfd2c-5386-4f14-baa7-98fc481f39a5"
@@ -1778,7 +1789,6 @@
           "tap": 1.0,
           "α": 0.0,
           "winding_group_number": "UNDEFINED",
-          "control": null,
           "available": true,
           "rating": 20.648507953540935,
           "rating_b": null,
@@ -1786,15 +1796,27 @@
           "active_power_flow": -0.8500002069509938,
           "reactive_power_flow": 0.11239707915078832,
           "base_power": 100.0,
-          "base_voltage": 230.0
+          "base_voltage_primary": 230.0,
+          "base_voltage_secondary": 13.8,
+          "r": 0.0,
+          "x": 0.0586,
+          "control_objective": "UNDEFINED",
+          "regulated_bus_number": 0,
+          "control_limits": {
+            "min": 0.9,
+            "max": 1.1
+          },
+          "controlled_quantity_limits": {
+            "min": 0.9,
+            "max": 1.1
+          },
+          "number_of_tap_positions": 33
         },
-        "r": 0.0,
-        "x": 0.0586,
         "magnetizing_shunt": {
           "imag": 0.0,
           "real": 0.0
         },
-        "base_voltage_secondary": 13.8,
+        "shunt_location": "PRIMARY",
         "services": [],
         "ext": {},
         "internal": {
@@ -1811,10 +1833,10 @@
           "type": "TwoWindingTransformer"
         },
         "name": "Bus 4-Bus1-i_7",
-        "winding": {
+        "circuit": {
           "__metadata__": {
             "module": "PowerSystems",
-            "type": "TransformerWinding"
+            "type": "TransformerCircuit"
           },
           "arc": {
             "value": "eca25651-2cd2-47c4-b7e3-3e97debe7cef"
@@ -1822,7 +1844,6 @@
           "tap": 1.0,
           "α": 0.0,
           "winding_group_number": "UNDEFINED",
-          "control": null,
           "available": true,
           "rating": 21.006988994401024,
           "rating_b": null,
@@ -1830,15 +1851,27 @@
           "active_power_flow": -1.6651644640415948,
           "reactive_power_flow": -0.2161127329424181,
           "base_power": 100.0,
-          "base_voltage": 230.0
+          "base_voltage_primary": 230.0,
+          "base_voltage_secondary": 16.5,
+          "r": 0.0,
+          "x": 0.0576,
+          "control_objective": "UNDEFINED",
+          "regulated_bus_number": 0,
+          "control_limits": {
+            "min": 0.9,
+            "max": 1.1
+          },
+          "controlled_quantity_limits": {
+            "min": 0.9,
+            "max": 1.1
+          },
+          "number_of_tap_positions": 33
         },
-        "r": 0.0,
-        "x": 0.0576,
         "magnetizing_shunt": {
           "imag": 0.0,
           "real": 0.0
         },
-        "base_voltage_secondary": 16.5,
+        "shunt_location": "PRIMARY",
         "services": [],
         "ext": {},
         "internal": {
