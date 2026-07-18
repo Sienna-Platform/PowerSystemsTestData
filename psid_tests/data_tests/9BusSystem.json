@@ -17,7 +17,7 @@
         "ext": {},
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "9feb0e81-94ed-4959-9633-db7254cfc4e0"
           }
@@ -44,7 +44,7 @@
         "ext": {},
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "d0d7b9be-17db-4971-9325-c4754ae3e1e7"
           }
@@ -71,7 +71,7 @@
         "ext": {},
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "dfa9ae24-32ca-48a4-b809-3a6e22aa0cbd"
           }
@@ -116,7 +116,7 @@
           "ext": {},
           "internal": {
             "ext": null,
-            "units_info": null,
+            "base_value": null,
             "uuid": {
               "value": "cd271c71-0451-4b10-9948-e19db8c7dc36"
             }
@@ -139,7 +139,7 @@
         "ext": {},
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "a0aa1a2b-0c47-4f1f-9dc9-bb69fe571e88"
           }
@@ -163,7 +163,7 @@
           "ext": {},
           "internal": {
             "ext": null,
-            "units_info": null,
+            "base_value": null,
             "uuid": {
               "value": "f122a176-6395-4662-b3c0-c860fc21ec79"
             }
@@ -195,7 +195,7 @@
           "ext": {},
           "internal": {
             "ext": null,
-            "units_info": null,
+            "base_value": null,
             "uuid": {
               "value": "ac1af62f-273c-4179-a80a-fc0fa187fb58"
             }
@@ -220,7 +220,7 @@
           "ext": {},
           "internal": {
             "ext": null,
-            "units_info": null,
+            "base_value": null,
             "uuid": {
               "value": "4303b6ab-b3d0-4174-9dc6-4d1e2fbcb6ee"
             }
@@ -238,7 +238,7 @@
           "ext": {},
           "internal": {
             "ext": null,
-            "units_info": null,
+            "base_value": null,
             "uuid": {
               "value": "06b7fdb5-d239-41dc-bb77-db8ae9286986"
             }
@@ -302,7 +302,7 @@
           "ext": {},
           "internal": {
             "ext": null,
-            "units_info": null,
+            "base_value": null,
             "uuid": {
               "value": "fc77efb5-b24c-45af-b352-46c1c94dca93"
             }
@@ -325,7 +325,7 @@
         "ext": {},
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "972a2261-3b1e-479b-b052-4df06c2cd379"
           }
@@ -349,7 +349,7 @@
           "ext": {},
           "internal": {
             "ext": null,
-            "units_info": null,
+            "base_value": null,
             "uuid": {
               "value": "a5c3d570-3e21-45e3-8efa-24a254623a65"
             }
@@ -381,7 +381,7 @@
           "ext": {},
           "internal": {
             "ext": null,
-            "units_info": null,
+            "base_value": null,
             "uuid": {
               "value": "bd63eac6-0c19-4b8b-a1df-60820064fd64"
             }
@@ -406,7 +406,7 @@
           "ext": {},
           "internal": {
             "ext": null,
-            "units_info": null,
+            "base_value": null,
             "uuid": {
               "value": "ed1c85e5-edf8-47bc-828d-6c1b26afd602"
             }
@@ -424,7 +424,7 @@
           "ext": {},
           "internal": {
             "ext": null,
-            "units_info": null,
+            "base_value": null,
             "uuid": {
               "value": "59613c99-5fe1-47b8-905a-2285accc9409"
             }
@@ -488,7 +488,7 @@
           "ext": {},
           "internal": {
             "ext": null,
-            "units_info": null,
+            "base_value": null,
             "uuid": {
               "value": "e696ff4d-095f-4c0f-ab83-85f13b429d30"
             }
@@ -511,7 +511,7 @@
         "ext": {},
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "e1a1053c-bf1c-47bb-be03-aa69c6082dcd"
           }
@@ -535,7 +535,7 @@
           "ext": {},
           "internal": {
             "ext": null,
-            "units_info": null,
+            "base_value": null,
             "uuid": {
               "value": "d8fd122b-df77-4e82-965f-4fec2e9105ab"
             }
@@ -567,7 +567,7 @@
           "ext": {},
           "internal": {
             "ext": null,
-            "units_info": null,
+            "base_value": null,
             "uuid": {
               "value": "869ff900-2f88-43aa-9fa7-bdc75ccea6ba"
             }
@@ -592,7 +592,7 @@
           "ext": {},
           "internal": {
             "ext": null,
-            "units_info": null,
+            "base_value": null,
             "uuid": {
               "value": "ec75300a-b8a0-4d73-9556-a4c441b08ac2"
             }
@@ -610,7 +610,7 @@
           "ext": {},
           "internal": {
             "ext": null,
-            "units_info": null,
+            "base_value": null,
             "uuid": {
               "value": "45586ad7-5357-4d93-9123-36b52b637fb7"
             }
@@ -650,7 +650,7 @@
         },
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "901bb336-2272-44d1-8442-7d3536ba98b3"
           }
@@ -669,7 +669,7 @@
         },
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "3c5d997a-a5b3-46c0-befb-4911c3a3dfa0"
           }
@@ -688,7 +688,7 @@
         },
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "eca25651-2cd2-47c4-b7e3-3e97debe7cef"
           }
@@ -707,7 +707,7 @@
         },
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "bed3e968-ab70-476a-9a5a-5b2a8a64368f"
           }
@@ -726,7 +726,7 @@
         },
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "1aac7395-d83c-490f-9ddb-cc26ee4010be"
           }
@@ -745,7 +745,7 @@
         },
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "73bff230-dfee-4548-987b-eb425cfbadcd"
           }
@@ -764,7 +764,7 @@
         },
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "4fef428d-0bc5-4f85-b57d-7b2e72bebc47"
           }
@@ -783,7 +783,7 @@
         },
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "226ddddd-4747-4586-baad-283f811cedd3"
           }
@@ -802,7 +802,7 @@
         },
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "5d7bfd2c-5386-4f14-baa7-98fc481f39a5"
           }
@@ -831,7 +831,7 @@
         },
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "31eeec08-4a9b-4b72-b47c-fad2c3351733"
           }
@@ -869,7 +869,7 @@
         },
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "2ed1bdf5-410e-475b-99c8-36367e5a1c76"
           }
@@ -905,7 +905,7 @@
         },
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "b08d6383-a3f1-48ac-8e76-a26395c6e402"
           }
@@ -943,7 +943,7 @@
         },
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "678a163e-966b-481a-887d-7440a68a10a3"
           }
@@ -980,7 +980,7 @@
         },
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "f85171e8-09f1-4e3b-9861-d6049ee623da"
           }
@@ -1016,7 +1016,7 @@
         },
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "f4798b24-ab90-4b44-a28b-642a0a722106"
           }
@@ -1054,7 +1054,7 @@
         },
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "9fec6654-1053-4d55-b97a-31e0341044c7"
           }
@@ -1091,7 +1091,7 @@
         },
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "10d3b921-e615-4b5b-897d-6bada5558706"
           }
@@ -1128,7 +1128,7 @@
         },
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "dc813fd9-479f-40fb-b3ad-78fbf88453e9"
           }
@@ -1171,7 +1171,7 @@
         "fuel": "OTHER",
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "c0d60640-4db2-4b34-b76c-1676eb59ee06"
           }
@@ -1278,7 +1278,7 @@
         "fuel": "OTHER",
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "0b245a94-33e8-4eaf-a832-23ec690dc7a9"
           }
@@ -1385,7 +1385,7 @@
         "fuel": "OTHER",
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "16cb9aeb-e6e1-4d76-badf-8ddee67ec4eb"
           }
@@ -1473,7 +1473,7 @@
         "ext": {},
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "711573ce-35f2-4c9a-a160-0dcb555fbeb6"
           }
@@ -1508,7 +1508,7 @@
         },
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "3def568d-b591-4ca8-8e1e-2983f8bac535"
           }
@@ -1547,7 +1547,7 @@
         },
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "c0fce4fa-99f6-4c3e-896a-0963c324e96f"
           }
@@ -1586,7 +1586,7 @@
         },
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "c59965f4-4ad8-412a-bb45-c192c1e601ae"
           }
@@ -1625,7 +1625,7 @@
         },
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "44397fb5-f9ff-46d3-a660-83dc49c20dc7"
           }
@@ -1664,7 +1664,7 @@
         },
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "f6566ff7-1a2a-416c-b357-9fe12cd67364"
           }
@@ -1703,7 +1703,7 @@
         },
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "98941b83-ce9c-4e3e-955e-a2d6c35b689c"
           }
@@ -1766,7 +1766,7 @@
         "ext": {},
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "6369755c-0635-40ed-8488-7e6acba3091c"
           }
@@ -1821,7 +1821,7 @@
         "ext": {},
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "791892a8-c18e-4dac-832a-75e2acaf175f"
           }
@@ -1876,7 +1876,7 @@
         "ext": {},
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "33623721-8754-4111-99bd-7c22f9c00cd9"
           }
@@ -1890,7 +1890,7 @@
         "ext": {},
         "internal": {
           "ext": null,
-          "units_info": null,
+          "base_value": null,
           "uuid": {
             "value": "16857260-18c2-420f-b3a2-b0e901355192"
           }
@@ -1902,7 +1902,7 @@
     ],
     "internal": {
       "ext": {},
-      "units_info": null,
+      "base_value": null,
       "uuid": {
         "value": "a3d66d62-a2f6-4621-ab19-79359b4c36fe"
       }
@@ -4284,7 +4284,7 @@
   "frequency": 60.0,
   "internal": {
     "ext": null,
-    "units_info": null,
+    "base_value": null,
     "uuid": {
       "value": "fceeae5e-c652-4638-9606-f166767635b9"
     }
@@ -4298,12 +4298,5 @@
     "name": null
   },
   "runchecks": false,
-  "units_settings": {
-    "__metadata__": {
-      "module": "InfrastructureSystems",
-      "type": "SystemUnitsSettings"
-    },
-    "base_value": 100.0,
-    "unit_system": "SYSTEM_BASE"
-  }
+  "base_power": 100.0
 }
