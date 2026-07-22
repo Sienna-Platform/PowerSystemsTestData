@@ -37,7 +37,7 @@
       "count": 3
     },
     {
-      "type": "Transformer2W",
+      "type": "TwoWindingTransformer",
       "count": 3
     }
   ],
