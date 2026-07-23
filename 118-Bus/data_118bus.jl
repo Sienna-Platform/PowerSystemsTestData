@@ -147,7 +147,7 @@ fuel = []
 for i in 1:192
     if thermal_gens[i, "PrimeMoveType"] == "OT"
         push!(fuel_prices, bm_price)
-        push!(fuel, ThermalFuels.AG_BIPRODUCT)
+        push!(fuel, ThermalFuels.AG_BYPRODUCT)
     elseif thermal_gens[i, "PrimeMoveType"] == "CC" || startswith(thermal_gens[i, "Generator Name"], "CT NG") || startswith(thermal_gens[i, "Generator Name"], "ICE NG") || startswith(thermal_gens[i, "Generator Name"], "ST NG")
         push!(fuel_prices, ng_price)
         push!(fuel, ThermalFuels.NATURAL_GAS)
