@@ -61,16 +61,12 @@
       "count": 139
     },
     {
-      "type": "TapTransformer",
-      "count": 2
-    },
-    {
       "type": "ThermalStandard",
       "count": 146
     },
     {
-      "type": "Transformer2W",
-      "count": 120
+      "type": "TwoWindingTransformer",
+      "count": 122
     }
   ],
   "time_series_counts": []
