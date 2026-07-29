@@ -258,7 +258,6 @@ branches14_dc(nodes14) = [
         circuit = TransformerCircuit(;
             arc = Arc(from = nodes14[4], to = nodes14[7]),
             tap = 0.978,
-            winding_group_number = WindingGroupNumber.UNDEFINED,
             available = true,
             rating = 20.0,
             active_power_flow = 0.0,
@@ -275,7 +274,6 @@ branches14_dc(nodes14) = [
         circuit = TransformerCircuit(;
             arc = Arc(from = nodes14[4], to = nodes14[9]),
             tap = 0.969,
-            winding_group_number = WindingGroupNumber.UNDEFINED,
             available = true,
             rating = 20.0,
             active_power_flow = 0.0,
@@ -292,7 +290,6 @@ branches14_dc(nodes14) = [
         circuit = TransformerCircuit(;
             arc = Arc(from = nodes14[5], to = nodes14[6]),
             tap = 0.932,
-            winding_group_number = WindingGroupNumber.UNDEFINED,
             available = true,
             rating = 20.0,
             active_power_flow = 0.0,
@@ -344,7 +341,6 @@ branches14_dc(nodes14) = [
         name = "Trans4",
         circuit = TransformerCircuit(;
             arc = Arc(from = nodes14[7], to = nodes14[8]),
-            winding_group_number = WindingGroupNumber.UNDEFINED,
             available = true,
             rating = 20.0,
             active_power_flow = 0.0,
@@ -520,7 +516,6 @@ branches14(nodes14) = [
         circuit = TransformerCircuit(;
             arc = Arc(from = nodes14[4], to = nodes14[7]),
             tap = 0.978,
-            winding_group_number = WindingGroupNumber.UNDEFINED,
             available = true,
             rating = 20.0,
             active_power_flow = 0.0,
@@ -537,7 +532,6 @@ branches14(nodes14) = [
         circuit = TransformerCircuit(;
             arc = Arc(from = nodes14[4], to = nodes14[9]),
             tap = 0.969,
-            winding_group_number = WindingGroupNumber.UNDEFINED,
             available = true,
             rating = 20.0,
             active_power_flow = 0.0,
@@ -554,7 +548,6 @@ branches14(nodes14) = [
         circuit = TransformerCircuit(;
             arc = Arc(from = nodes14[5], to = nodes14[6]),
             tap = 0.932,
-            winding_group_number = WindingGroupNumber.UNDEFINED,
             available = true,
             rating = 20.0,
             active_power_flow = 0.0,
@@ -606,7 +599,6 @@ branches14(nodes14) = [
         name = "Trans4",
         circuit = TransformerCircuit(;
             arc = Arc(from = nodes14[7], to = nodes14[8]),
-            winding_group_number = WindingGroupNumber.UNDEFINED,
             available = true,
             rating = 20.0,
             active_power_flow = 0.0,
