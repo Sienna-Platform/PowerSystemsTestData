@@ -1017,64 +1017,71 @@ interruptible(nodes5) = [InterruptiblePowerLoad(
 # Natural Units: First vector: Power in MW, Second Vector: Slopes in $/MWh
 ORDC_cost = CostCurve(PiecewiseIncrementalCurve(0.0, [0.0, 20.0, 40.0, 60.0, 80.0], [150.0, 27.5, 24.5, 0.5]))
 
+# Keyword form: `OnlineReserve`'s positional order differs from the old `ConstantReserve`.
 constant_reserve5() =
-    ConstantReserve{ReserveUp}(
-        "ReserveUp",
-        true,
-        300,
-        1.0,
-        3600.0,
-        1.0,
-        1.0,
-        0.0,
+    OnlineReserve{ReserveUp}(;
+        name = "ReserveUp",
+        available = true,
+        time_frame = 300,
+        requirement = 1.0,
+        sustained_time = 3600.0,
+        max_output_fraction = 1.0,
+        max_participation_factor = 1.0,
+        deployed_fraction = 0.0,
     )
 
 
+# The ORDC carries its demand curve on `variable`; non-spinning is `OfflineReserve` (no direction).
 reserve5(thermal_generators5) = [
-    VariableReserve{ReserveUp}(
+    OnlineReserve{ReserveUp}(
         "Reserve1",
         true,
         0.6,
         maximum([gen.active_power_limits[:max] for gen in thermal_generators5]) .* 0.001,
     ),
-    VariableReserve{ReserveDown}(
+    OnlineReserve{ReserveDown}(
         "Reserve2",
         true,
         0.3,
         maximum([gen.active_power_limits[:max] for gen in thermal_generators5]) .* 0.005,
     ),
-    VariableReserve{ReserveUp}(
+    OnlineReserve{ReserveUp}(
         "Reserve11",
         true,
         0.8,
         maximum([gen.active_power_limits[:max] for gen in thermal_generators5]) .* 0.001,
     ),
-    ReserveDemandCurve{ReserveUp}(nothing, "ORDC1", true, 0.6),
-    VariableReserveNonSpinning("NonSpinningReserve", true, 0.5, maximum([gen.active_power_limits[:max] for gen in thermal_generators5]) .* 0.001),
+    OnlineReserve{ReserveUp}(;
+        name = "ORDC1",
+        available = true,
+        time_frame = 0.6,
+        variable = ORDC_cost,
+    ),
+    OfflineReserve("NonSpinningReserve", true, 0.5, maximum([gen.active_power_limits[:max] for gen in thermal_generators5]) .* 0.001),
 ]
 
 reserve5_re(renewable_generators5) = [
-    VariableReserve{ReserveUp}("Reserve3", true, 30, 100),
-    VariableReserve{ReserveDown}("Reserve4", true, 5, 50),
-    ReserveDemandCurve{ReserveUp}(nothing, "ORDC1", true, 0.6),
+    OnlineReserve{ReserveUp}("Reserve3", true, 30, 100),
+    OnlineReserve{ReserveDown}("Reserve4", true, 5, 50),
+    OnlineReserve{ReserveUp}(; name = "ORDC1", available = true, time_frame = 0.6, variable = ORDC_cost),
 ]
 reserve5_hy(hydro_generators5) = [
-    VariableReserve{ReserveUp}("Reserve5", true, 30, 100),
-    VariableReserve{ReserveDown}("Reserve6", true, 5, 50),
-    ReserveDemandCurve{ReserveUp}(nothing, "ORDC1", true, 0.6),
+    OnlineReserve{ReserveUp}("Reserve5", true, 30, 100),
+    OnlineReserve{ReserveDown}("Reserve6", true, 5, 50),
+    OnlineReserve{ReserveUp}(; name = "ORDC1", available = true, time_frame = 0.6, variable = ORDC_cost),
 ]
 
 reserve5_il(interruptible_loads) = [
-    VariableReserve{ReserveUp}("Reserve7", true, 30, 100),
-    VariableReserve{ReserveDown}("Reserve8", true, 5, 50),
-    ReserveDemandCurve{ReserveUp}(nothing, "ORDC1", true, 0.6),
+    OnlineReserve{ReserveUp}("Reserve7", true, 30, 100),
+    OnlineReserve{ReserveDown}("Reserve8", true, 5, 50),
+    OnlineReserve{ReserveUp}(; name = "ORDC1", available = true, time_frame = 0.6, variable = ORDC_cost),
 ]
 
 
 reserve5_phes(phes5) = [
-    VariableReserve{ReserveUp}("Reserve9", true, 30, 100),
-    VariableReserve{ReserveDown}("Reserve10", true, 5, 50),
-    ReserveDemandCurve{ReserveUp}(nothing, "ORDC1", true, 0.6),
+    OnlineReserve{ReserveUp}("Reserve9", true, 30, 100),
+    OnlineReserve{ReserveDown}("Reserve10", true, 5, 50),
+    OnlineReserve{ReserveUp}(; name = "ORDC1", available = true, time_frame = 0.6, variable = ORDC_cost),
 ]
 
 # TODO: add a sensible cost for hybrid devices
