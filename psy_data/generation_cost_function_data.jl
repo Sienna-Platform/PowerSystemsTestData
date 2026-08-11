@@ -397,10 +397,8 @@ _mbts_constant_forecast(ini_time, val) = Dict(
     ini_time + Hour(1) => fill(val, 5),
 )
 
-# Attach the series backing a `MarketBidTimeSeriesCost` and set it as the operation cost.
-# psy6 pattern for time-varying bids: every field references an attached series by key,
-# so the component must already be in the system. The decremental side gets a zero-width
-# (trivial) curve, the TS analogue of `ZERO_OFFER_CURVE`.
+# Attach the series backing a `MarketBidTimeSeriesCost` (fields reference them by key,
+# so `gen` must already be in the system) and set it as the operation cost.
 function _set_ts_market_bid_cost!(sys, gen, incremental_bid, ini_time, no_load)
     _det(name, val) = PSY.Deterministic(;
         name = name,
@@ -475,8 +473,7 @@ function thermal_generators_market_bid_ts(sys, node)
         resolution = Hour(1),
     )
 
-    # Placeholder cost, replaced by the TS-backed `MarketBidTimeSeriesCost` once the
-    # component is in the system (the series keys require an attached component).
+    # Placeholder, replaced by the TS-backed cost after `add_component!`.
     market_bid1 = MarketBidCost(nothing)
 
     gen1 = ThermalStandard(
