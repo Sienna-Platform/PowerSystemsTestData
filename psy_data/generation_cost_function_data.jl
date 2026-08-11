@@ -338,13 +338,11 @@ end
 ## Single Bid MarketBid Cost Function
 
 function thermal_generators_market_bid(node)
-    market_bid1 = MarketBidCost(
-        30.0,
-        (hot = 1.5, warm = 1.5, cold = 1.5),
-        0.75,
-        CostCurve(PiecewiseIncrementalCurve(0.0, [10.0, 30.0, 50.0, 100.0], [63.37, 98.155, 102.276])),
-        nothing,
-        Vector{Service}(),
+    market_bid1 = MarketBidCost(;
+        no_load_cost = LinearCurve(30.0),
+        start_up = (hot = 1.5, warm = 1.5, cold = 1.5),
+        shut_down = LinearCurve(0.75),
+        incremental_offer_curves = CostCurve(PiecewiseIncrementalCurve(0.0, [10.0, 30.0, 50.0, 100.0], [63.37, 98.155, 102.276])),
     )
 
     gen1 = ThermalStandard(
@@ -365,13 +363,11 @@ function thermal_generators_market_bid(node)
         base_power=100.0,
     )
 
-    market_bid2 = MarketBidCost(
-        50.0,
-        (hot = 1.5, warm = 1.5, cold = 1.5),
-        0.75,
-        CostCurve(PiecewiseIncrementalCurve(0.0, [10.0, 30.0, 50.0, 100.0], [66.37, 88.155, 109.276])),
-        nothing,
-        Vector{Service}(),
+    market_bid2 = MarketBidCost(;
+        no_load_cost = LinearCurve(50.0),
+        start_up = (hot = 1.5, warm = 1.5, cold = 1.5),
+        shut_down = LinearCurve(0.75),
+        incremental_offer_curves = CostCurve(PiecewiseIncrementalCurve(0.0, [10.0, 30.0, 50.0, 100.0], [66.37, 88.155, 109.276])),
     )
 
     gen2 = ThermalStandard(
@@ -393,6 +389,44 @@ function thermal_generators_market_bid(node)
     )
 
     return [gen1, gen2]
+end
+
+# Constant-valued forecast matching the market-bid windows (2 windows x 5 steps, hourly).
+_mbts_constant_forecast(ini_time, val) = Dict(
+    ini_time => fill(val, 5),
+    ini_time + Hour(1) => fill(val, 5),
+)
+
+# Attach the series backing a `MarketBidTimeSeriesCost` and set it as the operation cost.
+# psy6 pattern for time-varying bids: every field references an attached series by key,
+# so the component must already be in the system. The decremental side gets a zero-width
+# (trivial) curve, the TS analogue of `ZERO_OFFER_CURVE`.
+function _set_ts_market_bid_cost!(sys, gen, incremental_bid, ini_time, no_load)
+    _det(name, val) = PSY.Deterministic(;
+        name = name,
+        data = _mbts_constant_forecast(ini_time, val),
+        resolution = Hour(1),
+    )
+    pwl_key = PSY.add_time_series!(sys, gen, incremental_bid)
+    init_key = PSY.add_time_series!(sys, gen, _det("initial_input_incremental", 0.0))
+    dec_key = PSY.add_time_series!(
+        sys, gen, _det("variable_cost_decremental", PiecewiseStepData([0.0, 0.0], [0.0])),
+    )
+    dec_init_key = PSY.add_time_series!(sys, gen, _det("initial_input_decremental", 0.0))
+    nl_key = PSY.add_time_series!(sys, gen, _det("no_load_cost", no_load))
+    su_key = PSY.add_time_series!(sys, gen, _det("start_up", (1.5, 1.5, 1.5)))
+    sd_key = PSY.add_time_series!(sys, gen, _det("shut_down", 0.75))
+    PSY.set_operation_cost!(
+        gen,
+        PSY.MarketBidTimeSeriesCost(;
+            no_load_cost = PSY.TimeSeriesLinearCurve(nl_key),
+            start_up = PSY.IS.TupleTimeSeries{PSY.StartUpStages}(su_key),
+            shut_down = PSY.TimeSeriesLinearCurve(sd_key),
+            incremental_offer_curves = PSY.make_market_bid_ts_curve(pwl_key, init_key),
+            decremental_offer_curves = PSY.make_market_bid_ts_curve(dec_key, dec_init_key),
+        ),
+    )
+    return
 end
 
 function thermal_generators_market_bid_ts(sys, node)
@@ -441,14 +475,9 @@ function thermal_generators_market_bid_ts(sys, node)
         resolution = Hour(1),
     )
 
-    market_bid1 = MarketBidCost(
-        30.0,
-        (hot = 1.5, warm = 1.5, cold = 1.5),
-        0.75,
-        nothing,
-        nothing,
-        Vector{Service}(),
-    )
+    # Placeholder cost, replaced by the TS-backed `MarketBidTimeSeriesCost` once the
+    # component is in the system (the series keys require an attached component).
+    market_bid1 = MarketBidCost(nothing)
 
     gen1 = ThermalStandard(
         name="Test Unit1",
@@ -468,14 +497,7 @@ function thermal_generators_market_bid_ts(sys, node)
         base_power=100.0,
     )
 
-    market_bid2 = MarketBidCost(
-        50.0,
-        (hot = 1.5, warm = 1.5, cold = 1.5),
-        0.75,
-        nothing,
-        nothing,
-        Vector{Service}(),
-    )
+    market_bid2 = MarketBidCost(nothing)
 
     gen2 = ThermalStandard(
         name="Test Unit2",
@@ -498,8 +520,8 @@ function thermal_generators_market_bid_ts(sys, node)
 
     PSY.add_component!(sys, gen1)
     PSY.add_component!(sys, gen2)
-    PSY.set_variable_cost!(sys, gen1, market_bid_gen1, PSY.UnitSystem.NATURAL_UNITS)
-    PSY.set_variable_cost!(sys, gen2, market_bid_gen2, PSY.UnitSystem.NATURAL_UNITS)
+    _set_ts_market_bid_cost!(sys, gen1, market_bid_gen1, ini_time, 30.0)
+    _set_ts_market_bid_cost!(sys, gen2, market_bid_gen2, ini_time, 50.0)
 
     return [gen1, gen2]
 end
