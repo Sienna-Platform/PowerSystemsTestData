@@ -172,6 +172,7 @@ branches10_ac(nodes10) = [
     ),
 ]
 
+# base_current (A) = S_base / V_base = 100 MVA / 500 kV (the DC bus base voltage) = 200 A.
 branches10_dc(nodes10_dc) = [
     TModelHVDCLine(
         name = "nodeC_DC-nodeC2_DC",
@@ -183,6 +184,7 @@ branches10_dc(nodes10_dc) = [
         c = 0.0,
         active_power_limits_from=(min=-10.0, max=10.0),
         active_power_limits_to=(min=-10.0, max=10.0),
+        base_current = 200.0,
     ),
     TModelHVDCLine(
         name = "nodeD_DC-nodeD2_DC",
@@ -194,6 +196,7 @@ branches10_dc(nodes10_dc) = [
         c = 0.0,
         active_power_limits_from=(min=-10.0, max=10.0),
         active_power_limits_to=(min=-10.0, max=10.0),
+        base_current = 200.0,
     ),
     TModelHVDCLine(
         name = "nodeC_DC-nodeD2_DC",
@@ -205,6 +208,7 @@ branches10_dc(nodes10_dc) = [
         c = 0.0,
         active_power_limits_from=(min=-10.0, max=10.0),
         active_power_limits_to=(min=-10.0, max=10.0),
+        base_current = 200.0,
     ),
 ]
 
