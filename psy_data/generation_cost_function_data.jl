@@ -418,7 +418,7 @@ function _set_ts_market_bid_cost!(sys, gen, incremental_bid, ini_time, no_load)
         gen,
         PSY.MarketBidTimeSeriesCost(;
             no_load_cost = PSY.TimeSeriesLinearCurve(nl_key),
-            start_up = PSY.IS.TupleTimeSeries{PSY.StartUpStages}(su_key),
+            start_up = su_key,
             shut_down = PSY.TimeSeriesLinearCurve(sd_key),
             incremental_offer_curves = PSY.make_market_bid_ts_curve(pwl_key, init_key),
             decremental_offer_curves = PSY.make_market_bid_ts_curve(dec_key, dec_init_key),
