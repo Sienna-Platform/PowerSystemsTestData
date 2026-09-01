@@ -339,7 +339,7 @@ end
 
 function thermal_generators_market_bid(node)
     market_bid1 = MarketBidCost(;
-        no_load_cost = LinearCurve(30.0),
+        minimum_energy_offer = LinearCurve(30.0),
         start_up = (hot = 1.5, warm = 1.5, cold = 1.5),
         shut_down = LinearCurve(0.75),
         incremental_offer_curves = CostCurve(PiecewiseIncrementalCurve(0.0, [10.0, 30.0, 50.0, 100.0], [63.37, 98.155, 102.276])),
@@ -364,7 +364,7 @@ function thermal_generators_market_bid(node)
     )
 
     market_bid2 = MarketBidCost(;
-        no_load_cost = LinearCurve(50.0),
+        minimum_energy_offer = LinearCurve(50.0),
         start_up = (hot = 1.5, warm = 1.5, cold = 1.5),
         shut_down = LinearCurve(0.75),
         incremental_offer_curves = CostCurve(PiecewiseIncrementalCurve(0.0, [10.0, 30.0, 50.0, 100.0], [66.37, 88.155, 109.276])),
@@ -417,7 +417,7 @@ function _set_ts_market_bid_cost!(sys, gen, incremental_bid, ini_time, no_load)
     PSY.set_operation_cost!(
         gen,
         PSY.MarketBidTimeSeriesCost(;
-            no_load_cost = PSY.TimeSeriesLinearCurve(nl_key),
+            minimum_energy_offer = PSY.TimeSeriesLinearCurve(nl_key),
             start_up = su_key,
             shut_down = PSY.TimeSeriesLinearCurve(sd_key),
             incremental_offer_curves = PSY.make_market_bid_ts_curve(pwl_key, init_key),
