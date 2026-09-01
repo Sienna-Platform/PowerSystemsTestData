@@ -411,9 +411,12 @@ function _set_ts_market_bid_cost!(sys, gen, incremental_bid, ini_time, no_load)
         sys, gen, _det("variable_cost_decremental", PiecewiseStepData([0.0, 0.0], [0.0])),
     )
     dec_init_key = PSY.add_time_series!(sys, gen, _det("initial_input_decremental", 0.0))
-    nl_key = PSY.add_time_series!(sys, gen, _det("no_load_cost", no_load))
+    # `TimeSeriesLinearCurve` is bound by its key's element type, so the scalar cost
+    # fields it wraps must ride as `LinearFunctionData`, not bare `Float64`.
+    _det_linear(name, val) = _det(name, PSY.LinearFunctionData(val, 0.0))
+    nl_key = PSY.add_time_series!(sys, gen, _det_linear("no_load_cost", no_load))
     su_key = PSY.add_time_series!(sys, gen, _det("start_up", (1.5, 1.5, 1.5)))
-    sd_key = PSY.add_time_series!(sys, gen, _det("shut_down", 0.75))
+    sd_key = PSY.add_time_series!(sys, gen, _det_linear("shut_down", 0.75))
     PSY.set_operation_cost!(
         gen,
         PSY.MarketBidTimeSeriesCost(;
