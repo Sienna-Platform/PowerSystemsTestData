@@ -218,7 +218,7 @@ thermal_generators10(nodes10) = [
     ThermalStandard(;
         name = "Alta",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes10[1],
         active_power = 0.40,
         reactive_power = 0.010,
@@ -240,7 +240,7 @@ thermal_generators10(nodes10) = [
     ThermalStandard(
         name = "Park City",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes10[1],
         active_power = 1.70,
         reactive_power = 0.20,
@@ -262,7 +262,7 @@ thermal_generators10(nodes10) = [
     ThermalStandard(
         name = "Solitude",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes10[3],
         active_power = 5.2,
         reactive_power = 1.00,
@@ -284,7 +284,7 @@ thermal_generators10(nodes10) = [
     ThermalStandard(
         name = "Sundance",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes10[4],
         active_power = 2.0,
         reactive_power = 0.40,
@@ -306,7 +306,7 @@ thermal_generators10(nodes10) = [
     ThermalStandard(
         name = "Brighton",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes10[5],
         active_power = 6.0,
         reactive_power = 1.50,
@@ -328,7 +328,7 @@ thermal_generators10(nodes10) = [
     ThermalStandard(;
         name = "Alta-2",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes10[6],
         active_power = 0.40,
         reactive_power = 0.010,
@@ -350,7 +350,7 @@ thermal_generators10(nodes10) = [
     ThermalStandard(
         name = "Park City-2",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes10[6],
         active_power = 1.70,
         reactive_power = 0.20,
@@ -372,7 +372,7 @@ thermal_generators10(nodes10) = [
     ThermalStandard(
         name = "Solitude-2",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes10[8],
         active_power = 5.2,
         reactive_power = 1.00,
@@ -394,7 +394,7 @@ thermal_generators10(nodes10) = [
     ThermalStandard(
         name = "Sundance-2",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes10[9],
         active_power = 2.0,
         reactive_power = 0.40,
@@ -416,7 +416,7 @@ thermal_generators10(nodes10) = [
     ThermalStandard(
         name = "Brighton-2",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes10[10],
         active_power = 6.0,
         reactive_power = 1.50,

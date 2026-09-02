@@ -3,7 +3,7 @@ thermal_generator_linear_cost(node) =
     ThermalStandard(
         name="Test Unit",
         available=true,
-        status=true,
+        status=OperationalStates.ONLINE,
         bus=node,
         active_power=1.70,
         reactive_power=0.20,
@@ -26,7 +26,7 @@ thermal_generator_linear_fuel(node) =
     ThermalStandard(
         name="Test Unit",
         available=true,
-        status=true,
+        status=OperationalStates.ONLINE,
         bus=node,
         active_power=1.70,
         reactive_power=0.20,
@@ -49,7 +49,7 @@ thermal_generator_pwl_io_fuel(node) =
     ThermalStandard(
         name="Test Unit",
         available=true,
-        status=true,
+        status=OperationalStates.ONLINE,
         bus=node,
         active_power=1.70,
         reactive_power=0.20,
@@ -72,7 +72,7 @@ thermal_generator_pwl_io_cost(node) =
     ThermalStandard(
         name="Test Unit",
         available=true,
-        status=true,
+        status=OperationalStates.ONLINE,
         bus=node,
         active_power=1.70,
         reactive_power=0.20,
@@ -95,7 +95,7 @@ thermal_generator_pwl_incremental_cost(node) =
     ThermalStandard(
         name="Test Unit",
         available=true,
-        status=true,
+        status=OperationalStates.ONLINE,
         bus=node,
         active_power=1.70,
         reactive_power=0.20,
@@ -120,7 +120,7 @@ thermal_generator_pwl_incremental_fuel(node) =
     ThermalStandard(
         name="Test Unit",
         available=true,
-        status=true,
+        status=OperationalStates.ONLINE,
         bus=node,
         active_power=1.70,
         reactive_power=0.20,
@@ -145,7 +145,7 @@ thermal_generator_quad_cost(node) =
     ThermalStandard(
         name="Test Unit",
         available=true,
-        status=true,
+        status=OperationalStates.ONLINE,
         bus=node,
         active_power=1.70,
         reactive_power=0.20,
@@ -168,7 +168,7 @@ thermal_generator_quad_fuel(node) =
     ThermalStandard(
         name="Test Unit",
         available=true,
-        status=true,
+        status=OperationalStates.ONLINE,
         bus=node,
         active_power=1.70,
         reactive_power=0.20,
@@ -191,7 +191,7 @@ thermal_generator_pwl_io_cost_nonconvex(node) =
     ThermalStandard(
         name="Test Unit",
         available=true,
-        status=true,
+        status=OperationalStates.ONLINE,
         bus=node,
         active_power=1.70,
         reactive_power=0.20,
@@ -229,7 +229,7 @@ function thermal_generator_linear_fuel_ts(sys, node)
     gen = ThermalStandard(
         name="Test Unit",
         available=true,
-        status=true,
+        status=OperationalStates.ONLINE,
         bus=node,
         active_power=1.70,
         reactive_power=0.20,
@@ -256,7 +256,7 @@ function thermal_generator_pwl_io_fuel_ts(sys, node)
     gen = ThermalStandard(
         name="Test Unit",
         available=true,
-        status=true,
+        status=OperationalStates.ONLINE,
         bus=node,
         active_power=1.70,
         reactive_power=0.20,
@@ -283,7 +283,7 @@ function thermal_generator_pwl_incremental_fuel_ts(sys, node)
     gen = ThermalStandard(
         name="Test Unit",
         available=true,
-        status=true,
+        status=OperationalStates.ONLINE,
         bus=node,
         active_power=1.70,
         reactive_power=0.20,
@@ -312,7 +312,7 @@ function thermal_generator_quad_fuel_ts(sys, node)
     gen = ThermalStandard(
         name="Test Unit",
         available=true,
-        status=true,
+        status=OperationalStates.ONLINE,
         bus=node,
         active_power=1.70,
         reactive_power=0.20,
@@ -348,7 +348,7 @@ function thermal_generators_market_bid(node)
     gen1 = ThermalStandard(
         name="Test Unit1",
         available=true,
-        status=true,
+        status=OperationalStates.ONLINE,
         bus=node,
         active_power=0.70,
         reactive_power=0.20,
@@ -373,7 +373,7 @@ function thermal_generators_market_bid(node)
     gen2 = ThermalStandard(
         name="Test Unit2",
         available=true,
-        status=true,
+        status=OperationalStates.ONLINE,
         bus=node,
         active_power=0.70,
         reactive_power=0.20,
@@ -482,7 +482,7 @@ function thermal_generators_market_bid_ts(sys, node)
     gen1 = ThermalStandard(
         name="Test Unit1",
         available=true,
-        status=true,
+        status=OperationalStates.ONLINE,
         bus=node,
         active_power=0.70,
         reactive_power=0.20,
@@ -502,7 +502,7 @@ function thermal_generators_market_bid_ts(sys, node)
     gen2 = ThermalStandard(
         name="Test Unit2",
         available=true,
-        status=true,
+        status=OperationalStates.ONLINE,
         bus=node,
         active_power=0.70,
         reactive_power=0.20,

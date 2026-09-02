@@ -334,7 +334,7 @@ thermal_generators5(nodes5) = [
     ThermalStandard(;
         name = "Alta",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes5[1],
         active_power = 0.40,
         reactive_power = 0.010,
@@ -351,7 +351,7 @@ thermal_generators5(nodes5) = [
     ThermalStandard(
         name = "Park City",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes5[1],
         active_power = 1.70,
         reactive_power = 0.20,
@@ -368,7 +368,7 @@ thermal_generators5(nodes5) = [
     ThermalStandard(
         name = "Solitude",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes5[3],
         active_power = 5.2,
         reactive_power = 1.00,
@@ -385,7 +385,7 @@ thermal_generators5(nodes5) = [
     ThermalStandard(
         name = "Sundance",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes5[4],
         active_power = 2.0,
         reactive_power = 0.40,
@@ -402,7 +402,7 @@ thermal_generators5(nodes5) = [
     ThermalStandard(
         name = "Brighton",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes5[5],
         active_power = 6.0,
         reactive_power = 1.50,
@@ -422,7 +422,7 @@ thermal_generators5_events(nodes5) = [
     ThermalStandard(;
         name = "Alta",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes5[1],
         active_power = 0.40,
         reactive_power = 0.010,
@@ -439,7 +439,7 @@ thermal_generators5_events(nodes5) = [
     ThermalStandard(
         name = "Park City",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes5[1],
         active_power = 1.70,
         reactive_power = 0.20,
@@ -456,7 +456,7 @@ thermal_generators5_events(nodes5) = [
     ThermalStandard(
         name = "Solitude",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes5[3],
         active_power = 5.2,
         reactive_power = 1.00,
@@ -473,7 +473,7 @@ thermal_generators5_events(nodes5) = [
     ThermalStandard(
         name = "Sundance",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes5[4],
         active_power = 2.0,
         reactive_power = 0.40,
@@ -490,7 +490,7 @@ thermal_generators5_events(nodes5) = [
     ThermalStandard(
         name = "Brighton",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes5[5],
         active_power = 6.0,
         reactive_power = 1.50,
@@ -511,7 +511,7 @@ thermal_generators5_pwl(nodes5) = [
     ThermalStandard(
         name = "Test PWL",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes5[1],
         active_power = 1.70,
         reactive_power = 0.20,
@@ -535,7 +535,7 @@ thermal_generators5_pwl_nonconvex(nodes5) = [
     ThermalStandard(
         name = "Test PWL Nonconvex",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes5[1],
         active_power = 1.70,
         reactive_power = 0.20,
@@ -559,7 +559,7 @@ thermal_pglib_generators5(nodes5) = [
     ThermalMultiStart(
         "115_STEAM_1",
         true,
-        true,
+        OperationalStates.ONLINE,
         nodes5[1],
         0.05,
         0.010,
@@ -585,7 +585,7 @@ thermal_pglib_generators5(nodes5) = [
     ThermalMultiStart(
         "101_CT_1",
         true,
-        true,
+        OperationalStates.ONLINE,
         nodes5[1],
         0.08,
         0.020,
@@ -614,7 +614,7 @@ thermal_generators5_uc_testing(nodes) = [
     ThermalStandard(
         name = "Alta",
         available = true,
-        status = false,
+        status = OperationalStates.OFFLINE,
         bus = nodes[1],
         active_power = 0.0,
         reactive_power = 0.0,
@@ -631,7 +631,7 @@ thermal_generators5_uc_testing(nodes) = [
     ThermalStandard(
         name = "Park City",
         available = true,
-        status = false,
+        status = OperationalStates.OFFLINE,
         bus = nodes[1],
         active_power = 0.0,
         reactive_power = 0.0,
@@ -648,7 +648,7 @@ thermal_generators5_uc_testing(nodes) = [
     ThermalStandard(
         name = "Solitude",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes[3],
         active_power = 2.7,
         reactive_power = 0.00,
@@ -665,7 +665,7 @@ thermal_generators5_uc_testing(nodes) = [
     ThermalStandard(
         name = "Sundance",
         available = true,
-        status = false,
+        status = OperationalStates.OFFLINE,
         bus = nodes[4],
         active_power = 0.0,
         reactive_power = 0.00,
@@ -682,7 +682,7 @@ thermal_generators5_uc_testing(nodes) = [
     ThermalStandard(
         name = "Brighton",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes[5],
         active_power = 6.0,
         reactive_power = 0.0,
@@ -799,7 +799,6 @@ function phes5(nodes5)
         transition_time=(turbine = 0.1, pump = 0.1),
         minimum_time=(turbine = 1.0, pump = 1.0),
         conversion_factor=1.0,
-        must_run=false,
         services=Device[],
         dynamic_injector=nothing,
         ext=Dict{String, Any}(),

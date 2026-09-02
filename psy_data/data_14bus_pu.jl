@@ -688,7 +688,7 @@ thermal_generators14(nodes14) = [
     ThermalStandard(
         name = "Bus1",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes14[1],
         active_power = 2.0,
         reactive_power = -0.169,
@@ -705,7 +705,7 @@ thermal_generators14(nodes14) = [
     ThermalStandard(
         name = "Bus2",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes14[2],
         active_power = 0.40,
         reactive_power = 0.42,
@@ -722,7 +722,7 @@ thermal_generators14(nodes14) = [
     ThermalStandard(
         name = "Bus3",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes14[3],
         active_power = 0.0,
         reactive_power = 0.23,
@@ -739,7 +739,7 @@ thermal_generators14(nodes14) = [
     ThermalStandard(
         name = "Bus6",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes14[6],
         active_power = 0.0,
         reactive_power = 0.12,
@@ -756,7 +756,7 @@ thermal_generators14(nodes14) = [
     ThermalStandard(
         name = "Bus8",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes14[8],
         active_power = 0.0,
         reactive_power = 0.174,

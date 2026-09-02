@@ -282,7 +282,7 @@ function thermal_generators118(nodes)
         thermal = ThermalStandard(;
             name = thermal_gens[i, "Generator Name"],
             available = true,
-            status = true,
+            status = OperationalStates.ONLINE,
             bus = nodes[bus_thermal],
             active_power = max_active_power,
             reactive_power = 0.0,
