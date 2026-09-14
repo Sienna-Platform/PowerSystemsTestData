@@ -202,7 +202,7 @@ branches14_dc(nodes14) = [
         (min = -600.0, max = 600),
         (min = -600.0, max = 600),
         (min = -600.0, max = 600),
-        LinearCurve(0.001, 0.01),
+        LossCurve(LinearCurve(0.001, 0.01), NaturalUnit()),
     ),
     TwoTerminalGenericHVDCLine(
         "DCLine4",
@@ -213,7 +213,7 @@ branches14_dc(nodes14) = [
         (min = -600.0, max = 600),
         (min = -600.0, max = 600),
         (min = -600.0, max = 600),
-        LinearCurve(0.001, 0.01),
+        LossCurve(LinearCurve(0.001, 0.01), NaturalUnit()),
     ),
     #Line("Line3",  true, 0.0, 0.0, Arc(from=nodes14[2],to=nodes14[3]),   0.04699, 0.19797, (from=0.0219, to=0.0219), 5.522, 1.04),
     #Line("Line4",  true, 0.0, 0.0, Arc(from=nodes14[2],to=nodes14[4]),   0.05811, 0.17632, (from=0.017,  to=0.017), 6.052, 1.04),

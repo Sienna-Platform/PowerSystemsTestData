@@ -43,7 +43,7 @@ branches5_dc(nodes5) = [
         (min = -3000, max = 3000),
         (min = -3000.0, max = 3000.0),
         (min = -3000.0, max = 3000.0),
-        LinearCurve(0.01),
+        LossCurve(LinearCurve(0.01), NaturalUnit()),
     ),
     Line(
         "3",
