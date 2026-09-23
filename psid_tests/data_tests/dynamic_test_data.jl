@@ -625,7 +625,8 @@ function add_source_to_ref(sys::PSY.System, X_th::Float64)
         reactive_power = 0.0,
         bus = slack_bus, #bus
         R_th = 0.0,
-        X_th = X_th, #Xth
+        X_th = X_th, #Xth,
+        input_basis = CU,
     )
     PSY.add_component!(sys, inf_source)
     return
@@ -646,7 +647,8 @@ function add_source_to_ref(sys::PSY.System)
         reactive_power = 0.0,
         bus = slack_bus, #bus
         R_th = 0.0,
-        X_th = 5e-6, #Xth
+        X_th = 5e-6, #Xth,
+        input_basis = CU,
     )
     PSY.add_component!(sys, inf_source)
     return

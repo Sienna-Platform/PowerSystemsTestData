@@ -223,6 +223,7 @@ function get_static_system(raw_file)
         base_power = get_base_power(l),
         max_active_power = get_max_constant_active_power(l),
         max_reactive_power = get_max_constant_reactive_power(l),
+        input_basis = CU,
     )
     remove_component!(sys_exp, l)
     add_component!(sys_exp, exp_load)

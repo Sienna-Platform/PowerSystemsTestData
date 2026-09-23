@@ -74,6 +74,7 @@ for row in eachrow(line_params)
             b = (from = 0.0, to = 0.0),
             rating = row["Max Flow (MW)"]/100,
             angle_limits = (min = 0.0, max = 0.0),
+            input_basis = CU,
         );
         push!(lines, line)
     else
@@ -87,7 +88,9 @@ for row in eachrow(line_params)
                 r = row["Resistance (p.u.)"],
                 x = row["Reactance (p.u.)"],
                 rating = row["Max Flow (MW)"]/100,
+                input_basis = CU,
             ),
+            input_basis = CU,
         );
         push!(tlines, tline)
     end
@@ -295,6 +298,7 @@ function thermal_generators118(nodes)
             time_limits = (up = thermal_gens[i,"Min Up Time (h)" ], down = thermal_gens[i, "Min Down Time (h)"]),
             prime_mover_type = prime_mover,
             fuel = fuel[i],
+            input_basis = CU,
         )
             set_operation_cost!(thermal, thermal_cost_function[i])
             push!(thermal_generators, thermal)
@@ -328,6 +332,7 @@ for row in eachrow(partfact)
         base_power = 1.0, # MVA, for loads match system
         max_active_power = max*(row[3]), #per-unitized by device base_power?
         max_reactive_power = 0.0,
+        input_basis = CU,
     );
 push!(loads, load)
 end
@@ -443,7 +448,8 @@ for i in 1:75
         reactive_power_limits = (min = 0.0, max = 0.0),
         power_factor = 1.0,
         operation_cost = cost_ren,
-        base_power = solar_gens[i, "Max Capacity (MW)"]
+        base_power = solar_gens[i, "Max Capacity (MW)"],
+        input_basis = CU,
         )
 	push!(renewable_gens, solar)
 end
@@ -469,7 +475,8 @@ for i in 1:17
         reactive_power_limits = (min = 0.0, max = 0.0),
         power_factor = 1.0,
         operation_cost = cost_ren,
-        base_power = wind_gens[i, "Max Capacity (MW)"]
+        base_power = wind_gens[i, "Max Capacity (MW)"],
+        input_basis = CU,
         )
 	push!(renewable_gens, wind)
 end
@@ -504,7 +511,8 @@ for i in 1:43
         ramp_limits = (up = hydro_gens[i, "Max Ramp Up (MW/min)"], down = hydro_gens[i, "Max Ramp Down (MW/min)"]),
         time_limits = (up = hydro_gens[i,"Min Up Time (h)" ], down = hydro_gens[i, "Min Down Time (h)"]),
         base_power = hydro_gens[i, "Max Capacity (MW)"],
-        operation_cost = cost_hydro
+        operation_cost = cost_hydro,
+        input_basis = CU,
         )
 	push!(hydro_generators, hydro)
 end
