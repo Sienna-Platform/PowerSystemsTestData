@@ -185,6 +185,7 @@ branches10_dc(nodes10_dc) = [
         active_power_limits_from=(min=-10.0, max=10.0),
         active_power_limits_to=(min=-10.0, max=10.0),
         base_current = 200.0,
+        input_basis = CU,
     ),
     TModelHVDCLine(
         name = "nodeD_DC-nodeD2_DC",
@@ -197,6 +198,7 @@ branches10_dc(nodes10_dc) = [
         active_power_limits_from=(min=-10.0, max=10.0),
         active_power_limits_to=(min=-10.0, max=10.0),
         base_current = 200.0,
+        input_basis = CU,
     ),
     TModelHVDCLine(
         name = "nodeC_DC-nodeD2_DC",
@@ -209,6 +211,7 @@ branches10_dc(nodes10_dc) = [
         active_power_limits_from=(min=-10.0, max=10.0),
         active_power_limits_to=(min=-10.0, max=10.0),
         base_current = 200.0,
+        input_basis = CU,
     ),
 ]
 
@@ -218,7 +221,7 @@ thermal_generators10(nodes10) = [
     ThermalStandard(;
         name = "Alta",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes10[1],
         active_power = 0.40,
         reactive_power = 0.010,
@@ -236,11 +239,12 @@ thermal_generators10(nodes10) = [
             2.0,
         ),
         base_power = 100.0,
+        input_basis = CU,
     ),
     ThermalStandard(
         name = "Park City",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes10[1],
         active_power = 1.70,
         reactive_power = 0.20,
@@ -258,11 +262,12 @@ thermal_generators10(nodes10) = [
             0.75,
         ),
         base_power = 100.0,
+        input_basis = CU,
     ),
     ThermalStandard(
         name = "Solitude",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes10[3],
         active_power = 5.2,
         reactive_power = 1.00,
@@ -280,11 +285,12 @@ thermal_generators10(nodes10) = [
             1.5,
         ),
         base_power = 100.0,
+        input_basis = CU,
     ),
     ThermalStandard(
         name = "Sundance",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes10[4],
         active_power = 2.0,
         reactive_power = 0.40,
@@ -302,11 +308,12 @@ thermal_generators10(nodes10) = [
             2.0,
         ),
         base_power = 100.0,
+        input_basis = CU,
     ),
     ThermalStandard(
         name = "Brighton",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes10[5],
         active_power = 6.0,
         reactive_power = 1.50,
@@ -324,11 +331,12 @@ thermal_generators10(nodes10) = [
             0.75,
         ),
         base_power = 100.0,
+        input_basis = CU,
     ),
     ThermalStandard(;
         name = "Alta-2",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes10[6],
         active_power = 0.40,
         reactive_power = 0.010,
@@ -346,11 +354,12 @@ thermal_generators10(nodes10) = [
             2.0,
         ),
         base_power = 100.0,
+        input_basis = CU,
     ),
     ThermalStandard(
         name = "Park City-2",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes10[6],
         active_power = 1.70,
         reactive_power = 0.20,
@@ -368,11 +377,12 @@ thermal_generators10(nodes10) = [
             0.75,
         ),
         base_power = 100.0,
+        input_basis = CU,
     ),
     ThermalStandard(
         name = "Solitude-2",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes10[8],
         active_power = 5.2,
         reactive_power = 1.00,
@@ -390,11 +400,12 @@ thermal_generators10(nodes10) = [
             1.5,
         ),
         base_power = 100.0,
+        input_basis = CU,
     ),
     ThermalStandard(
         name = "Sundance-2",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes10[9],
         active_power = 2.0,
         reactive_power = 0.40,
@@ -412,11 +423,12 @@ thermal_generators10(nodes10) = [
             2.0,
         ),
         base_power = 100.0,
+        input_basis = CU,
     ),
     ThermalStandard(
         name = "Brighton-2",
         available = true,
-        status = true,
+        status = OperationalStates.ONLINE,
         bus = nodes10[10],
         active_power = 6.0,
         reactive_power = 1.50,
@@ -434,6 +446,7 @@ thermal_generators10(nodes10) = [
             0.75,
         ),
         base_power = 100.0,
+        input_basis = CU,
     ),
 ];
 
@@ -597,6 +610,7 @@ ipcs_10bus(nodes, nodesdc) = [
         dc_current = 0.0,
         max_dc_current = 1e8,  # setting to the default value
         base_power = 100.0,
+        input_basis = CU,
     ),
     InterconnectingConverter(;
         name = "IPC-nodeD",
@@ -609,6 +623,7 @@ ipcs_10bus(nodes, nodesdc) = [
         dc_current = 0.0,
         max_dc_current = 1e8,
         base_power = 100.0,
+        input_basis = CU,
     ),
     InterconnectingConverter(;
         name = "IPC-nodeC2",
@@ -621,6 +636,7 @@ ipcs_10bus(nodes, nodesdc) = [
         dc_current = 0.0,
         max_dc_current = 1e8,
         base_power = 100.0,
+        input_basis = CU,
     ),
     InterconnectingConverter(;
         name = "IPC-nodeD2",
@@ -633,5 +649,6 @@ ipcs_10bus(nodes, nodesdc) = [
         dc_current = 0.0,
         max_dc_current = 1e8,
         base_power = 100.0,
+        input_basis = CU,
     ),
 ]
