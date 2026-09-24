@@ -20,7 +20,7 @@ thermal_generator_linear_cost(node) =
             0.75,
         ),
         base_power=100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     )
 
 thermal_generator_linear_fuel(node) =
@@ -44,7 +44,7 @@ thermal_generator_linear_fuel(node) =
             0.75,
         ),
         base_power=100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     )
 
 thermal_generator_pwl_io_fuel(node) =
@@ -68,7 +68,7 @@ thermal_generator_pwl_io_fuel(node) =
             0.75,
         ),
         base_power=100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     )
 
 thermal_generator_pwl_io_cost(node) =
@@ -92,7 +92,7 @@ thermal_generator_pwl_io_cost(node) =
             0.75,
         ),
         base_power=100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     )
 
 thermal_generator_pwl_incremental_cost(node) =
@@ -118,7 +118,7 @@ thermal_generator_pwl_incremental_cost(node) =
             0.75,
         ),
         base_power=100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     )
 
 thermal_generator_pwl_incremental_fuel(node) =
@@ -144,7 +144,7 @@ thermal_generator_pwl_incremental_fuel(node) =
             0.75,
         ),
         base_power=100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     )
 
 thermal_generator_quad_cost(node) =
@@ -168,7 +168,7 @@ thermal_generator_quad_cost(node) =
             0.75,
         ),
         base_power=100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     )
 
 thermal_generator_quad_fuel(node) =
@@ -192,7 +192,7 @@ thermal_generator_quad_fuel(node) =
             0.75,
         ),
         base_power=100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     )
 
 thermal_generator_pwl_io_cost_nonconvex(node) =
@@ -216,7 +216,7 @@ thermal_generator_pwl_io_cost_nonconvex(node) =
             0.75,
         ),
         base_power=100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     );
 
 ################# Time Variable Fuel Costs ####################
@@ -255,7 +255,7 @@ function thermal_generator_linear_fuel_ts(sys, node)
             0.75,
         ),
         base_power=100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     )
     add_component!(sys, gen)
     set_fuel_cost!(sys, gen, _get_fuel_cost_time_series())
@@ -283,7 +283,7 @@ function thermal_generator_pwl_io_fuel_ts(sys, node)
             0.75,
         ),
         base_power=100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     )
     add_component!(sys, gen)
     set_fuel_cost!(sys, gen, _get_fuel_cost_time_series())
@@ -313,7 +313,7 @@ function thermal_generator_pwl_incremental_fuel_ts(sys, node)
             0.75,
         ),
         base_power=100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     )
     add_component!(sys, gen)
     set_fuel_cost!(sys, gen, _get_fuel_cost_time_series())
@@ -341,7 +341,7 @@ function thermal_generator_quad_fuel_ts(sys, node)
             0.75,
         ),
         base_power=100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     )
     add_component!(sys, gen)
     set_fuel_cost!(sys, gen, _get_fuel_cost_time_series())
@@ -374,7 +374,7 @@ function thermal_generators_market_bid(node)
         time_limits=(up=2.0, down=1.0),
         operation_cost=market_bid1,
         base_power=100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     )
 
     market_bid2 = MarketBidCost(;
@@ -400,7 +400,7 @@ function thermal_generators_market_bid(node)
         time_limits=(up=2.0, down=1.0),
         operation_cost=market_bid2,
         base_power=100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     )
 
     return [gen1, gen2]
@@ -510,7 +510,7 @@ function thermal_generators_market_bid_ts(sys, node)
         time_limits=(up=2.0, down=1.0),
         operation_cost=market_bid1,
         base_power=100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     )
 
     market_bid2 = MarketBidCost(nothing)
@@ -531,7 +531,7 @@ function thermal_generators_market_bid_ts(sys, node)
         time_limits=(up=2.0, down=1.0),
         operation_cost=market_bid2,
         base_power=100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     )
 
 
