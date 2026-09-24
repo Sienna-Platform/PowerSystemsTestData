@@ -267,9 +267,9 @@ branches14_dc(nodes14) = [
             base_voltage_secondary = get_base_voltage(nodes14[7]),
             r = 0.0,
             x = 0.20912,
-            input_basis = CU,
+            input_basis = u"CU",
         ),
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     TwoWindingTransformer(;
         name = "Trans1",
@@ -285,9 +285,9 @@ branches14_dc(nodes14) = [
             base_voltage_secondary = get_base_voltage(nodes14[9]),
             r = 0.0,
             x = 0.55618,
-            input_basis = CU,
+            input_basis = u"CU",
         ),
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     TwoWindingTransformer(;
         name = "Trans2",
@@ -303,9 +303,9 @@ branches14_dc(nodes14) = [
             base_voltage_secondary = get_base_voltage(nodes14[6]),
             r = 0.0,
             x = 0.25202,
-            input_basis = CU,
+            input_basis = u"CU",
         ),
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     Line(
         "Line8",
@@ -356,9 +356,9 @@ branches14_dc(nodes14) = [
             base_voltage_secondary = get_base_voltage(nodes14[8]),
             r = 0.0,
             x = 0.17615,
-            input_basis = CU,
+            input_basis = u"CU",
         ),
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     Line(
         "Line16",
@@ -533,9 +533,9 @@ branches14(nodes14) = [
             base_voltage_secondary = get_base_voltage(nodes14[7]),
             r = 0.0,
             x = 0.20912,
-            input_basis = CU,
+            input_basis = u"CU",
         ),
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     TwoWindingTransformer(;
         name = "Trans1",
@@ -551,9 +551,9 @@ branches14(nodes14) = [
             base_voltage_secondary = get_base_voltage(nodes14[9]),
             r = 0.0,
             x = 0.55618,
-            input_basis = CU,
+            input_basis = u"CU",
         ),
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     TwoWindingTransformer(;
         name = "Trans2",
@@ -569,9 +569,9 @@ branches14(nodes14) = [
             base_voltage_secondary = get_base_voltage(nodes14[6]),
             r = 0.0,
             x = 0.25202,
-            input_basis = CU,
+            input_basis = u"CU",
         ),
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     Line(
         "Line8",
@@ -622,9 +622,9 @@ branches14(nodes14) = [
             base_voltage_secondary = get_base_voltage(nodes14[8]),
             r = 0.0,
             x = 0.17615,
-            input_basis = CU,
+            input_basis = u"CU",
         ),
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     Line(
         "Line16",
@@ -717,7 +717,7 @@ thermal_generators14(nodes14) = [
         ramp_limits = nothing,
         operation_cost = ThermalGenerationCost(CostCurve(QuadraticCurve(0.0430292599, 20.0, 0.0)), 0.0, 0.0, 0.0),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     ThermalStandard(
         name = "Bus2",
@@ -735,7 +735,7 @@ thermal_generators14(nodes14) = [
         ramp_limits = nothing,
         operation_cost = ThermalGenerationCost(CostCurve(QuadraticCurve(0.25, 20.0, 0.0)), 0.0, 0.0, 0.0),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     ThermalStandard(
         name = "Bus3",
@@ -753,7 +753,7 @@ thermal_generators14(nodes14) = [
         ramp_limits = nothing,
         operation_cost = ThermalGenerationCost(CostCurve(QuadraticCurve(0.01, 40.0, 0.0)), 0.0, 0.0, 0.0),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     ThermalStandard(
         name = "Bus6",
@@ -771,7 +771,7 @@ thermal_generators14(nodes14) = [
         ramp_limits = nothing,
         operation_cost = ThermalGenerationCost(CostCurve(QuadraticCurve(0.01, 40.0, 0.0)), 0.0, 0.0, 0.0),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     ThermalStandard(
         name = "Bus8",
@@ -789,7 +789,7 @@ thermal_generators14(nodes14) = [
         ramp_limits = nothing,
         operation_cost = ThermalGenerationCost(CostCurve(QuadraticCurve(0.01, 40.0, 0.0)), 0.0, 0.0, 0.0),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
 ]
 
@@ -940,6 +940,6 @@ battery14(nodes14_nodes) = [
         reactive_power_limits = (min = -50.0, max = 50.0),
         efficiency = (in = 0.80, out = 0.90),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
 ]

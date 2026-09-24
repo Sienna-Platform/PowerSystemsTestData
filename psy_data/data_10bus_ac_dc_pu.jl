@@ -185,7 +185,7 @@ branches10_dc(nodes10_dc) = [
         active_power_limits_from=(min=-10.0, max=10.0),
         active_power_limits_to=(min=-10.0, max=10.0),
         base_current = 200.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     TModelHVDCLine(
         name = "nodeD_DC-nodeD2_DC",
@@ -198,7 +198,7 @@ branches10_dc(nodes10_dc) = [
         active_power_limits_from=(min=-10.0, max=10.0),
         active_power_limits_to=(min=-10.0, max=10.0),
         base_current = 200.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     TModelHVDCLine(
         name = "nodeC_DC-nodeD2_DC",
@@ -211,7 +211,7 @@ branches10_dc(nodes10_dc) = [
         active_power_limits_from=(min=-10.0, max=10.0),
         active_power_limits_to=(min=-10.0, max=10.0),
         base_current = 200.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
 ]
 
@@ -239,7 +239,7 @@ thermal_generators10(nodes10) = [
             2.0,
         ),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     ThermalStandard(
         name = "Park City",
@@ -262,7 +262,7 @@ thermal_generators10(nodes10) = [
             0.75,
         ),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     ThermalStandard(
         name = "Solitude",
@@ -285,7 +285,7 @@ thermal_generators10(nodes10) = [
             1.5,
         ),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     ThermalStandard(
         name = "Sundance",
@@ -308,7 +308,7 @@ thermal_generators10(nodes10) = [
             2.0,
         ),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     ThermalStandard(
         name = "Brighton",
@@ -331,7 +331,7 @@ thermal_generators10(nodes10) = [
             0.75,
         ),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     ThermalStandard(;
         name = "Alta-2",
@@ -354,7 +354,7 @@ thermal_generators10(nodes10) = [
             2.0,
         ),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     ThermalStandard(
         name = "Park City-2",
@@ -377,7 +377,7 @@ thermal_generators10(nodes10) = [
             0.75,
         ),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     ThermalStandard(
         name = "Solitude-2",
@@ -400,7 +400,7 @@ thermal_generators10(nodes10) = [
             1.5,
         ),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     ThermalStandard(
         name = "Sundance-2",
@@ -423,7 +423,7 @@ thermal_generators10(nodes10) = [
             2.0,
         ),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     ThermalStandard(
         name = "Brighton-2",
@@ -446,7 +446,7 @@ thermal_generators10(nodes10) = [
             0.75,
         ),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
 ];
 
@@ -610,7 +610,7 @@ ipcs_10bus(nodes, nodesdc) = [
         dc_current = 0.0,
         max_dc_current = 1e8,  # setting to the default value
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     InterconnectingConverter(;
         name = "IPC-nodeD",
@@ -623,7 +623,7 @@ ipcs_10bus(nodes, nodesdc) = [
         dc_current = 0.0,
         max_dc_current = 1e8,
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     InterconnectingConverter(;
         name = "IPC-nodeC2",
@@ -636,7 +636,7 @@ ipcs_10bus(nodes, nodesdc) = [
         dc_current = 0.0,
         max_dc_current = 1e8,
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     InterconnectingConverter(;
         name = "IPC-nodeD2",
@@ -649,6 +649,6 @@ ipcs_10bus(nodes, nodesdc) = [
         dc_current = 0.0,
         max_dc_current = 1e8,
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
 ]
