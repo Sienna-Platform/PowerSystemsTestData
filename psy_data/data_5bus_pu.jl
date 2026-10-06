@@ -34,16 +34,16 @@ branches5_dc(nodes5) = [
         3.29, # min for 230kV
         (min = -0.7, max = 0.7),
     ),
-    TwoTerminalGenericHVDCLine(
-        "DCL2",
-        true,
-        0.0,
-        Arc(from = nodes5[1], to = nodes5[4]),
-        (min = -3000.0, max = 3000.0),
-        (min = -3000, max = 3000),
-        (min = -3000.0, max = 3000.0),
-        (min = -3000.0, max = 3000.0),
-        LossCurve(LinearCurve(0.01), NaturalUnit()),
+    TwoTerminalGenericHVDCLine(;
+        name = "DCL2",
+        available = true,
+        active_power_flow = 0.0,
+        arc = Arc(from = nodes5[1], to = nodes5[4]),
+        rating = 3000.0,
+        reactive_power_limits_from = (min = -3000.0, max = 3000.0),
+        reactive_power_limits_to = (min = -3000.0, max = 3000.0),
+        loss = LossCurve(LinearCurve(0.01), NaturalUnit()),
+        input_basis = u"CU",
     ),
     Line(
         "3",

@@ -615,7 +615,7 @@ ipcs_10bus(nodes, nodesdc) = [
         active_power_limits = (min = -1.0, max = 1.0),
         dc_control = VSCDCControlModes.DC_VOLTAGE,
         ac_control = VSCACControlModes.AC_REACTIVE_POWER,
-        dc_voltage_setpoint = 1.0,
+        dc_voltage_setpoint = 500.0,
         power_factor_setpoint = 1.0,
         dc_current = 0.0,
         max_dc_current = 1e8,  # setting to the default value
