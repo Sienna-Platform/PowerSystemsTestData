@@ -171,18 +171,22 @@ branches5(nodes5) = [
 ];
 
 branches5_ml(nodes5) = [
-    MonitoredLine(
-        "1",
-        true,
-        0.0,
-        0.0,
-        Arc(from = nodes5[1], to = nodes5[2]),
-        0.00281,
-        0.0281,
-        (from = 0.00356, to = 0.00356),
-        (from_to = 1.0, to_from = 1.0),
-        3.29, # min for 230kV
-        (min = -0.7, max = 0.7),
+    Line(
+        name = "1",
+        available = true,
+        active_power_flow = 0.0,
+        reactive_power_flow = 0.0,
+        arc = Arc(from = nodes5[1], to = nodes5[2]),
+        r = 0.00281,
+        x = 0.0281,
+        b = (from = 0.00356, to = 0.00356),
+        rating = 3.29, # min for 230kV
+        angle_limits = (min = -0.7, max = 0.7),
+        operational_flow_limit = (
+            from_to = (min = 0.0, max = 1.0),
+            to_from = (min = 0.0, max = 1.0),
+        ),
+        input_basis = u"CU",
     ),
     Line(
         "2",
