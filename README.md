@@ -15,4 +15,5 @@ This repository contains several data files in modeling packages in [Sienna](htt
 - psse_dyr: Data for PSSe power flow datasets
 - psy_data: Data directly typed in PowerSystems types.
 - RTS_GMLC: Slightly modified data from the original [RTS-GMLC dataset](https://github.com/gridmod/rts-gmlc)
+- ieee9_bus_pcm_time_series: IEEE 9-bus RAW/DYR (EPICS-adapted) with PCM time-series builds, including GFM solar (`GFM_Bus_2` VSM) RE variant at bus 2
 - SyntheticUSA: TAMU PowerFlow Dataset of the whole continental United States (no timeseries)
