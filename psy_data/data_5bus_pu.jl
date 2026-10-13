@@ -34,16 +34,16 @@ branches5_dc(nodes5) = [
         3.29, # min for 230kV
         (min = -0.7, max = 0.7),
     ),
-    TwoTerminalGenericHVDCLine(
-        "DCL2",
-        true,
-        0.0,
-        Arc(from = nodes5[1], to = nodes5[4]),
-        (min = -3000.0, max = 3000.0),
-        (min = -3000, max = 3000),
-        (min = -3000.0, max = 3000.0),
-        (min = -3000.0, max = 3000.0),
-        LossCurve(LinearCurve(0.01), NaturalUnit()),
+    TwoTerminalGenericHVDCLine(;
+        name = "DCL2",
+        available = true,
+        active_power_flow = 0.0,
+        arc = Arc(from = nodes5[1], to = nodes5[4]),
+        rating = 3000.0,
+        reactive_power_limits_from = (min = -3000.0, max = 3000.0),
+        reactive_power_limits_to = (min = -3000.0, max = 3000.0),
+        loss = LossCurve(LinearCurve(0.01), NaturalUnit()),
+        input_basis = u"CU",
     ),
     Line(
         "3",
@@ -171,18 +171,22 @@ branches5(nodes5) = [
 ];
 
 branches5_ml(nodes5) = [
-    MonitoredLine(
-        "1",
-        true,
-        0.0,
-        0.0,
-        Arc(from = nodes5[1], to = nodes5[2]),
-        0.00281,
-        0.0281,
-        (from = 0.00356, to = 0.00356),
-        (from_to = 1.0, to_from = 1.0),
-        3.29, # min for 230kV
-        (min = -0.7, max = 0.7),
+    Line(
+        name = "1",
+        available = true,
+        active_power_flow = 0.0,
+        reactive_power_flow = 0.0,
+        arc = Arc(from = nodes5[1], to = nodes5[2]),
+        r = 0.00281,
+        x = 0.0281,
+        b = (from = 0.00356, to = 0.00356),
+        rating = 3.29, # min for 230kV
+        angle_limits = (min = -0.7, max = 0.7),
+        operational_flow_limit = (
+            from_to = (min = 0.0, max = 1.0),
+            to_from = (min = 0.0, max = 1.0),
+        ),
+        input_basis = u"CU",
     ),
     Line(
         "2",
@@ -347,7 +351,7 @@ thermal_generators5(nodes5) = [
         time_limits = nothing,
         operation_cost = ThermalGenerationCost(CostCurve(LinearCurve(14.0)), 0.0, 4.0, 2.0),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     ThermalStandard(
         name = "Park City",
@@ -362,10 +366,10 @@ thermal_generators5(nodes5) = [
         active_power_limits = (min = 0.0, max = 1.70),
         reactive_power_limits = (min = -1.275, max = 1.275),
         ramp_limits = (up = 0.02 * 2.2125, down = 0.02 * 2.2125),
-        time_limits = (up = 2.0, down = 1.0),
+        time_limits = (up = 120.0, down = 60.0),
         operation_cost = ThermalGenerationCost(CostCurve(LinearCurve(15.0)), 0.0, 1.5, 0.75),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     ThermalStandard(
         name = "Solitude",
@@ -380,10 +384,10 @@ thermal_generators5(nodes5) = [
         active_power_limits = (min = 0.0, max = 5.20),
         reactive_power_limits = (min = -3.90, max = 3.90),
         ramp_limits = (up = 0.012 * 5.2, down = 0.012 * 5.2),
-        time_limits = (up = 3.0, down = 2.0),
+        time_limits = (up = 180.0, down = 120.0),
         operation_cost = ThermalGenerationCost(CostCurve(LinearCurve(30.0)), 0.0, 3.0, 1.5),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     ThermalStandard(
         name = "Sundance",
@@ -398,10 +402,10 @@ thermal_generators5(nodes5) = [
         active_power_limits = (min = 0.0, max = 2.0),
         reactive_power_limits = (min = -1.5, max = 1.5),
         ramp_limits = (up = 0.015 * 2.5, down = 0.015 * 2.5),
-        time_limits = (up = 2.0, down = 1.0),
+        time_limits = (up = 120.0, down = 60.0),
         operation_cost = ThermalGenerationCost(CostCurve(LinearCurve(40.0)), 0.0, 4.0, 2.0),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     ThermalStandard(
         name = "Brighton",
@@ -416,10 +420,10 @@ thermal_generators5(nodes5) = [
         active_power_limits = (min = 0.0, max = 6.0),
         reactive_power_limits = (min = -4.50, max = 4.50),
         ramp_limits = (up = 0.015 * 7.5, down = 0.015 * 7.5),
-        time_limits = (up = 5.0, down = 3.0),
+        time_limits = (up = 300.0, down = 180.0),
         operation_cost = ThermalGenerationCost(CostCurve(LinearCurve(10.0)), 0.0, 1.5, 0.75),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
 ];
 
@@ -437,10 +441,10 @@ thermal_generators5_events(nodes5) = [
         active_power_limits = (min = 0.1, max = 0.40),
         reactive_power_limits = (min = -0.30, max = 0.30),
         ramp_limits =(up = 0.003, down = 10.0),
-        time_limits = (up = 2.0, down = 4.0),
+        time_limits = (up = 120.0, down = 240.0),
         operation_cost = ThermalGenerationCost(CostCurve(LinearCurve(14.0)), 0.0, 4.0, 2.0),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     ThermalStandard(
         name = "Park City",
@@ -455,10 +459,10 @@ thermal_generators5_events(nodes5) = [
         active_power_limits = (min = 0.1, max = 1.70),
         reactive_power_limits = (min = -1.275, max = 1.275),
         ramp_limits = (up = 0.02 * 2.2125, down = 0.02 * 2.2125),
-        time_limits = (up = 2.0, down = 1.0),
+        time_limits = (up = 120.0, down = 60.0),
         operation_cost = ThermalGenerationCost(CostCurve(LinearCurve(15.0)), 0.0, 1.5, 0.75),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     ThermalStandard(
         name = "Solitude",
@@ -473,10 +477,10 @@ thermal_generators5_events(nodes5) = [
         active_power_limits = (min = 0.1, max = 5.20),
         reactive_power_limits = (min = -3.90, max = 3.90),
         ramp_limits = (up = 0.012 * 5.2, down = 0.012 * 5.2),
-        time_limits = (up = 3.0, down = 2.0),
+        time_limits = (up = 180.0, down = 120.0),
         operation_cost = ThermalGenerationCost(CostCurve(LinearCurve(30.0)), 0.0, 3.0, 1.5),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     ThermalStandard(
         name = "Sundance",
@@ -491,10 +495,10 @@ thermal_generators5_events(nodes5) = [
         active_power_limits = (min = 0.1, max = 2.0),
         reactive_power_limits = (min = -1.5, max = 1.5),
         ramp_limits = (up = 0.015 * 2.5, down = 0.015 * 2.5),
-        time_limits = (up = 2.0, down = 1.0),
+        time_limits = (up = 120.0, down = 60.0),
         operation_cost = ThermalGenerationCost(CostCurve(LinearCurve(40.0)), 0.0, 4.0, 2.0),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     ThermalStandard(
         name = "Brighton",
@@ -509,10 +513,10 @@ thermal_generators5_events(nodes5) = [
         active_power_limits = (min = 0.1, max = 6.0),
         reactive_power_limits = (min = -4.50, max = 4.50),
         ramp_limits = (up = 0.015 * 7.5, down = 0.015 * 7.5),
-        time_limits = (up = 5.0, down = 3.0),
+        time_limits = (up = 300.0, down = 180.0),
         operation_cost = ThermalGenerationCost(CostCurve(LinearCurve(10.0)), 0.0, 1.5, 0.75),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
 ];
 
@@ -531,14 +535,14 @@ thermal_generators5_pwl(nodes5) = [
         active_power_limits = (min = 0.0, max = 1.70),
         reactive_power_limits = (min = -1.275, max = 1.275),
         ramp_limits = (up = 0.02 * 2.2125, down = 0.02 * 2.2125),
-        time_limits = (up = 2.0, down = 1.0),
+        time_limits = (up = 120.0, down = 60.0),
         operation_cost = ThermalGenerationCost(CostCurve(PiecewisePointCurve([(50.0, 0.0), (80.0, 190.1), (120.0, 582.72), (170.0, 1094.1)])),
             0.0,
             1.5,
             0.75,
         ),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
 ];
 
@@ -556,14 +560,14 @@ thermal_generators5_pwl_nonconvex(nodes5) = [
         active_power_limits = (min = 0.0, max = 1.70),
         reactive_power_limits = (min = -1.275, max = 1.275),
         ramp_limits = (up = 0.02 * 2.2125, down = 0.02 * 2.2125),
-        time_limits = (up = 2.0, down = 1.0),
+        time_limits = (up = 120.0, down = 60.0),
         operation_cost = ThermalGenerationCost(CostCurve(PiecewisePointCurve([(50.0, 0.0), (80.0, 190.1), (120.0, 582.72), (170.0, 825.1)])),
             0.0,
             1.5,
             0.75,
         ),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
 ];
 
@@ -582,8 +586,8 @@ thermal_pglib_generators5(nodes5) = [
         (min = -0.30, max = 0.30),
         (up = 0.002 * 0.12, down = 0.002 * 0.12),
         (startup = 0.05, shutdown = 0.05),
-        (up = 4.0, down = 2.0),
-        (hot = 2.0, warm = 4.0, cold = 12.0),
+        (up = 240.0, down = 120.0),
+        (hot = 120.0, warm = 240.0, cold = 720.0),
         3,
         ThermalGenerationCost(
             CostCurve(PiecewisePointCurve(
@@ -608,8 +612,8 @@ thermal_pglib_generators5(nodes5) = [
         (min = -0.30, max = 0.30),
         (up = 0.002 * 0.2, down = 0.002 * 0.2),
         (startup = 0.08, shutdown = 0.08),
-        (up = 1.0, down = 1.0),
-        (hot = 1.0, warm = 999.0, cold = 999.0),
+        (up = 60.0, down = 60.0),
+        (hot = 60.0, warm = 59940.0, cold = 59940.0),
         1,
         ThermalGenerationCost(
             CostCurve(PiecewisePointCurve(
@@ -639,7 +643,7 @@ thermal_generators5_uc_testing(nodes) = [
         time_limits = (up = 0.0, down = 0.0),
         operation_cost = ThermalGenerationCost(CostCurve(LinearCurve(14.0)), 0.0, 4.0, 2.0),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     ThermalStandard(
         name = "Park City",
@@ -657,7 +661,7 @@ thermal_generators5_uc_testing(nodes) = [
         time_limits = (up = 0.0, down = 0.0),
         operation_cost = ThermalGenerationCost(CostCurve(QuadraticCurve(0.0, 15.0, 0.0)), 0.0, 1.5, 0.75),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     ThermalStandard(
         name = "Solitude",
@@ -672,10 +676,10 @@ thermal_generators5_uc_testing(nodes) = [
         active_power_limits = (min = 1.0, max = 5.20),
         reactive_power_limits = (min = -3.90, max = 3.90),
         ramp_limits = (up = 0.0012 * 5.2, down = 0.0012 * 5.2),
-        time_limits = (up = 5.0, down = 3.0),
+        time_limits = (up = 300.0, down = 180.0),
         operation_cost = ThermalGenerationCost(CostCurve(QuadraticCurve(0.0, 30.0, 0.0)), 0.0, 3.0, 1.5),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     ThermalStandard(
         name = "Sundance",
@@ -690,10 +694,10 @@ thermal_generators5_uc_testing(nodes) = [
         active_power_limits = (min = 1.0, max = 2.0),
         reactive_power_limits = (min = -1.5, max = 1.5),
         ramp_limits = (up = 0.015 * 2.5, down = 0.015 * 2.5),
-        time_limits = (up = 2.0, down = 1.0),
+        time_limits = (up = 120.0, down = 60.0),
         operation_cost = ThermalGenerationCost(CostCurve(QuadraticCurve(0.0, 40.0, 0.0)), 0.0, 4.0, 2.0),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     ThermalStandard(
         name = "Brighton",
@@ -708,10 +712,10 @@ thermal_generators5_uc_testing(nodes) = [
         active_power_limits = (min = 3.0, max = 6.0),
         reactive_power_limits = (min = -4.50, max = 4.50),
         ramp_limits = (up = 0.0015 * 7.5, down = 0.0015 * 7.5),
-        time_limits = (up = 5.0, down = 3.0),
+        time_limits = (up = 300.0, down = 180.0),
         operation_cost = ThermalGenerationCost(CostCurve(QuadraticCurve(0.0, 10.0, 0.0)), 0.0, 1.5, 0.75),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
 ];
 
@@ -772,7 +776,7 @@ hydro_generators5(nodes5) = [
         ramp_limits = nothing,
         time_limits = nothing,
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     HydroTurbine(;
         name = "HydroEnergyReservoirTurbine",
@@ -791,7 +795,7 @@ hydro_generators5(nodes5) = [
         conversion_factor = 1.0,
         outflow_limits = nothing,
         powerhouse_elevation = 0.0,
-        input_basis = CU,
+        input_basis = u"CU",
     )
 ];
 
@@ -821,7 +825,7 @@ function phes5(nodes5)
         services=Device[],
         dynamic_injector=nothing,
         ext=Dict{String, Any}(),
-        input_basis = CU,
+        input_basis = u"CU",
     )
 
     head_reservoir = HydroReservoir(;
@@ -872,7 +876,7 @@ battery5(nodes5) = [EnergyReservoirStorage(
     reactive_power = 0.0,
     reactive_power_limits = (min = -2.0, max = 2.0),
     base_power = 100.0,
-    input_basis = CU,
+    input_basis = u"CU",
 )];
 
 batteryems5(nodes5) = [
@@ -903,7 +907,7 @@ batteryems5(nodes5) = [
             energy_shortage_cost = 50.0,
             energy_surplus_cost = 40.0,
         ),
-        input_basis = CU,
+        input_basis = u"CU",
      )
  ];
 
@@ -1388,7 +1392,7 @@ hydro_turbines5_energy(nodes5) = [
         base_power = 100.0,
         powerhouse_elevation = 0.0,
         operation_cost = HydroGenerationCost(CostCurve(LinearCurve(0.15)), 0.0),
-        input_basis = CU,
+        input_basis = u"CU",
     )
 ]
 
@@ -1425,7 +1429,7 @@ hydro_turbines5_head(nodes5) = [
         base_power = 100.0,
         powerhouse_elevation = 317.12, # elevation in meters for Jiguey dam
         operation_cost = HydroGenerationCost(nothing),
-        input_basis = CU,
+        input_basis = u"CU",
     )
 ]
 
@@ -1461,7 +1465,7 @@ hydro_turbines5_cascading_energy(nodes5) = [
         base_power = 100.0,
         powerhouse_elevation = 0.0,
         operation_cost = HydroGenerationCost(CostCurve(LinearCurve(0.15)), 0.0),
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     HydroTurbine(;
         name = "HydroEnergyReservoir_turbine_downstream",
@@ -1478,7 +1482,7 @@ hydro_turbines5_cascading_energy(nodes5) = [
         base_power = 100.0,
         powerhouse_elevation = 0.0,
         operation_cost = HydroGenerationCost(CostCurve(LinearCurve(0.15)), 0.0),
-        input_basis = CU,
+        input_basis = u"CU",
     ),
 ]
 
@@ -1528,7 +1532,7 @@ hydro_turbines5_cascading_head(nodes5) = [
         base_power = 100.0,
         powerhouse_elevation = 317.12, # elevation in meters for Jiguey dam
         operation_cost = HydroGenerationCost(nothing),
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     HydroTurbine(;
         name = "Water_Turbine_downstream",
@@ -1545,7 +1549,7 @@ hydro_turbines5_cascading_head(nodes5) = [
         base_power = 100.0,
         powerhouse_elevation = 117.12, 
         operation_cost = HydroGenerationCost(nothing),
-        input_basis = CU,
+        input_basis = u"CU",
     ),
 ]
 

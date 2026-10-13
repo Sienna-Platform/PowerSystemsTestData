@@ -182,10 +182,12 @@ branches10_dc(nodes10_dc) = [
         r = 0.01,
         l = 0.01,
         c = 0.0,
-        active_power_limits_from=(min=-10.0, max=10.0),
-        active_power_limits_to=(min=-10.0, max=10.0),
+        operational_flow_limit = (
+            from_to = (min = 0.0, max = 10.0),
+            to_from = (min = 0.0, max = 10.0),
+        ),
         base_current = 200.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     TModelHVDCLine(
         name = "nodeD_DC-nodeD2_DC",
@@ -195,10 +197,12 @@ branches10_dc(nodes10_dc) = [
         r = 0.01,
         l = 0.01,
         c = 0.0,
-        active_power_limits_from=(min=-10.0, max=10.0),
-        active_power_limits_to=(min=-10.0, max=10.0),
+        operational_flow_limit = (
+            from_to = (min = 0.0, max = 10.0),
+            to_from = (min = 0.0, max = 10.0),
+        ),
         base_current = 200.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     TModelHVDCLine(
         name = "nodeC_DC-nodeD2_DC",
@@ -208,10 +212,12 @@ branches10_dc(nodes10_dc) = [
         r = 0.01,
         l = 0.01,
         c = 0.0,
-        active_power_limits_from=(min=-10.0, max=10.0),
-        active_power_limits_to=(min=-10.0, max=10.0),
+        operational_flow_limit = (
+            from_to = (min = 0.0, max = 10.0),
+            to_from = (min = 0.0, max = 10.0),
+        ),
         base_current = 200.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
 ]
 
@@ -239,7 +245,7 @@ thermal_generators10(nodes10) = [
             2.0,
         ),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     ThermalStandard(
         name = "Park City",
@@ -254,7 +260,7 @@ thermal_generators10(nodes10) = [
         active_power_limits = (min = 0.0, max = 1.70),
         reactive_power_limits = (min = -1.275, max = 1.275),
         ramp_limits = (up = 0.02 * 2.2125, down = 0.02 * 2.2125),
-        time_limits = (up = 2.0, down = 1.0),
+        time_limits = (up = 120.0, down = 60.0),
         operation_cost = ThermalGenerationCost(
             CostCurve(QuadraticCurve(0.0, 15.0, 0.0)),
             0.0,
@@ -262,7 +268,7 @@ thermal_generators10(nodes10) = [
             0.75,
         ),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     ThermalStandard(
         name = "Solitude",
@@ -277,7 +283,7 @@ thermal_generators10(nodes10) = [
         active_power_limits = (min = 0.0, max = 5.20),
         reactive_power_limits = (min = -3.90, max = 3.90),
         ramp_limits = (up = 0.012 * 5.2, down = 0.012 * 5.2),
-        time_limits = (up = 3.0, down = 2.0),
+        time_limits = (up = 180.0, down = 120.0),
         operation_cost = ThermalGenerationCost(
             CostCurve(QuadraticCurve(0.0, 30.0, 0.0)),
             0.0,
@@ -285,7 +291,7 @@ thermal_generators10(nodes10) = [
             1.5,
         ),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     ThermalStandard(
         name = "Sundance",
@@ -300,7 +306,7 @@ thermal_generators10(nodes10) = [
         active_power_limits = (min = 0.0, max = 2.0),
         reactive_power_limits = (min = -1.5, max = 1.5),
         ramp_limits = (up = 0.015 * 2.5, down = 0.015 * 2.5),
-        time_limits = (up = 2.0, down = 1.0),
+        time_limits = (up = 120.0, down = 60.0),
         operation_cost = ThermalGenerationCost(
             CostCurve(QuadraticCurve(0.0, 40.0, 0.0)),
             0.0,
@@ -308,7 +314,7 @@ thermal_generators10(nodes10) = [
             2.0,
         ),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     ThermalStandard(
         name = "Brighton",
@@ -323,7 +329,7 @@ thermal_generators10(nodes10) = [
         active_power_limits = (min = 0.0, max = 6.0),
         reactive_power_limits = (min = -4.50, max = 4.50),
         ramp_limits = (up = 0.015 * 7.5, down = 0.015 * 7.5),
-        time_limits = (up = 5.0, down = 3.0),
+        time_limits = (up = 300.0, down = 180.0),
         operation_cost = ThermalGenerationCost(
             CostCurve(QuadraticCurve(0.0, 10.0, 0.0)),
             0.0,
@@ -331,7 +337,7 @@ thermal_generators10(nodes10) = [
             0.75,
         ),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     ThermalStandard(;
         name = "Alta-2",
@@ -354,7 +360,7 @@ thermal_generators10(nodes10) = [
             2.0,
         ),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     ThermalStandard(
         name = "Park City-2",
@@ -369,7 +375,7 @@ thermal_generators10(nodes10) = [
         active_power_limits = (min = 0.0, max = 1.70),
         reactive_power_limits = (min = -1.275, max = 1.275),
         ramp_limits = (up = 0.02 * 2.2125, down = 0.02 * 2.2125),
-        time_limits = (up = 2.0, down = 1.0),
+        time_limits = (up = 120.0, down = 60.0),
         operation_cost = ThermalGenerationCost(
             CostCurve(QuadraticCurve(0.0, 15.0, 0.0)),
             0.0,
@@ -377,7 +383,7 @@ thermal_generators10(nodes10) = [
             0.75,
         ),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     ThermalStandard(
         name = "Solitude-2",
@@ -392,7 +398,7 @@ thermal_generators10(nodes10) = [
         active_power_limits = (min = 0.0, max = 5.20),
         reactive_power_limits = (min = -3.90, max = 3.90),
         ramp_limits = (up = 0.012 * 5.2, down = 0.012 * 5.2),
-        time_limits = (up = 3.0, down = 2.0),
+        time_limits = (up = 180.0, down = 120.0),
         operation_cost = ThermalGenerationCost(
             CostCurve(QuadraticCurve(0.0, 30.0, 0.0)),
             0.0,
@@ -400,7 +406,7 @@ thermal_generators10(nodes10) = [
             1.5,
         ),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     ThermalStandard(
         name = "Sundance-2",
@@ -415,7 +421,7 @@ thermal_generators10(nodes10) = [
         active_power_limits = (min = 0.0, max = 2.0),
         reactive_power_limits = (min = -1.5, max = 1.5),
         ramp_limits = (up = 0.015 * 2.5, down = 0.015 * 2.5),
-        time_limits = (up = 2.0, down = 1.0),
+        time_limits = (up = 120.0, down = 60.0),
         operation_cost = ThermalGenerationCost(
             CostCurve(QuadraticCurve(0.0, 40.0, 0.0)),
             0.0,
@@ -423,7 +429,7 @@ thermal_generators10(nodes10) = [
             2.0,
         ),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     ThermalStandard(
         name = "Brighton-2",
@@ -438,7 +444,7 @@ thermal_generators10(nodes10) = [
         active_power_limits = (min = 0.0, max = 6.0),
         reactive_power_limits = (min = -4.50, max = 4.50),
         ramp_limits = (up = 0.015 * 7.5, down = 0.015 * 7.5),
-        time_limits = (up = 5.0, down = 3.0),
+        time_limits = (up = 300.0, down = 180.0),
         operation_cost = ThermalGenerationCost(
             CostCurve(QuadraticCurve(0.0, 10.0, 0.0)),
             0.0,
@@ -446,7 +452,7 @@ thermal_generators10(nodes10) = [
             0.75,
         ),
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
 ];
 
@@ -607,10 +613,14 @@ ipcs_10bus(nodes, nodesdc) = [
         active_power = 0.0,
         rating = 2.0,
         active_power_limits = (min = -1.0, max = 1.0),
+        dc_control = VSCDCControlModes.DC_VOLTAGE,
+        ac_control = VSCACControlModes.AC_REACTIVE_POWER,
+        dc_voltage_setpoint = 500.0,
+        power_factor_setpoint = 1.0,
         dc_current = 0.0,
         max_dc_current = 1e8,  # setting to the default value
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     InterconnectingConverter(;
         name = "IPC-nodeD",
@@ -620,10 +630,14 @@ ipcs_10bus(nodes, nodesdc) = [
         active_power = 0.0,
         rating = 2.0,
         active_power_limits = (min = -1.0, max = 1.0),
+        dc_control = VSCDCControlModes.DC_POWER,
+        ac_control = VSCACControlModes.AC_REACTIVE_POWER,
+        dc_power_setpoint = 0.0,
+        power_factor_setpoint = 1.0,
         dc_current = 0.0,
         max_dc_current = 1e8,
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     InterconnectingConverter(;
         name = "IPC-nodeC2",
@@ -633,10 +647,14 @@ ipcs_10bus(nodes, nodesdc) = [
         active_power = 0.0,
         rating = 2.0,
         active_power_limits = (min = -1.0, max = 1.0),
+        dc_control = VSCDCControlModes.DC_POWER,
+        ac_control = VSCACControlModes.AC_REACTIVE_POWER,
+        dc_power_setpoint = 0.0,
+        power_factor_setpoint = 1.0,
         dc_current = 0.0,
         max_dc_current = 1e8,
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
     InterconnectingConverter(;
         name = "IPC-nodeD2",
@@ -646,9 +664,13 @@ ipcs_10bus(nodes, nodesdc) = [
         active_power = 0.0,
         rating = 2.0,
         active_power_limits = (min = -1.0, max = 1.0),
+        dc_control = VSCDCControlModes.DC_POWER,
+        ac_control = VSCACControlModes.AC_REACTIVE_POWER,
+        dc_power_setpoint = 0.0,
+        power_factor_setpoint = 1.0,
         dc_current = 0.0,
         max_dc_current = 1e8,
         base_power = 100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     ),
 ]

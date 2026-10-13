@@ -13,14 +13,14 @@ thermal_generator_linear_cost(node) =
         active_power_limits=(min=0.5, max=1.70),
         reactive_power_limits=(min=-1.275, max=1.275),
         ramp_limits=(up=0.02 * 2.2125, down=0.02 * 2.2125),
-        time_limits=(up=2.0, down=1.0),
+        time_limits=(up=120.0, down=60.0),
         operation_cost=ThermalGenerationCost(CostCurve(LinearCurve(10.23)),
             0.0,
             1.5,
             0.75,
         ),
         base_power=100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     )
 
 thermal_generator_linear_fuel(node) =
@@ -37,14 +37,14 @@ thermal_generator_linear_fuel(node) =
         active_power_limits=(min=0.5, max=1.70),
         reactive_power_limits=(min=-1.275, max=1.275),
         ramp_limits=(up=0.02 * 2.2125, down=0.02 * 2.2125),
-        time_limits=(up=2.0, down=1.0),
+        time_limits=(up=120.0, down=60.0),
         operation_cost=ThermalGenerationCost(FuelCurve(LinearCurve(1.023), 10.0),
             0.0,
             1.5,
             0.75,
         ),
         base_power=100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     )
 
 thermal_generator_pwl_io_fuel(node) =
@@ -61,14 +61,14 @@ thermal_generator_pwl_io_fuel(node) =
         active_power_limits=(min=0.5, max=1.70),
         reactive_power_limits=(min=-1.275, max=1.275),
         ramp_limits=(up=0.02 * 2.2125, down=0.02 * 2.2125),
-        time_limits=(up=2.0, down=1.0),
+        time_limits=(up=120.0, down=60.0),
         operation_cost=ThermalGenerationCost(FuelCurve(PiecewisePointCurve([(50.0, 30.0), (80.0, 48.91), (120.0, 88.181), (170.0, 139.319)]), 10.0),
             0.0,
             1.5,
             0.75,
         ),
         base_power=100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     )
 
 thermal_generator_pwl_io_cost(node) =
@@ -85,14 +85,14 @@ thermal_generator_pwl_io_cost(node) =
         active_power_limits=(min=0.5, max=1.70),
         reactive_power_limits=(min=-1.275, max=1.275),
         ramp_limits=(up=0.02 * 2.2125, down=0.02 * 2.2125),
-        time_limits=(up=2.0, down=1.0),
+        time_limits=(up=120.0, down=60.0),
         operation_cost=ThermalGenerationCost(CostCurve(PiecewisePointCurve([(50.0, 300.0), (80.0, 489.1), (120.0, 881.81), (170.0, 1393.19)])),
             0.0,
             1.5,
             0.75,
         ),
         base_power=100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     )
 
 thermal_generator_pwl_incremental_cost(node) =
@@ -109,7 +109,7 @@ thermal_generator_pwl_incremental_cost(node) =
         active_power_limits=(min=0.5, max=1.70),
         reactive_power_limits=(min=-1.275, max=1.275),
         ramp_limits=(up=0.02 * 2.2125, down=0.02 * 2.2125),
-        time_limits=(up=2.0, down=1.0),
+        time_limits=(up=120.0, down=60.0),
         operation_cost=ThermalGenerationCost(CostCurve(
                 PiecewiseIncrementalCurve(300.0, [50.0, 80.0, 120.0, 170.0], [6.337, 9.8155, 10.2276]),
             ),
@@ -118,7 +118,7 @@ thermal_generator_pwl_incremental_cost(node) =
             0.75,
         ),
         base_power=100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     )
 
 thermal_generator_pwl_incremental_fuel(node) =
@@ -135,7 +135,7 @@ thermal_generator_pwl_incremental_fuel(node) =
         active_power_limits=(min=0.5, max=1.70),
         reactive_power_limits=(min=-1.275, max=1.275),
         ramp_limits=(up=0.02 * 2.2125, down=0.02 * 2.2125),
-        time_limits=(up=2.0, down=1.0),
+        time_limits=(up=120.0, down=60.0),
         operation_cost=ThermalGenerationCost(FuelCurve(
                 PiecewiseIncrementalCurve(30.0, [50.0, 80.0, 120.0, 170.0], [0.6337, 0.98155, 1.02276]),
                 10.0),
@@ -144,7 +144,7 @@ thermal_generator_pwl_incremental_fuel(node) =
             0.75,
         ),
         base_power=100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     )
 
 thermal_generator_quad_cost(node) =
@@ -161,14 +161,14 @@ thermal_generator_quad_cost(node) =
         active_power_limits=(min=0.5, max=1.70),
         reactive_power_limits=(min=-1.275, max=1.275),
         ramp_limits=(up=0.02 * 2.2125, down=0.02 * 2.2125),
-        time_limits=(up=2.0, down=1.0),
+        time_limits=(up=120.0, down=60.0),
         operation_cost=ThermalGenerationCost(CostCurve(QuadraticCurve(0.0205, 4.708, 3.5509)),
             0.0,
             1.5,
             0.75,
         ),
         base_power=100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     )
 
 thermal_generator_quad_fuel(node) =
@@ -185,14 +185,14 @@ thermal_generator_quad_fuel(node) =
         active_power_limits=(min=0.5, max=1.70),
         reactive_power_limits=(min=-1.275, max=1.275),
         ramp_limits=(up=0.02 * 2.2125, down=0.02 * 2.2125),
-        time_limits=(up=2.0, down=1.0),
+        time_limits=(up=120.0, down=60.0),
         operation_cost=ThermalGenerationCost(FuelCurve(QuadraticCurve(0.0021, 0.4708, 0.35509), 10.0),
             0.0,
             1.5,
             0.75,
         ),
         base_power=100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     )
 
 thermal_generator_pwl_io_cost_nonconvex(node) =
@@ -209,14 +209,14 @@ thermal_generator_pwl_io_cost_nonconvex(node) =
         active_power_limits=(min=0.5, max=1.70),
         reactive_power_limits=(min=-1.275, max=1.275),
         ramp_limits=(up=0.02 * 2.2125, down=0.02 * 2.2125),
-        time_limits=(up=2.0, down=1.0),
+        time_limits=(up=120.0, down=60.0),
         operation_cost=ThermalGenerationCost(CostCurve(PiecewisePointCurve([(50.0, 300.0), (80.0, 489.1), (120.0, 871.81), (170.0, 1093.19)])),
             0.0,
             1.5,
             0.75,
         ),
         base_power=100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     );
 
 ################# Time Variable Fuel Costs ####################
@@ -248,14 +248,14 @@ function thermal_generator_linear_fuel_ts(sys, node)
         active_power_limits=(min=0.5, max=1.70),
         reactive_power_limits=(min=-1.275, max=1.275),
         ramp_limits=(up=0.02 * 2.2125, down=0.02 * 2.2125),
-        time_limits=(up=2.0, down=1.0),
+        time_limits=(up=120.0, down=60.0),
         operation_cost=ThermalGenerationCost(FuelCurve(LinearCurve(1.023), 10.0),
             0.0,
             1.5,
             0.75,
         ),
         base_power=100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     )
     add_component!(sys, gen)
     set_fuel_cost!(sys, gen, _get_fuel_cost_time_series())
@@ -276,14 +276,14 @@ function thermal_generator_pwl_io_fuel_ts(sys, node)
         active_power_limits=(min=0.5, max=1.70),
         reactive_power_limits=(min=-1.275, max=1.275),
         ramp_limits=(up=0.02 * 2.2125, down=0.02 * 2.2125),
-        time_limits=(up=2.0, down=1.0),
+        time_limits=(up=120.0, down=60.0),
         operation_cost=ThermalGenerationCost(FuelCurve(PiecewisePointCurve([(50.0, 30.0), (80.0, 48.91), (120.0, 88.181), (170.0, 139.319)]), 10.0),
             0.0,
             1.5,
             0.75,
         ),
         base_power=100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     )
     add_component!(sys, gen)
     set_fuel_cost!(sys, gen, _get_fuel_cost_time_series())
@@ -304,7 +304,7 @@ function thermal_generator_pwl_incremental_fuel_ts(sys, node)
         active_power_limits=(min=0.5, max=1.70),
         reactive_power_limits=(min=-1.275, max=1.275),
         ramp_limits=(up=0.02 * 2.2125, down=0.02 * 2.2125),
-        time_limits=(up=2.0, down=1.0),
+        time_limits=(up=120.0, down=60.0),
         operation_cost=ThermalGenerationCost(FuelCurve(
                 PiecewiseIncrementalCurve(30.0, [50.0, 80.0, 120.0, 170.0], [0.6337, 0.98155, 1.02276]),
                 10.0),
@@ -313,7 +313,7 @@ function thermal_generator_pwl_incremental_fuel_ts(sys, node)
             0.75,
         ),
         base_power=100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     )
     add_component!(sys, gen)
     set_fuel_cost!(sys, gen, _get_fuel_cost_time_series())
@@ -334,14 +334,14 @@ function thermal_generator_quad_fuel_ts(sys, node)
         active_power_limits=(min=0.5, max=1.70),
         reactive_power_limits=(min=-1.275, max=1.275),
         ramp_limits=(up=0.02 * 2.2125, down=0.02 * 2.2125),
-        time_limits=(up=2.0, down=1.0),
+        time_limits=(up=120.0, down=60.0),
         operation_cost=ThermalGenerationCost(FuelCurve(QuadraticCurve(0.0021, 0.4708, 0.35509), 10.0),
             0.0,
             1.5,
             0.75,
         ),
         base_power=100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     )
     add_component!(sys, gen)
     set_fuel_cost!(sys, gen, _get_fuel_cost_time_series())
@@ -371,10 +371,10 @@ function thermal_generators_market_bid(node)
         active_power_limits=(min=0.5, max=1.0),
         reactive_power_limits=(min=-0.275, max=0.275),
         ramp_limits=(up=0.02 * 2.2125, down=0.02 * 2.2125),
-        time_limits=(up=2.0, down=1.0),
+        time_limits=(up=120.0, down=60.0),
         operation_cost=market_bid1,
         base_power=100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     )
 
     market_bid2 = MarketBidCost(;
@@ -397,10 +397,10 @@ function thermal_generators_market_bid(node)
         active_power_limits=(min=0.5, max=1.0),
         reactive_power_limits=(min=-0.275, max=0.275),
         ramp_limits=(up=0.02 * 2.2125, down=0.02 * 2.2125),
-        time_limits=(up=2.0, down=1.0),
+        time_limits=(up=120.0, down=60.0),
         operation_cost=market_bid2,
         base_power=100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     )
 
     return [gen1, gen2]
@@ -507,10 +507,10 @@ function thermal_generators_market_bid_ts(sys, node)
         active_power_limits=(min=0.5, max=1.0),
         reactive_power_limits=(min=-0.275, max=0.275),
         ramp_limits=(up=0.02 * 2.2125, down=0.02 * 2.2125),
-        time_limits=(up=2.0, down=1.0),
+        time_limits=(up=120.0, down=60.0),
         operation_cost=market_bid1,
         base_power=100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     )
 
     market_bid2 = MarketBidCost(nothing)
@@ -528,10 +528,10 @@ function thermal_generators_market_bid_ts(sys, node)
         active_power_limits=(min=0.5, max=1.0),
         reactive_power_limits=(min=-0.275, max=0.275),
         ramp_limits=(up=0.02 * 2.2125, down=0.02 * 2.2125),
-        time_limits=(up=2.0, down=1.0),
+        time_limits=(up=120.0, down=60.0),
         operation_cost=market_bid2,
         base_power=100.0,
-        input_basis = CU,
+        input_basis = u"CU",
     )
 
 
