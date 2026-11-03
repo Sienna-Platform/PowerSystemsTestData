@@ -53388,16 +53388,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 230.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -53405,6 +53401,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -53443,16 +53440,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 287.0,
           "base_voltage_secondary": 138.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.00059,
           "rating": 81.0902977200026,
           "rating_b": null,
@@ -53460,6 +53453,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.01491,
           "α": 0.0
@@ -53498,16 +53492,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 345.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.0003,
           "rating": 66.8417898477156,
           "rating_b": null,
@@ -53515,6 +53505,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0181,
           "α": 0.0
@@ -53553,16 +53544,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 345.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.00029,
           "rating": 87.03160492545734,
           "rating_b": null,
@@ -53570,6 +53557,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0139,
           "α": 0.0
@@ -53608,16 +53596,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 345.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -53625,6 +53609,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -53663,16 +53648,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 345.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -53680,6 +53661,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -53718,16 +53700,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 230.0,
           "base_voltage_secondary": 138.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.0003,
           "rating": 90.27607747199814,
           "rating_b": null,
@@ -53735,6 +53713,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0134,
           "α": 0.0
@@ -53773,16 +53752,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.0001,
           "rating": 69.5392289485888,
           "rating_b": null,
@@ -53790,6 +53765,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0174,
           "α": 0.0
@@ -53828,16 +53804,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 242.00051316709968,
           "rating_b": null,
@@ -53845,6 +53817,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.005,
           "α": 0.0
@@ -53883,16 +53856,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.0003,
           "rating": 69.53004369887748,
           "rating_b": null,
@@ -53900,6 +53869,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0174,
           "α": 0.0
@@ -53938,16 +53908,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 345.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -53955,6 +53921,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -53993,16 +53960,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 242.00051316709968,
           "rating_b": null,
@@ -54010,6 +53973,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.005,
           "α": 0.0
@@ -54048,16 +54012,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 230.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -54065,6 +54025,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -54103,16 +54064,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 230.0,
           "base_voltage_secondary": 500.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.00028,
           "rating": 87.66330268853301,
           "rating_b": null,
@@ -54120,6 +54077,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0138,
           "α": 0.0
@@ -54158,16 +54116,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 230.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -54175,6 +54129,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -54213,16 +54168,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 345.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -54230,6 +54181,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -54268,16 +54220,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -54285,6 +54233,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -54323,16 +54272,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 230.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 1052.1761404372346,
           "rating_b": null,
@@ -54340,6 +54285,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.00115,
           "α": 0.0
@@ -54378,16 +54324,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 230.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -54395,6 +54337,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -54433,16 +54376,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.0002,
           "rating": 96.78781723837771,
           "rating_b": null,
@@ -54450,6 +54389,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0125,
           "α": 0.0
@@ -54488,16 +54428,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 345.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -54505,6 +54441,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -54543,16 +54480,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.00013,
           "rating": 87.29793250234715,
           "rating_b": null,
@@ -54560,6 +54493,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.01386,
           "α": 0.0
@@ -54598,16 +54532,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 230.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -54615,6 +54545,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -54653,16 +54584,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 345.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.0003,
           "rating": 66.8417898477156,
           "rating_b": null,
@@ -54670,6 +54597,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0181,
           "α": 0.0
@@ -54708,16 +54636,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 230.0,
           "base_voltage_secondary": 115.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.00089,
           "rating": 40.45039752659568,
           "rating_b": null,
@@ -54725,6 +54649,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0299,
           "α": 0.0
@@ -54763,16 +54688,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 230.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -54780,6 +54701,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -54818,16 +54740,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 345.0,
           "base_voltage_secondary": 115.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.00089,
           "rating": 40.45039752659568,
           "rating_b": null,
@@ -54835,6 +54753,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0299,
           "α": 0.0
@@ -54873,16 +54792,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 105.30918764418388,
           "rating_b": null,
@@ -54890,6 +54805,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.01149,
           "α": 0.0
@@ -54928,16 +54844,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 230.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 12100.019610766696,
           "rating_b": null,
@@ -54945,6 +54857,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0001,
           "α": 0.0
@@ -54983,16 +54896,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 345.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 82.87688808555592,
           "rating_b": null,
@@ -55000,6 +54909,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0146,
           "α": 0.0
@@ -55038,16 +54948,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 115.0,
           "base_voltage_secondary": 115.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.00089,
           "rating": 40.45039752659568,
           "rating_b": null,
@@ -55055,6 +54961,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0299,
           "α": 0.0
@@ -55093,16 +55000,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 345.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.0003,
           "rating": 66.8417898477156,
           "rating_b": null,
@@ -55110,6 +55013,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0181,
           "α": 0.0
@@ -55148,16 +55052,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 105.30918764418388,
           "rating_b": null,
@@ -55165,6 +55065,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.01149,
           "α": 0.0
@@ -55203,16 +55104,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.0003,
           "rating": 69.53004369887748,
           "rating_b": null,
@@ -55220,6 +55117,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0174,
           "α": 0.0
@@ -55258,16 +55156,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 242.00051316709968,
           "rating_b": null,
@@ -55275,6 +55169,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.005,
           "α": 0.0
@@ -55313,16 +55208,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 230.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -55330,6 +55221,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -55368,16 +55260,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 230.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 12100.019610766696,
           "rating_b": null,
@@ -55385,6 +55273,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0001,
           "α": 0.0
@@ -55423,16 +55312,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -55440,6 +55325,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -55478,16 +55364,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 230.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -55495,6 +55377,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -55533,16 +55416,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 230.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -55550,6 +55429,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -55588,16 +55468,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 230.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -55605,6 +55481,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -55643,16 +55520,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 345.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -55660,6 +55533,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -55698,16 +55572,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 230.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -55715,6 +55585,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -55753,16 +55624,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 242.00051316709968,
           "rating_b": null,
@@ -55770,6 +55637,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.005,
           "α": 0.0
@@ -55808,16 +55676,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -55825,6 +55689,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -55863,16 +55728,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -55880,6 +55741,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -55918,16 +55780,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 345.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.0003,
           "rating": 66.8417898477156,
           "rating_b": null,
@@ -55935,6 +55793,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.00286,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0181,
           "α": 0.0
@@ -55973,16 +55832,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 547.5124727777297,
           "rating_b": null,
@@ -55990,6 +55845,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.00221,
           "α": 0.0
@@ -56028,16 +55884,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.00028,
           "rating": 87.66330268853301,
           "rating_b": null,
@@ -56045,6 +55897,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0138,
           "α": 0.0
@@ -56083,16 +55936,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 9.0e-5,
           "rating": 164.61385903149585,
           "rating_b": null,
@@ -56100,6 +55949,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.00735,
           "α": 0.0
@@ -56138,16 +55988,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 115.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -56155,6 +56001,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -56193,16 +56040,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.0001,
           "rating": 69.5392289485888,
           "rating_b": null,
@@ -56210,6 +56053,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0174,
           "α": 0.0
@@ -56248,16 +56092,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 345.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 110.00023327522717,
           "rating_b": null,
@@ -56265,6 +56105,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.011,
           "α": 0.0
@@ -56303,16 +56144,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -56320,6 +56157,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -56358,16 +56196,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 345.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -56375,6 +56209,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -56413,16 +56248,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.0003,
           "rating": 69.53004369887748,
           "rating_b": null,
@@ -56430,6 +56261,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0174,
           "α": 0.0
@@ -56468,16 +56300,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 230.0,
           "base_voltage_secondary": 115.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.00089,
           "rating": 40.45039752659568,
           "rating_b": null,
@@ -56485,6 +56313,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0299,
           "α": 0.0
@@ -56523,16 +56352,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 345.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.00028,
           "rating": 87.66330268853301,
           "rating_b": null,
@@ -56540,6 +56365,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0138,
           "α": 0.0
@@ -56578,16 +56404,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 121.00025660169987,
           "rating_b": null,
@@ -56595,6 +56417,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.01,
           "α": 0.0
@@ -56633,16 +56456,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.0003,
           "rating": 69.53004369887748,
           "rating_b": null,
@@ -56650,6 +56469,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0174,
           "α": 0.0
@@ -56688,16 +56508,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 230.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -56705,6 +56521,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -56743,16 +56560,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -56760,6 +56573,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -56798,16 +56612,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 345.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 168.0559119389991,
           "rating_b": null,
@@ -56815,6 +56625,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0072,
           "α": 0.0
@@ -56853,16 +56664,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 345.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -56870,6 +56677,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -56908,16 +56716,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -56925,6 +56729,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -56963,16 +56768,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 230.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -56980,6 +56781,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -57018,16 +56820,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 345.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -57035,6 +56833,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -57073,16 +56872,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -57090,6 +56885,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -57128,16 +56924,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 115.0,
           "base_voltage_secondary": 115.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.00089,
           "rating": 40.45039752659568,
           "rating_b": null,
@@ -57145,6 +56937,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0299,
           "α": 0.0
@@ -57183,16 +56976,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 230.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -57200,6 +56989,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -57238,16 +57028,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.0003,
           "rating": 69.53004369887748,
           "rating_b": null,
@@ -57255,6 +57041,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0174,
           "α": 0.0
@@ -57293,16 +57080,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -57310,6 +57093,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -57348,16 +57132,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 230.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -57365,6 +57145,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -57403,16 +57184,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 345.0,
           "base_voltage_secondary": 345.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 62.05141364418402,
           "rating_b": null,
@@ -57420,6 +57197,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0195,
           "α": 0.0
@@ -57458,16 +57236,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.00013,
           "rating": 87.29793250234715,
           "rating_b": null,
@@ -57475,6 +57249,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.01386,
           "α": 0.0
@@ -57513,16 +57288,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 242.00051316709968,
           "rating_b": null,
@@ -57530,6 +57301,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.005,
           "α": 0.0
@@ -57568,16 +57340,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.0003,
           "rating": 69.53004369887748,
           "rating_b": null,
@@ -57585,6 +57353,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0174,
           "α": 0.0
@@ -57623,16 +57392,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 230.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -57640,6 +57405,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -57678,16 +57444,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -57695,6 +57457,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -57733,16 +57496,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 230.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -57750,6 +57509,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -57788,16 +57548,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.0003,
           "rating": 69.53004369887748,
           "rating_b": null,
@@ -57805,6 +57561,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0174,
           "α": 0.0
@@ -57843,16 +57600,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 115.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -57860,6 +57613,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -57898,16 +57652,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.0002,
           "rating": 102.44107507126215,
           "rating_b": null,
@@ -57915,6 +57665,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.01181,
           "α": 0.0
@@ -57953,16 +57704,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -57970,6 +57717,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -58008,16 +57756,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 230.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -58025,6 +57769,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -58063,16 +57808,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.0003,
           "rating": 69.53004369887748,
           "rating_b": null,
@@ -58080,6 +57821,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0174,
           "α": 0.0
@@ -58118,16 +57860,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -58135,6 +57873,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -58173,16 +57912,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.0003,
           "rating": 66.8417898477156,
           "rating_b": null,
@@ -58190,6 +57925,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0181,
           "α": 0.0
@@ -58228,16 +57964,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 230.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -58245,6 +57977,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -58283,16 +58016,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -58300,6 +58029,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -58338,16 +58068,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.0003,
           "rating": 69.53004369887748,
           "rating_b": null,
@@ -58355,6 +58081,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0174,
           "α": 0.0
@@ -58393,16 +58120,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 230.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -58410,6 +58133,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -58448,16 +58172,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 345.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 168.0559119389991,
           "rating_b": null,
@@ -58465,6 +58185,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0072,
           "α": 0.0
@@ -58503,16 +58224,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 105.30918764418388,
           "rating_b": null,
@@ -58520,6 +58237,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.01149,
           "α": 0.0
@@ -58558,16 +58276,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 230.0,
           "base_voltage_secondary": 138.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.0003,
           "rating": 90.95450108408434,
           "rating_b": null,
@@ -58575,6 +58289,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0133,
           "α": 0.0
@@ -58613,16 +58328,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 230.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -58630,6 +58341,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -58668,16 +58380,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 345.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 168.0559119389991,
           "rating_b": null,
@@ -58685,6 +58393,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0072,
           "α": 0.0
@@ -58723,16 +58432,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 345.0,
           "base_voltage_secondary": 115.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.00089,
           "rating": 40.45039752659568,
           "rating_b": null,
@@ -58740,6 +58445,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0299,
           "α": 0.0
@@ -58778,16 +58484,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.00026,
           "rating": 87.28641571605986,
           "rating_b": null,
@@ -58795,6 +58497,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.01386,
           "α": 0.0
@@ -58833,16 +58536,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 230.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -58850,6 +58549,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -58888,16 +58588,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 230.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -58905,6 +58601,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -58943,16 +58640,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -58960,6 +58653,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -58998,16 +58692,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 230.0,
           "base_voltage_secondary": 115.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.00089,
           "rating": 40.45039752659568,
           "rating_b": null,
@@ -59015,6 +58705,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0299,
           "α": 0.0
@@ -59053,16 +58744,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 12100.019610766696,
           "rating_b": null,
@@ -59070,6 +58757,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0001,
           "α": 0.0
@@ -59108,16 +58796,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.0003,
           "rating": 69.53004369887748,
           "rating_b": null,
@@ -59125,6 +58809,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0174,
           "α": 0.0
@@ -59163,16 +58848,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 230.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -59180,6 +58861,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -59218,16 +58900,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -59235,6 +58913,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -59273,16 +58952,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 345.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 110.00023327522717,
           "rating_b": null,
@@ -59290,6 +58965,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.011,
           "α": 0.0
@@ -59328,16 +59004,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.0003,
           "rating": 66.8417898477156,
           "rating_b": null,
@@ -59345,6 +59017,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0181,
           "α": 0.0
@@ -59383,16 +59056,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 230.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -59400,6 +59069,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -59438,16 +59108,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 287.0,
           "base_voltage_secondary": 138.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.00059,
           "rating": 81.0902977200026,
           "rating_b": null,
@@ -59455,6 +59121,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.01491,
           "α": 0.0
@@ -59493,16 +59160,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 115.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -59510,6 +59173,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -59548,16 +59212,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 230.0,
           "base_voltage_secondary": 20.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 2420.0050837548965,
           "rating_b": null,
@@ -59565,6 +59225,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0005,
           "α": 0.0
@@ -59603,16 +59264,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.0002,
           "rating": 101.66653025410304,
           "rating_b": null,
@@ -59620,6 +59277,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0119,
           "α": 0.0
@@ -59658,16 +59316,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 345.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 82.87688808555592,
           "rating_b": null,
@@ -59675,6 +59329,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0146,
           "α": 0.0
@@ -59713,16 +59368,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 242.00051316709968,
           "rating_b": null,
@@ -59730,6 +59381,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.005,
           "α": 0.0
@@ -59768,16 +59420,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 242.00051316709968,
           "rating_b": null,
@@ -59785,6 +59433,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.005,
           "α": 0.0
@@ -59823,16 +59472,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 287.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.0002,
           "rating": 51.75185186901449,
           "rating_b": null,
@@ -59840,6 +59485,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.02338,
           "α": 0.0
@@ -59878,16 +59524,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 242.00051316709968,
           "rating_b": null,
@@ -59895,6 +59537,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.005,
           "α": 0.0
@@ -59933,16 +59576,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 500.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 1.0e-7,
           "rating": 121.00025660169987,
           "rating_b": null,
@@ -59950,6 +59589,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.01,
           "α": 0.0
@@ -59988,16 +59628,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 230.0,
           "base_voltage_secondary": 115.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.00089,
           "rating": 40.45039752659568,
           "rating_b": null,
@@ -60005,6 +59641,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.0,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0299,
           "α": 0.0
@@ -60043,16 +59680,12 @@
           "base_power": 100.0,
           "base_voltage_primary": 345.0,
           "base_voltage_secondary": 230.0,
-          "control_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
           "control_objective": "UNDEFINED",
-          "controlled_quantity_limits": {
-            "min": 0.9,
-            "max": 1.1
-          },
+          "controlled_active_power_flow_limits": null,
+          "controlled_reactive_power_flow_limits": null,
+          "controlled_voltage_limits": null,
           "number_of_tap_positions": 33,
+          "phase_angle_limits": null,
           "r": 0.0003,
           "rating": 66.8417898477156,
           "rating_b": null,
@@ -60060,6 +59693,7 @@
           "reactive_power_flow": 0.0,
           "regulated_bus_number": 0,
           "tap": 1.00345,
+          "tap_ratio_limits": null,
           "winding_group_number": "UNDEFINED",
           "x": 0.0181,
           "α": 0.0
