@@ -208,7 +208,7 @@ for i in 1:192
     if ismissing(heat_rates[i,2])
         heat_rate = heat_rate1[i]
         heat_rate_curve = LinearCurve(heat_rate, heat_rate_base[i])
-        fuel_curve = FuelCurve(; value_curve = heat_rate_curve, fuel_cost = fuel_prices[i], vom_cost = vom)
+        fuel_curve = FuelCurve(; value_curve = heat_rate_curve, fuel_units = u"MMBtu", fuel_cost = fuel_prices[i], vom_cost = vom)
         cost = ThermalGenerationCost(;
             variable = fuel_curve,
             fixed = 0.00,
@@ -218,7 +218,7 @@ for i in 1:192
         heat_rate = [heat_rate1[i], heat_rate2[i]]
         load_point = [load_points[i,1], load_points[i,2], max_cap]
         heat_rate_curve = PiecewiseIncrementalCurve(heat_rate_base[i], load_point, heat_rate)
-        fuel_curve = FuelCurve(; value_curve = heat_rate_curve, fuel_cost = fuel_prices[i], vom_cost = vom)
+        fuel_curve = FuelCurve(; value_curve = heat_rate_curve, fuel_units = u"MMBtu", fuel_cost = fuel_prices[i], vom_cost = vom)
         cost = ThermalGenerationCost(;
             variable = fuel_curve,
             fixed = 0.0,
@@ -229,7 +229,7 @@ elseif !ismissing(heat_rates[i,2]) && !ismissing(heat_rates[i,3]) && ismissing(h
         heat_rate = [heat_rate1[i], heat_rate2[i], heat_rate3[i]]
         load_point = [load_points[i,1], load_points[i,2], load_points[i,3], max_cap]
         heat_rate_curve = PiecewiseIncrementalCurve(heat_rate_base[i], load_point, heat_rate)
-        fuel_curve = FuelCurve(; value_curve = heat_rate_curve, fuel_cost = fuel_prices[i], vom_cost = vom)
+        fuel_curve = FuelCurve(; value_curve = heat_rate_curve, fuel_units = u"MMBtu", fuel_cost = fuel_prices[i], vom_cost = vom)
         cost = ThermalGenerationCost(;
             variable = fuel_curve,
             fixed = 0.0,
@@ -240,7 +240,7 @@ elseif !ismissing(heat_rates[i,2]) && !ismissing(heat_rates[i,3]) && ismissing(h
         heat_rate = [heat_rate1[i], heat_rate2[i], heat_rate3[i], heat_rate4[i]]
         load_point = [load_points[i,1], load_points[i,2], load_points[i,3], load_points[i,4], max_cap]
         heat_rate_curve = PiecewiseIncrementalCurve(heat_rate_base[i], load_point, heat_rate)
-        fuel_curve = FuelCurve(; value_curve = heat_rate_curve, fuel_cost = fuel_prices[i], vom_cost = vom)
+        fuel_curve = FuelCurve(; value_curve = heat_rate_curve, fuel_units = u"MMBtu", fuel_cost = fuel_prices[i], vom_cost = vom)
         cost = ThermalGenerationCost(;
             variable = fuel_curve,
             fixed = 0.0,
@@ -251,7 +251,7 @@ elseif !ismissing(heat_rates[i,2]) && !ismissing(heat_rates[i,3]) && ismissing(h
         heat_rate = [heat_rate1[i], heat_rate2[i], heat_rate3[i], heat_rate4[i], heat_rate5[i]]
         load_point = [load_points[i,1], load_points[i,2], load_points[i,3], load_points[i,4], load_points[i,5], max_cap]
         heat_rate_curve = PiecewiseIncrementalCurve(heat_rate_base[i], load_point, heat_rate)
-        fuel_curve = FuelCurve(; value_curve = heat_rate_curve, fuel_cost = fuel_prices[i], vom_cost = vom)
+        fuel_curve = FuelCurve(; value_curve = heat_rate_curve, fuel_units = u"MMBtu", fuel_cost = fuel_prices[i], vom_cost = vom)
         cost = ThermalGenerationCost(;
             variable = fuel_curve,
             fixed = 0.0,
