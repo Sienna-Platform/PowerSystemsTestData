@@ -68,12 +68,12 @@ pss_none_load() = PSSFixed(0.0)
 function dyn_genrou(gen)
     return PSY.DynamicGenerator(
         name = PSY.get_name(gen),
-        ω_ref = 1.0,
-        machine = GENROU_ex(), 
-        shaft = shaft_ex(), 
-        avr = avr_sexs(), 
-        prime_mover = tg_tgov1(), 
-        pss = pss_none_load(), 
+        frequency_ref = 60.0,
+        synchronous_machine_dynamics = GENROU_ex(),
+        shaft = shaft_ex(),
+        excitation_system_dynamics = avr_sexs(),
+        turbine_governor_dynamics = tg_tgov1(),
+        power_system_stabilizer_dynamics = pss_none_load(),
     )
 end
 
@@ -98,12 +98,16 @@ end
 # Droop Controller
 function outer_control_droop_load()
     function active_droop_load()
-        return PSY.ActivePowerDroop(Rp = 0.02, ωz = 2 * pi * 20)
+        return PSY.ActivePowerDroop(
+            Rp = 0.02,
+            active_power_filter_frequency = 20.0,
+            ext = Dict{String, Any}("is_not_reference" => 0.0),
+        )
     end
     function reactive_droop_load()
-        return PSY.ReactivePowerDroop(kq = 0.05, ωf = 2 * pi * 20)
+        return PSY.ReactivePowerDroop(kq = 0.05, reactive_power_filter_frequency = 20.0)
     end
-    return PSY.OuterControl(active_droop_load(), reactive_droop_load(), Dict{String,Any}("is_not_reference" => 0.0))
+    return (active_droop_load(), reactive_droop_load())
 end
 
 
@@ -117,7 +121,7 @@ inner_control_load() = PSY.VoltageModeControl(
     kpc = 1.27,     #Current controller proportional gain
     kic = 14.3,     #Current controller integral gain
     kffi = 0.0,     #Binary variable enabling the current feed-forward in output of current controllers
-    ωad = 50.0,     #Active damping low pass filter cut-off frequency
+    active_damping_filter_frequency = 50.0 / (2 * pi),     #Active damping low pass filter cut-off frequency (Hz)
     kad = 0.2,      #Active damping gain
 )
 
@@ -140,9 +144,9 @@ average_converter_load() = PSY.AverageConverter(rated_voltage = 690.0, rated_cur
 function inv_droop(static_device)
     return PSY.DynamicInverter(
         PSY.get_name(static_device), # name
-        1.0, #ω_ref
+        60.0, # frequency_ref (Hz)
         average_converter_load(), # converter
-        outer_control_droop_load(), # outer control
+        outer_control_droop_load()..., # active and reactive power control
         inner_control_load(), # inner control
         stiff_source(), # dc source
         no_pll_load(), # pll
@@ -201,6 +205,11 @@ function active_cpl(load)
         kiv = 150.0 * (Vb_dc / Ib_dc),
         kpc = 15.0 * (Ib / Vb),
         kic = 30000.0 * (Ib / Vb),
+        P_ref = 1.0,
+        Q_ref = 1.0,
+        V_ref = 1.0,
+        frequency_ref = 60.0,
+        is_filter_differential = true,
         base_power = 100.0,
     )
 end
@@ -218,8 +227,8 @@ function get_static_system(raw_file)
         bus = get_bus(l),
         active_power = get_constant_active_power(l),
         reactive_power = get_constant_reactive_power(l),
-        active_power_coefficient = 0.0, # Constant Power
-        reactive_power_coefficient = 0.0, # Constant Power
+        alpha = 0.0, # Constant Power
+        beta = 0.0, # Constant Power
         base_power = get_base_power(l),
         max_active_power = get_max_constant_active_power(l),
         max_reactive_power = get_max_constant_reactive_power(l),
