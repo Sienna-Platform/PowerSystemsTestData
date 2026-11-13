@@ -279,13 +279,13 @@ filt_voc() = LCLFilter(lf = 0.0196, rf = 0.0139, cf = 0.1086, lg = 0.0196, rg = 
 
 ###### PLL Data ######
 pll() = KauraPLL(
-    ω_lp = 500.0, #Cut-off frequency for LowPass filter of PLL filter.
+    frequency_lp = 500.0 / (2 * pi), #Cut-off frequency (Hz) for LowPass filter of PLL filter.
     kp_pll = 0.084,  #PLL proportional gain
     ki_pll = 4.69,   #PLL integral gain
 )
 
 reduced_pll() = ReducedOrderPLL(
-    ω_lp = 1.32 * 2 * pi * 50, #Cut-off frequency for LowPass filter of PLL filter.
+    frequency_lp = 1.32 * 50, #Cut-off frequency (Hz) for LowPass filter of PLL filter.
     kp_pll = 2.0,  #PLL proportional gain
     ki_pll = 20.0,   #PLL integral gain
 )
@@ -295,52 +295,52 @@ no_pll() = PSY.FixedFrequency()
 ###### Outer Control ######
 function outer_control()
     function virtual_inertia()
-        return VirtualInertia(Ta = 2.0, kd = 400.0, kω = 20.0)
+        return VirtualInertia(Ta = 2.0, kd = 400.0, k_frequency = 20.0)
     end
     function reactive_droop()
-        return ReactivePowerDroop(kq = 0.2, ωf = 1000.0)
+        return ReactivePowerDroop(kq = 0.2, reactive_power_filter_frequency = 1000.0 / (2 * pi))
     end
-    return OuterControl(virtual_inertia(), reactive_droop())
+    return (virtual_inertia(), reactive_droop())
 end
 
 function outer_control_nopll()
     function virtual_inertia()
-        return VirtualInertia(Ta = 2.0, kd = 0.0, kω = 20.0)
+        return VirtualInertia(Ta = 2.0, kd = 0.0, k_frequency = 20.0)
     end
     function reactive_droop()
-        return ReactivePowerDroop(kq = 0.2, ωf = 1000.0)
+        return ReactivePowerDroop(kq = 0.2, reactive_power_filter_frequency = 1000.0 / (2 * pi))
     end
-    return OuterControl(virtual_inertia(), reactive_droop())
+    return (virtual_inertia(), reactive_droop())
 end
 
 function outer_control_droop()
     function active_droop()
-        return PSY.ActivePowerDroop(Rp = 0.05, ωz = 2 * pi * 5)
+        return PSY.ActivePowerDroop(Rp = 0.05, active_power_filter_frequency = 5.0)
     end
     function reactive_droop()
-        return ReactivePowerDroop(kq = 0.2, ωf = 1000.0)
+        return ReactivePowerDroop(kq = 0.2, reactive_power_filter_frequency = 1000.0 / (2 * pi))
     end
-    return OuterControl(active_droop(), reactive_droop())
+    return (active_droop(), reactive_droop())
 end
 
 function outer_control_gfoll()
     function active_pi()
-        return ActivePowerPI(Kp_p = 2.0, Ki_p = 30.0, ωz = 0.132 * 2 * pi * 50)
+        return ActivePowerPI(Kp_p = 2.0, Ki_p = 30.0, active_power_filter_frequency = 0.132 * 50)
     end
     function reactive_pi()
-        return ReactivePowerPI(Kp_q = 2.0, Ki_q = 30.0, ωf = 0.132 * 2 * pi * 50.0)
+        return ReactivePowerPI(Kp_q = 2.0, Ki_q = 30.0, reactive_power_filter_frequency = 0.132 * 50.0)
     end
-    return OuterControl(active_pi(), reactive_pi())
+    return (active_pi(), reactive_pi())
 end
 
 function outer_voc()
     function active_voc()
-        return PSY.ActiveVirtualOscillator(k1 = 0.0033, ψ = pi / 4)
+        return PSY.ActiveVirtualOscillator(k1 = 0.0033, psi = pi / 4)
     end
     function reactive_voc()
         return PSY.ReactiveVirtualOscillator(k2 = 0.0796)
     end
-    return OuterControl(active_voc(), reactive_voc())
+    return (active_voc(), reactive_voc())
 end
 
 ######## Inner Control ######
@@ -353,7 +353,7 @@ inner_control() = VoltageModeControl(
     kpc = 1.27,     #Current controller proportional gain
     kic = 14.3,     #Current controller integral gain
     kffi = 0.0,     #Binary variable enabling the current feed-forward in output of current controllers
-    ωad = 50.0,     #Active damping low pass filter cut-off frequency
+    active_damping_filter_frequency = 50.0 / (2 * pi),     #Active damping low pass filter cut-off frequency (Hz)
     kad = 0.2,
 )
 
@@ -373,8 +373,8 @@ function outer_control_TypeAB()
             bus_control = 0,
             from_branch_control = 0,
             to_branch_control = 0,
-            branch_id_control = "0",
-            Freq_Flag = 0,
+            branch_id_control = 0,
+            Freq_Flag = false,
             K_pg = 1.0,
             K_ig = 0.05,
             T_p = 0.25,
@@ -395,10 +395,10 @@ function outer_control_TypeAB()
             from_branch_control = 0,
             to_branch_control = 0,
             branch_id_control = "0",
-            VC_Flag = 0,
-            Ref_Flag = 0,
-            PF_Flag = 0,
-            V_Flag = 0,
+            VC_Flag = false,
+            Ref_Flag = false,
+            PF_Flag = false,
+            V_Flag = false,
             T_fltr = 0.02,
             K_p = 18.0,
             K_i = 50.0,
@@ -418,7 +418,7 @@ function outer_control_TypeAB()
             K_qi = 0.01,
         )
     end
-    return OuterControl(active_ab(), reactive_ab())
+    return (active_ab(), reactive_ab())
 end
 
 function outer_control_TypeAB_FreqFlag()
@@ -427,8 +427,8 @@ function outer_control_TypeAB_FreqFlag()
             bus_control = 0,
             from_branch_control = 0,
             to_branch_control = 0,
-            branch_id_control = "0",
-            Freq_Flag = 1,
+            branch_id_control = 0,
+            Freq_Flag = true,
             K_pg = 1.0,
             K_ig = 0.05,
             T_p = 0.25,
@@ -449,10 +449,10 @@ function outer_control_TypeAB_FreqFlag()
             from_branch_control = 0,
             to_branch_control = 0,
             branch_id_control = "0",
-            VC_Flag = 0,
-            Ref_Flag = 0,
-            PF_Flag = 0,
-            V_Flag = 0,
+            VC_Flag = false,
+            Ref_Flag = false,
+            PF_Flag = false,
+            V_Flag = false,
             T_fltr = 0.02,
             K_p = 18.0,
             K_i = 50.0,
@@ -472,12 +472,12 @@ function outer_control_TypeAB_FreqFlag()
             K_qi = 0.01,
         )
     end
-    return OuterControl(active_ab_fflag(), reactive_ab())
+    return (active_ab_fflag(), reactive_ab())
 end
 
 inner_ctrl_typeB() = RECurrentControlB(
-    Q_Flag = 0,
-    PQ_Flag = 0,
+    Q_Flag = false,
+    PQ_Flag = false,
     Vdip_lim = (-99.0, 99.0),
     T_rv = 0.02,
     dbd_pnts = (-0.01, 0.01),
@@ -513,12 +513,12 @@ filt_current() = RLFilter(rf = 0.0, lf = 0.0)
 #Parameters from (Ma, 2020)
 dera(generator, freq_flag) = AggregateDistributedGenerationA(
     name = get_name(generator),
-    Pf_Flag = 1,
+    Pf_Flag = true,
     Freq_Flag = freq_flag,
-    PQ_Flag = 0,
-    Gen_Flag = 1,
-    Vtrip_Flag = 1,
-    Ftrip_Flag = 1,
+    PQ_Flag = false,
+    Gen_Flag = true,
+    Vtrip_Flag = true,
+    Ftrip_Flag = true,
     T_rv = 0.02,
     Trf = 0.02,
     dbd_pnts = (-99, 99),
@@ -567,6 +567,8 @@ Ind_Motor(load) = PSY.SingleCageInductionMachine(
     H = 1.5,
     A = 1.0,
     B = 0.0,
+    torque_ref = 1.0,
+    B_shunt = 0.0,
     base_power = 1000.0,
 )
 
@@ -580,6 +582,8 @@ Ind_Motor3rd(load) = PSY.SimplifiedSingleCageInductionMachine(
     H = 1.5,
     A = 1.0,
     B = 0.0,
+    torque_ref = 1.0,
+    B_shunt = 0.0,
     base_power = 1000.0,
 )
 
@@ -588,24 +592,26 @@ Ind_Motor3rd(load) = PSY.SimplifiedSingleCageInductionMachine(
 function dyn_gen_second_order(generator)
     return PSY.DynamicGenerator(
         name = get_name(generator),
-        ω_ref = 1.0, # ω_ref,
-        machine = machine_oneDoneQ(), #machine
+        frequency_ref = 60.0, # Hz
+        synchronous_machine_dynamics = machine_oneDoneQ(), #machine
         shaft = shaft_no_damping(), #shaft
-        avr = avr_type1(), #avr
-        prime_mover = tg_none(), #tg
-        pss = pss_none(), #pss
+        excitation_system_dynamics = avr_type1(), #avr
+        turbine_governor_dynamics = tg_none(), #tg
+        power_system_stabilizer_dynamics = pss_none(), #pss
     )
 end
 
 function inv_case78(static_device)
+    active_power_control, reactive_power_control = outer_control()
     return DynamicInverter(
         name = get_name(static_device),
-        ω_ref = 1.0, # ω_ref,
+        frequency_ref = 60.0, # Hz
         converter = converter_high_power(), #converter
-        outer_control = outer_control(), #outer control
+        active_power_control = active_power_control,
+        reactive_power_control = reactive_power_control,
         inner_control = inner_control(), #inner control voltage source
         dc_source = dc_source_lv(), #dc source
-        freq_estimator = pll(), #pll
+        reference_frame_rotation = pll(), #pll
         filter = filt(), #filter
     )
 end
