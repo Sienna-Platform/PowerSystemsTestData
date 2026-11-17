@@ -1086,26 +1086,26 @@ reserve5(thermal_generators5) = [
 ]
 
 reserve5_re(renewable_generators5) = [
-    OnlineReserve{ReserveUp}("Reserve3", true, 30, 100),
-    OnlineReserve{ReserveDown}("Reserve4", true, 5, 50),
+    OnlineReserve{ReserveUp}("Reserve3", true, 30, 1.0), # 100 MW on the 100 MVA system base
+    OnlineReserve{ReserveDown}("Reserve4", true, 5, 0.5), # 50 MW
     OnlineReserve{ReserveUp}(; name = "ORDC1", available = true, time_frame = 0.6, variable = ORDC_cost),
 ]
 reserve5_hy(hydro_generators5) = [
-    OnlineReserve{ReserveUp}("Reserve5", true, 30, 100),
-    OnlineReserve{ReserveDown}("Reserve6", true, 5, 50),
+    OnlineReserve{ReserveUp}("Reserve5", true, 30, 1.0), # 100 MW on the 100 MVA system base
+    OnlineReserve{ReserveDown}("Reserve6", true, 5, 0.5), # 50 MW
     OnlineReserve{ReserveUp}(; name = "ORDC1", available = true, time_frame = 0.6, variable = ORDC_cost),
 ]
 
 reserve5_il(interruptible_loads) = [
-    OnlineReserve{ReserveUp}("Reserve7", true, 30, 100),
-    OnlineReserve{ReserveDown}("Reserve8", true, 5, 50),
+    OnlineReserve{ReserveUp}("Reserve7", true, 30, 1.0), # 100 MW on the 100 MVA system base
+    OnlineReserve{ReserveDown}("Reserve8", true, 5, 0.5), # 50 MW
     OnlineReserve{ReserveUp}(; name = "ORDC1", available = true, time_frame = 0.6, variable = ORDC_cost),
 ]
 
 
 reserve5_phes(phes5) = [
-    OnlineReserve{ReserveUp}("Reserve9", true, 30, 100),
-    OnlineReserve{ReserveDown}("Reserve10", true, 5, 50),
+    OnlineReserve{ReserveUp}("Reserve9", true, 30, 1.0), # 100 MW on the 100 MVA system base
+    OnlineReserve{ReserveDown}("Reserve10", true, 5, 0.5), # 50 MW
     OnlineReserve{ReserveUp}(; name = "ORDC1", available = true, time_frame = 0.6, variable = ORDC_cost),
 ]
 
@@ -1137,6 +1137,17 @@ hydro_timeseries_DA = [
 hydro_single_timeseries_DA = TimeSeries.TimeArray(
     vcat(TimeSeries.timestamp(hydro_timeseries_DA[1][1]), TimeSeries.timestamp(hydro_timeseries_DA[2][1])),
     vcat(TimeSeries.values(hydro_timeseries_DA[1][1]), TimeSeries.values(hydro_timeseries_DA[2][1]))
+)
+
+# Reservoir inflow in MW. The profile is a fraction of the reservoirs' 4 MW `inflow`.
+reservoir_inflow_DA = [
+    [TimeSeries.TimeArray(DayAhead, 4.0 * hydro_inflow_ts_DA)],
+    [TimeSeries.TimeArray(DayAhead + Day(1), 4.0 * (ones(24) * 0.1 + hydro_inflow_ts_DA))],
+];
+
+reservoir_inflow_single_ts_DA = TimeSeries.TimeArray(
+    vcat(TimeSeries.timestamp(reservoir_inflow_DA[1][1]), TimeSeries.timestamp(reservoir_inflow_DA[2][1])),
+    vcat(TimeSeries.values(reservoir_inflow_DA[1][1]), TimeSeries.values(reservoir_inflow_DA[2][1]))
 )
 
 hydro_pump_power_timeseries_DA = [
@@ -1171,9 +1182,10 @@ storage_target_single_ts_DA = TimeSeries.TimeArray(
     vcat(TimeSeries.values(storage_target_DA[1][1]), TimeSeries.values(storage_target_DA[2][1]))
 );
 
+# Reservoir energy budget in MWh per hourly step: 0.8 of the inflow energy.
 hydro_budget_DA = [
-    [TimeSeries.TimeArray(DayAhead, hydro_inflow_ts_DA * 0.8)],
-    [TimeSeries.TimeArray(DayAhead + Day(1), hydro_inflow_ts_DA * 0.8)],
+    [TimeSeries.TimeArray(DayAhead, 0.8 * TimeSeries.values(reservoir_inflow_DA[1][1]))],
+    [TimeSeries.TimeArray(DayAhead + Day(1), 0.8 * TimeSeries.values(reservoir_inflow_DA[2][1]))],
 ];
 
 hydro_budget_single_ts_DA = TimeSeries.TimeArray(
@@ -1203,6 +1215,17 @@ hydro_single_timeseries_RT = TimeSeries.TimeArray(
     vcat(TimeSeries.values(hydro_timeseries_RT[1][1]), TimeSeries.values(hydro_timeseries_RT[2][1]))
 );
 
+# Reservoir inflow in MW, as `reservoir_inflow_DA`.
+reservoir_inflow_RT = [
+    [TimeSeries.TimeArray(RealTime, repeat(TimeSeries.values(reservoir_inflow_DA[1][1]), inner = 12))],
+    [TimeSeries.TimeArray(RealTime + Day(1), repeat(TimeSeries.values(reservoir_inflow_DA[2][1]), inner = 12))],
+];
+
+reservoir_inflow_single_ts_RT = TimeSeries.TimeArray(
+    vcat(TimeSeries.timestamp(reservoir_inflow_RT[1][1]), TimeSeries.timestamp(reservoir_inflow_RT[2][1])),
+    vcat(TimeSeries.values(reservoir_inflow_RT[1][1]), TimeSeries.values(reservoir_inflow_RT[2][1]))
+);
+
 storage_target_RT = [
     [TimeSeries.TimeArray(RealTime, repeat(storage_target, inner = 12))],
     [TimeSeries.TimeArray(RealTime + Day(1), repeat(storage_target, inner = 12))],
@@ -1213,9 +1236,10 @@ storage_target_single_ts_RT = TimeSeries.TimeArray(
     vcat(TimeSeries.values(storage_target_RT[1][1]), TimeSeries.values(storage_target_RT[2][1]))
 )
 
+# Reservoir energy budget in MWh per 5-minute step: 0.8 of the inflow energy.
 hydro_budget_RT = [
-    [TimeSeries.TimeArray(RealTime, repeat(hydro_inflow_ts_DA  * 0.8, inner = 12))],
-    [TimeSeries.TimeArray(RealTime + Day(1), repeat(hydro_inflow_ts_DA  * 0.8, inner = 12))],
+    [TimeSeries.TimeArray(RealTime, 0.8 / 12 * TimeSeries.values(reservoir_inflow_RT[1][1]))],
+    [TimeSeries.TimeArray(RealTime + Day(1), 0.8 / 12 * TimeSeries.values(reservoir_inflow_RT[2][1]))],
 ];
 
 hydro_budget_single_ts_RT = TimeSeries.TimeArray(
