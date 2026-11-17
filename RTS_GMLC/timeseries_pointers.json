@@ -7,9 +7,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
@@ -20,9 +19,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
@@ -33,9 +31,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
@@ -46,9 +43,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
@@ -59,9 +55,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
@@ -72,9 +67,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
@@ -85,9 +79,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
@@ -98,9 +91,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
@@ -111,9 +103,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
@@ -124,9 +115,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
@@ -137,9 +127,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
@@ -150,9 +139,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
@@ -163,9 +151,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
@@ -176,9 +163,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
@@ -189,9 +175,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
@@ -202,9 +187,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
@@ -215,9 +199,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
@@ -228,9 +211,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
@@ -241,9 +223,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
@@ -254,9 +235,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
@@ -1654,9 +1634,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
     },
     {
@@ -1667,9 +1646,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
     },
     {
@@ -1680,9 +1658,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
     },
     {
@@ -1693,9 +1670,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
     },
     {
@@ -1706,9 +1682,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
     },
     {
@@ -1719,9 +1694,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
     },
     {
@@ -1732,9 +1706,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
     },
     {
@@ -1745,9 +1718,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
     },
     {
@@ -1758,9 +1730,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
     },
     {
@@ -1771,9 +1742,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
     },
     {
@@ -1784,9 +1754,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
     },
     {
@@ -1797,9 +1766,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
     },
     {
@@ -1810,9 +1778,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
     },
     {
@@ -1823,9 +1790,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
     },
     {
@@ -1836,9 +1802,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
     },
     {
@@ -1849,9 +1814,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
     },
     {
@@ -1862,9 +1826,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
     },
     {
@@ -1875,9 +1838,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
     },
     {
@@ -1888,9 +1850,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
     },
     {
@@ -1901,9 +1862,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 52.49761899362675,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
     },
     {
