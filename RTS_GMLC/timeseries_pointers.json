@@ -1571,9 +1571,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 2850.0,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/load/DAY_AHEAD_regional_Load.csv"
     },
     {
@@ -1584,9 +1583,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 2850.0,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/load/DAY_AHEAD_regional_Load.csv"
     },
     {
@@ -1597,9 +1595,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 2850.0,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/load/DAY_AHEAD_regional_Load.csv"
     },
     {
@@ -3174,9 +3171,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 2850.0,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/load/REAL_TIME_regional_Load.csv"
     },
     {
@@ -3187,9 +3183,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 2850.0,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/load/REAL_TIME_regional_Load.csv"
     },
     {
@@ -3200,9 +3195,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 2850.0,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/load/REAL_TIME_regional_Load.csv"
     }
 ]
