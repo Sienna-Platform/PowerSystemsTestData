@@ -324,16 +324,21 @@ for row in eachrow(partfact)
     RTdf = CSV.read( RTdf_path, DataFrame);
     max = maximum(RTdf[:, 2])
     partfact = row[:"Load Participation Factor"]
+    # The load's share of its region's peak (MW). The load is its own base, so its
+    # `max_active_power` profile is per unit of `base_power`.
+    peak = max * row[3]
+    # A bus with no share of its region's load has no load.
+    iszero(peak) && continue
     load = PowerLoad(;
         name = "load$num",
         available = true,
         bus = nodes[number],
-        active_power = 0.0, #per-unitized by device base_power
-        reactive_power = 0.0, #per-unitized by device base_power
-        base_power = 1.0, # MVA, for loads match system
-        max_active_power = max*(row[3]), #per-unitized by device base_power?
+        active_power = 0.0,
+        reactive_power = 0.0,
+        base_power = peak,
+        max_active_power = peak,
         max_reactive_power = 0.0,
-        input_basis = u"CU",
+        input_basis = u"NU",
     );
 push!(loads, load)
 end
