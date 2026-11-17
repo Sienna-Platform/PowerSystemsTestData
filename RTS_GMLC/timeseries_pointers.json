@@ -787,9 +787,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 51.6,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
     },
     {
@@ -800,9 +799,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 51.6,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
     },
     {
@@ -813,9 +811,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 51.6,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
     },
     {
@@ -826,9 +823,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 95.1,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
     },
     {
@@ -839,9 +835,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 92.7,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
     },
     {
@@ -852,9 +847,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 51.6,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
     },
     {
@@ -865,9 +859,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 93.3,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
     },
     {
@@ -878,9 +871,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 51.7,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
     },
     {
@@ -891,9 +883,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 49.7,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
     },
     {
@@ -904,9 +895,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 94.1,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
     },
     {
@@ -917,9 +907,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 51.6,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
     },
     {
@@ -930,9 +919,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 51.6,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
     },
     {
@@ -943,9 +931,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 51.0,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
     },
     {
@@ -956,9 +943,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 93.6,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
     },
     {
@@ -969,9 +955,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 188.2,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
     },
     {
@@ -982,9 +967,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 125.1,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
     },
     {
@@ -995,9 +979,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 25.6,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
     },
     {
@@ -1008,9 +991,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 25.900000000000002,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
     },
     {
@@ -1021,9 +1003,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 25.3,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
     },
     {
@@ -1034,9 +1015,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 26.8,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
     },
     {
@@ -1047,9 +1027,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 26.700000000000003,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
     },
     {
@@ -1060,9 +1039,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 26.200000000000003,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
     },
     {
@@ -1073,9 +1051,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 25.8,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
     },
     {
@@ -1086,9 +1063,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 61.5,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
     },
     {
@@ -1099,9 +1075,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 66.6,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
     },
     {
@@ -1112,9 +1087,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 100.9,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
@@ -1125,9 +1099,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 101.70000000000002,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
@@ -1138,9 +1111,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 63.1,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
@@ -1151,9 +1123,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 65.4,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
@@ -1164,9 +1135,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 67.0,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
@@ -1177,9 +1147,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 64.8,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
@@ -1190,9 +1159,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 63.800000000000004,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
@@ -1203,9 +1171,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 64.1,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
@@ -1216,9 +1183,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 66.6,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
@@ -1229,9 +1195,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 62.4,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
@@ -1242,9 +1207,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 66.9,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
@@ -1255,9 +1219,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 65.2,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
@@ -1268,9 +1231,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 27.800000000000004,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
@@ -1281,9 +1243,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 27.3,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
@@ -1294,9 +1255,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 27.0,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
@@ -1307,9 +1267,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 28.300000000000004,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
@@ -1320,9 +1279,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 27.200000000000003,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
@@ -1333,9 +1291,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 27.0,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
@@ -1346,9 +1303,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 28.199999999999996,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
@@ -1359,9 +1315,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 9.3,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
@@ -1372,9 +1327,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 9.7,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
@@ -1385,9 +1339,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 9.4,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
@@ -1398,9 +1351,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 9.1,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
@@ -1411,9 +1363,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 9.1,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
@@ -1424,9 +1375,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 9.7,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
@@ -1437,9 +1387,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 9.4,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
@@ -1450,9 +1399,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 11.8,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
@@ -1463,9 +1411,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 11.2,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
@@ -1476,9 +1423,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 10.3,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
@@ -1489,9 +1435,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 4.5,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
@@ -1502,9 +1447,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 13.200000000000001,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
@@ -1515,9 +1459,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 148.3,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/WIND/DAY_AHEAD_wind.csv"
     },
     {
@@ -1528,9 +1471,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 799.1,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/WIND/DAY_AHEAD_wind.csv"
     },
     {
@@ -1541,9 +1483,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 847.0000000000001,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/WIND/DAY_AHEAD_wind.csv"
     },
     {
@@ -1554,9 +1495,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 713.5,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/WIND/DAY_AHEAD_wind.csv"
     },
     {
@@ -1567,9 +1507,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "requirement",
-        "scaling_factor_multiplier": "get_requirement",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 98.0,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "../RTS_GMLC/Reserves/DAY_AHEAD_regional_Flex_Down.csv"
     },
     {
@@ -1580,9 +1519,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "requirement",
-        "scaling_factor_multiplier": "get_requirement",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 96.0,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "../RTS_GMLC/Reserves/DAY_AHEAD_regional_Flex_Up.csv"
     },
     {
@@ -1593,9 +1531,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "requirement",
-        "scaling_factor_multiplier": "get_requirement",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 77.0,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "../RTS_GMLC/Reserves/DAY_AHEAD_regional_Reg_Down.csv"
     },
     {
@@ -1606,9 +1543,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "requirement",
-        "scaling_factor_multiplier": "get_requirement",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 72.0,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "../RTS_GMLC/Reserves/DAY_AHEAD_regional_Reg_Up.csv"
     },
     {
@@ -1619,9 +1555,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "requirement",
-        "scaling_factor_multiplier": "get_requirement",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 40.413,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "../RTS_GMLC/Reserves/DAY_AHEAD_regional_Spin_Up_R1.csv"
     },
     {
@@ -1632,9 +1567,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "requirement",
-        "scaling_factor_multiplier": "get_requirement",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 42.851,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "../RTS_GMLC/Reserves/DAY_AHEAD_regional_Spin_Up_R2.csv"
     },
     {
@@ -1645,9 +1579,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "requirement",
-        "scaling_factor_multiplier": "get_requirement",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 56.666,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "../RTS_GMLC/Reserves/DAY_AHEAD_regional_Spin_Up_R3.csv"
     },
     {
@@ -1697,9 +1630,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 200.0,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/CSP/DAY_AHEAD_Natural_Inflow.csv"
     },
     {
@@ -1710,9 +1642,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 200.0,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/CSP/REAL_TIME_Natural_Inflow.csv"
     },
     {
@@ -2503,9 +2434,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 51.6,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
     },
     {
@@ -2516,9 +2446,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 51.6,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
     },
     {
@@ -2529,9 +2458,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 51.6,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
     },
     {
@@ -2542,9 +2470,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 95.1,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
     },
     {
@@ -2555,9 +2482,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 92.7,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
     },
     {
@@ -2568,9 +2494,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 51.6,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
     },
     {
@@ -2581,9 +2506,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 93.3,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
     },
     {
@@ -2594,9 +2518,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 51.7,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
     },
     {
@@ -2607,9 +2530,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 49.7,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
     },
     {
@@ -2620,9 +2542,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 94.1,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
     },
     {
@@ -2633,9 +2554,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 51.6,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
     },
     {
@@ -2646,9 +2566,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 51.6,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
     },
     {
@@ -2659,9 +2578,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 51.0,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
     },
     {
@@ -2672,9 +2590,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 93.6,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
     },
     {
@@ -2685,9 +2602,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 188.2,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
     },
     {
@@ -2698,9 +2614,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 125.1,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
     },
     {
@@ -2711,9 +2626,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 25.6,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
     },
     {
@@ -2724,9 +2638,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 25.900000000000002,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
     },
     {
@@ -2737,9 +2650,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 25.3,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
     },
     {
@@ -2750,9 +2662,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 26.8,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
     },
     {
@@ -2763,9 +2674,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 26.700000000000003,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
     },
     {
@@ -2776,9 +2686,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 26.200000000000003,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
     },
     {
@@ -2789,9 +2698,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 25.8,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
     },
     {
@@ -2802,9 +2710,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 61.5,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
     },
     {
@@ -2815,9 +2722,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 66.6,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
     },
     {
@@ -2828,9 +2734,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 100.9,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
     },
     {
@@ -2841,9 +2746,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 101.70000000000002,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
     },
     {
@@ -2854,9 +2758,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 63.1,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
     },
     {
@@ -2867,9 +2770,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 65.4,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
     },
     {
@@ -2880,9 +2782,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 67.0,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
     },
     {
@@ -2893,9 +2794,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 64.8,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
     },
     {
@@ -2906,9 +2806,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 63.800000000000004,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
     },
     {
@@ -2919,9 +2818,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 64.1,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
     },
     {
@@ -2932,9 +2830,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 66.6,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
     },
     {
@@ -2945,9 +2842,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 62.4,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
     },
     {
@@ -2958,9 +2854,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 66.9,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
     },
     {
@@ -2971,9 +2866,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 65.2,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
     },
     {
@@ -2984,9 +2878,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 27.800000000000004,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
     },
     {
@@ -2997,9 +2890,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 27.3,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
     },
     {
@@ -3010,9 +2902,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 27.0,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
     },
     {
@@ -3023,9 +2914,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 28.300000000000004,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
     },
     {
@@ -3036,9 +2926,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 27.200000000000003,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
     },
     {
@@ -3049,9 +2938,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 27.0,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
     },
     {
@@ -3062,9 +2950,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 28.199999999999996,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
     },
     {
@@ -3075,9 +2962,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 9.3,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
     },
     {
@@ -3088,9 +2974,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 9.7,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
     },
     {
@@ -3101,9 +2986,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 9.4,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
     },
     {
@@ -3114,9 +2998,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 9.1,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
     },
     {
@@ -3127,9 +3010,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 9.1,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
     },
     {
@@ -3140,9 +3022,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 9.7,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
     },
     {
@@ -3153,9 +3034,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 9.4,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
     },
     {
@@ -3166,9 +3046,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 11.8,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
     },
     {
@@ -3179,9 +3058,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 11.2,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
     },
     {
@@ -3192,9 +3070,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 10.3,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
     },
     {
@@ -3205,9 +3082,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 4.5,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
     },
     {
@@ -3218,9 +3094,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 13.200000000000001,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
     },
     {
@@ -3231,9 +3106,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 148.3,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/WIND/REAL_TIME_wind.csv"
     },
     {
@@ -3244,9 +3118,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 799.1,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/WIND/REAL_TIME_wind.csv"
     },
     {
@@ -3257,9 +3130,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 847.0000000000001,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/WIND/REAL_TIME_wind.csv"
     },
     {
@@ -3270,9 +3142,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 713.5,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./RTS_GMLC_forecasts/gen/Renewable/WIND/REAL_TIME_wind.csv"
     },
     {
@@ -3283,9 +3154,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "requirement",
-        "scaling_factor_multiplier": "get_requirement",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 77.0,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "../RTS_GMLC/Reserves/REAL_TIME_regional_Reg_Down.csv"
     },
     {
@@ -3296,9 +3166,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "requirement",
-        "scaling_factor_multiplier": "get_requirement",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 72.0,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "../RTS_GMLC/Reserves/REAL_TIME_regional_Reg_Up.csv"
     },
     {
@@ -3309,9 +3178,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "requirement",
-        "scaling_factor_multiplier": "get_requirement",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 40.413,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "../RTS_GMLC/Reserves/REAL_TIME_regional_Spin_Up_R1.csv"
     },
     {
@@ -3322,9 +3190,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "requirement",
-        "scaling_factor_multiplier": "get_requirement",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 42.851,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "../RTS_GMLC/Reserves/REAL_TIME_regional_Spin_Up_R2.csv"
     },
     {
@@ -3335,9 +3202,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "requirement",
-        "scaling_factor_multiplier": "get_requirement",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 56.666,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "../RTS_GMLC/Reserves/REAL_TIME_regional_Spin_Up_R3.csv"
     },
     {
