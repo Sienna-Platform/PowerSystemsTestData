@@ -41,6 +41,7 @@ function nodes118()
           magnitude = 1.0,
           voltage_limits = (min = min_volt, max = max_volt),
           base_voltage = base_volt,
+          input_basis = u"CU",
         )
         push!(buses, bus)
     end
@@ -74,7 +75,7 @@ for row in eachrow(line_params)
             b = (from = 0.0, to = 0.0),
             rating = row["Max Flow (MW)"]/100,
             angle_limits = (min = 0.0, max = 0.0),
-            input_basis = CU,
+            input_basis = u"CU",
         );
         push!(lines, line)
     else
@@ -88,9 +89,9 @@ for row in eachrow(line_params)
                 r = row["Resistance (p.u.)"],
                 x = row["Reactance (p.u.)"],
                 rating = row["Max Flow (MW)"]/100,
-                input_basis = CU,
+                input_basis = u"CU",
             ),
-            input_basis = CU,
+            input_basis = u"CU",
         );
         push!(tlines, tline)
     end
@@ -126,7 +127,7 @@ end
 bus_thermal = []
 
 # Creating prime mover dict
-thermal_prime_mover_type = Dict{String, PrimeMovers}(
+thermal_prime_mover_type = Dict{String, PrimeMovers.Value}(
 "OT" => PrimeMovers.OT,
 "CC" => PrimeMovers.CC,
 "CT" => PrimeMovers.CT,
@@ -208,9 +209,9 @@ for i in 1:192
     if ismissing(heat_rates[i,2])
         heat_rate = heat_rate1[i]
         heat_rate_curve = LinearCurve(heat_rate, heat_rate_base[i])
-        fuel_curve = FuelCurve(; value_curve = heat_rate_curve, fuel_cost = fuel_prices[i], vom_cost = vom)
+        fuel_curve = FuelCurve(; value_curve = heat_rate_curve, fuel_units = u"MMBtu", fuel_cost = fuel_prices[i], vom_cost = vom)
         cost = ThermalGenerationCost(;
-            variable = fuel_curve,
+            variable_operation_cost = fuel_curve,
             fixed = 0.00,
             start_up = thermal_gens[i, "Start Cost (dollar)"],
             shut_down = 0.0)
@@ -218,9 +219,9 @@ for i in 1:192
         heat_rate = [heat_rate1[i], heat_rate2[i]]
         load_point = [load_points[i,1], load_points[i,2], max_cap]
         heat_rate_curve = PiecewiseIncrementalCurve(heat_rate_base[i], load_point, heat_rate)
-        fuel_curve = FuelCurve(; value_curve = heat_rate_curve, fuel_cost = fuel_prices[i], vom_cost = vom)
+        fuel_curve = FuelCurve(; value_curve = heat_rate_curve, fuel_units = u"MMBtu", fuel_cost = fuel_prices[i], vom_cost = vom)
         cost = ThermalGenerationCost(;
-            variable = fuel_curve,
+            variable_operation_cost = fuel_curve,
             fixed = 0.0,
             start_up = thermal_gens[i, "Start Cost (dollar)"],
             shut_down = 0.0
@@ -229,9 +230,9 @@ elseif !ismissing(heat_rates[i,2]) && !ismissing(heat_rates[i,3]) && ismissing(h
         heat_rate = [heat_rate1[i], heat_rate2[i], heat_rate3[i]]
         load_point = [load_points[i,1], load_points[i,2], load_points[i,3], max_cap]
         heat_rate_curve = PiecewiseIncrementalCurve(heat_rate_base[i], load_point, heat_rate)
-        fuel_curve = FuelCurve(; value_curve = heat_rate_curve, fuel_cost = fuel_prices[i], vom_cost = vom)
+        fuel_curve = FuelCurve(; value_curve = heat_rate_curve, fuel_units = u"MMBtu", fuel_cost = fuel_prices[i], vom_cost = vom)
         cost = ThermalGenerationCost(;
-            variable = fuel_curve,
+            variable_operation_cost = fuel_curve,
             fixed = 0.0,
             start_up = thermal_gens[i, "Start Cost (dollar)"],
             shut_down = 0.0
@@ -240,9 +241,9 @@ elseif !ismissing(heat_rates[i,2]) && !ismissing(heat_rates[i,3]) && ismissing(h
         heat_rate = [heat_rate1[i], heat_rate2[i], heat_rate3[i], heat_rate4[i]]
         load_point = [load_points[i,1], load_points[i,2], load_points[i,3], load_points[i,4], max_cap]
         heat_rate_curve = PiecewiseIncrementalCurve(heat_rate_base[i], load_point, heat_rate)
-        fuel_curve = FuelCurve(; value_curve = heat_rate_curve, fuel_cost = fuel_prices[i], vom_cost = vom)
+        fuel_curve = FuelCurve(; value_curve = heat_rate_curve, fuel_units = u"MMBtu", fuel_cost = fuel_prices[i], vom_cost = vom)
         cost = ThermalGenerationCost(;
-            variable = fuel_curve,
+            variable_operation_cost = fuel_curve,
             fixed = 0.0,
             start_up = thermal_gens[i, "Start Cost (dollar)"],
             shut_down = 0.0
@@ -251,9 +252,9 @@ elseif !ismissing(heat_rates[i,2]) && !ismissing(heat_rates[i,3]) && ismissing(h
         heat_rate = [heat_rate1[i], heat_rate2[i], heat_rate3[i], heat_rate4[i], heat_rate5[i]]
         load_point = [load_points[i,1], load_points[i,2], load_points[i,3], load_points[i,4], load_points[i,5], max_cap]
         heat_rate_curve = PiecewiseIncrementalCurve(heat_rate_base[i], load_point, heat_rate)
-        fuel_curve = FuelCurve(; value_curve = heat_rate_curve, fuel_cost = fuel_prices[i], vom_cost = vom)
+        fuel_curve = FuelCurve(; value_curve = heat_rate_curve, fuel_units = u"MMBtu", fuel_cost = fuel_prices[i], vom_cost = vom)
         cost = ThermalGenerationCost(;
-            variable = fuel_curve,
+            variable_operation_cost = fuel_curve,
             fixed = 0.0,
             start_up = thermal_gens[i, "Start Cost (dollar)"],
             shut_down = 0.0
@@ -295,10 +296,10 @@ function thermal_generators118(nodes)
             ramp_limits = (up = thermal_gens[i, "Max Ramp Up (MW/min)"], down = thermal_gens[i, "Max Ramp Down (MW/min)"]),
             operation_cost = ThermalGenerationCost(nothing),
             base_power = bases,
-            time_limits = (up = thermal_gens[i,"Min Up Time (h)" ], down = thermal_gens[i, "Min Down Time (h)"]),
+            time_limits = (up = thermal_gens[i,"Min Up Time (h)" ] * 60.0, down = thermal_gens[i, "Min Down Time (h)"] * 60.0),
             prime_mover_type = prime_mover,
             fuel = fuel[i],
-            input_basis = CU,
+            input_basis = u"CU",
         )
             set_operation_cost!(thermal, thermal_cost_function[i])
             push!(thermal_generators, thermal)
@@ -332,7 +333,7 @@ for row in eachrow(partfact)
         base_power = 1.0, # MVA, for loads match system
         max_active_power = max*(row[3]), #per-unitized by device base_power?
         max_reactive_power = 0.0,
-        input_basis = CU,
+        input_basis = u"CU",
     );
 push!(loads, load)
 end
@@ -354,25 +355,25 @@ hydro1_15 = sort(CSV.read(hydro1_15_path, DataFrame), [:3])
 hydro36_39_path = joinpath(@__DIR__, "Hydro", "Hydro_nondispatchable.csv")
 hydro36_39 = CSV.read(hydro36_39_path, DataFrame)[21:68, 1:8]
 
-months = []
-values = []
+budget_months = []
+budget_values = []
 hydro_num = []
 
 for row in eachrow(hydro1_15)
 	if row[11] !== missing && row[4] == "Max Energy Month"
-		push!(months, lpad(row[11][2:end], 2, '0'))
-		push!(values, parse(Float64, row[5]))
+		push!(budget_months, lpad(row[11][2:end], 2, '0'))
+		push!(budget_values, parse(Float64, row[5]))
 		push!(hydro_num, row[3])
 	end
 end
 
 for row in eachrow(hydro36_39)
-	push!(months, lpad(row[8][2:end], 2, '0')) 
-	push!(values, row[3])
+	push!(budget_months, lpad(row[8][2:end], 2, '0')) 
+	push!(budget_values, row[3])
 	push!(hydro_num, row[1])
 end
 
-hydrobg = sort(DataFrame(Hydro=hydro_num, Month=months, Value=values), [:1, :2])
+hydrobg = sort(DataFrame(Hydro=hydro_num, Month=budget_months, Value=budget_values), [:1, :2])
 
 #constructing time series from budgets
 time_series_list = []
@@ -397,7 +398,7 @@ for i in 1:43
 		local hydro_TS = SingleTimeSeries(;
            name = "max_active_power",
            data = hydro_array,
-		   scaling_factor_multiplier = get_max_active_power, #assumption?
+		   component_base("active_power")...,
        	);
 		push!(hydro_DA_RT_TS, hydro_TS);
 	elseif 36<=i<=39
@@ -405,7 +406,7 @@ for i in 1:43
 		local hydro_TS = SingleTimeSeries(;
            name = "max_active_power",
            data = hydro_array,
-		   scaling_factor_multiplier = get_max_active_power, #assumption?
+		   component_base("active_power")...,
        	);
 		push!(hydro_DA_RT_TS, hydro_TS);
 	else
@@ -416,7 +417,7 @@ for i in 1:43
 		local hydro_TS = SingleTimeSeries(;
           name = "max_active_power",
           data = hydro_array,
-		  scaling_factor_multiplier = get_max_active_power, #assumption?
+		  component_base("active_power")...,
        );
 		push!(hydro_DA_RT_TS, hydro_TS);
 	end
@@ -449,7 +450,7 @@ for i in 1:75
         power_factor = 1.0,
         operation_cost = cost_ren,
         base_power = solar_gens[i, "Max Capacity (MW)"],
-        input_basis = CU,
+        input_basis = u"CU",
         )
 	push!(renewable_gens, solar)
 end
@@ -476,7 +477,7 @@ for i in 1:17
         power_factor = 1.0,
         operation_cost = cost_ren,
         base_power = wind_gens[i, "Max Capacity (MW)"],
-        input_basis = CU,
+        input_basis = u"CU",
         )
 	push!(renewable_gens, wind)
 end
@@ -495,7 +496,7 @@ for i in 1:43
     cost_curve = LinearCurve(0.0)
     value_curve = CostCurve(cost_curve)
     fixed = 0.0
-    cost_hydro = HydroGenerationCost(;variable = value_curve, fixed)
+    cost_hydro = HydroGenerationCost(;variable_operation_cost = value_curve, fixed)
 	local num = lpad(i, 3, '0')
     local bus_hydro = parse(Int, hydro_gens[i, "bus of connection"][4:6])
     local hydro = HydroDispatch(;
@@ -509,10 +510,10 @@ for i in 1:43
         active_power_limits = (min = hydro_gens[i, "Min Stable Level (MW)"]/hydro_gens[i, "Max Capacity (MW)"], max = 1.0),
         reactive_power_limits = (min = 0.0, max = 0.0),
         ramp_limits = (up = hydro_gens[i, "Max Ramp Up (MW/min)"], down = hydro_gens[i, "Max Ramp Down (MW/min)"]),
-        time_limits = (up = hydro_gens[i,"Min Up Time (h)" ], down = hydro_gens[i, "Min Down Time (h)"]),
+        time_limits = (up = hydro_gens[i,"Min Up Time (h)" ] * 60.0, down = hydro_gens[i, "Min Down Time (h)"] * 60.0),
         base_power = hydro_gens[i, "Max Capacity (MW)"],
         operation_cost = cost_hydro,
-        input_basis = CU,
+        input_basis = u"CU",
         )
 	push!(hydro_generators, hydro)
 end
