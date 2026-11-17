@@ -7,9 +7,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 1.8329972808018467,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./agc_solar.csv"
     },
     {
@@ -20,9 +19,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 100.0443887066016,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./agc_wind.csv"
     },
     {
@@ -33,9 +31,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 1142.845,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./agc_load.csv"
     },
     {
@@ -46,9 +43,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 1142.845,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./agc_load.csv"
     },
     {
@@ -59,9 +55,8 @@
         "module": "PowerSystems",
         "type": "SingleTimeSeries",
         "name": "max_active_power",
-        "scaling_factor_multiplier": "get_max_active_power",
-        "scaling_factor_multiplier_module": "PowerSystems",
-        "normalization_factor": 1142.845,
+        "units": "MW",
+        "quantity_kind": "active_power",
         "data_file": "./agc_load.csv"
     }
 ]

@@ -1,0 +1,110 @@
+[
+    {
+        "simulation": "DAY_AHEAD",
+        "resolution": 3600,
+        "category": "Generator",
+        "component_name": "SolarBusC",
+        "module": "PowerSystems",
+        "type": "SingleTimeSeries",
+        "name": "max_active_power",
+        "units": "MW",
+        "quantity_kind": "active_power",
+        "data_file": "./da_solar.csv"
+    },
+    {
+        "simulation": "DAY_AHEAD",
+        "resolution": 3600,
+        "category": "Generator",
+        "component_name": "WindBusA",
+        "module": "PowerSystems",
+        "type": "SingleTimeSeries",
+        "name": "max_active_power",
+        "units": "MW",
+        "quantity_kind": "active_power",
+        "data_file": "./da_wind.csv"
+    },
+    {
+        "simulation": "DAY_AHEAD",
+        "resolution": 3600,
+        "category": "ElectricLoad",
+        "component_name": "bus2",
+        "module": "PowerSystems",
+        "type": "SingleTimeSeries",
+        "name": "max_active_power",
+        "units": "MW",
+        "quantity_kind": "active_power",
+        "data_file": "./da_load.csv"
+    },
+    {
+        "simulation": "DAY_AHEAD",
+        "resolution": 3600,
+        "category": "ElectricLoad",
+        "component_name": "bus3",
+        "module": "PowerSystems",
+        "type": "SingleTimeSeries",
+        "name": "max_active_power",
+        "units": "MW",
+        "quantity_kind": "active_power",
+        "data_file": "./da_load.csv"
+    },
+    {
+        "simulation": "DAY_AHEAD",
+        "resolution": 3600,
+        "category": "ElectricLoad",
+        "component_name": "bus4",
+        "module": "PowerSystems",
+        "type": "SingleTimeSeries",
+        "name": "max_active_power",
+        "units": "MW",
+        "quantity_kind": "active_power",
+        "data_file": "./da_load.csv"
+    },
+    {
+        "simulation": "DAY_AHEAD",
+        "resolution": 3600,
+        "category": "Reserve",
+        "component_name": "REG1",
+        "module": "PowerSystems",
+        "type": "SingleTimeSeries",
+        "name": "requirement",
+        "units": "MW",
+        "quantity_kind": "active_power",
+        "data_file": "./da_reserve.csv"
+    },
+    {
+        "simulation": "DAY_AHEAD",
+        "resolution": 3600,
+        "category": "Reserve",
+        "component_name": "REG2",
+        "module": "PowerSystems",
+        "type": "SingleTimeSeries",
+        "name": "requirement",
+        "units": "MW",
+        "quantity_kind": "active_power",
+        "data_file": "./da_reserve.csv"
+    },
+    {
+        "simulation": "DAY_AHEAD",
+        "resolution": 3600,
+        "category": "Reserve",
+        "component_name": "REG3",
+        "module": "PowerSystems",
+        "type": "SingleTimeSeries",
+        "name": "requirement",
+        "units": "MW",
+        "quantity_kind": "active_power",
+        "data_file": "./da_reserve.csv"
+    },
+    {
+        "simulation": "DAY_AHEAD",
+        "resolution": 3600,
+        "category": "Reserve",
+        "component_name": "REG4",
+        "module": "PowerSystems",
+        "type": "SingleTimeSeries",
+        "name": "requirement",
+        "units": "MW",
+        "quantity_kind": "active_power",
+        "data_file": "./da_reserve.csv"
+    }
+]
