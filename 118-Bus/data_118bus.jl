@@ -41,6 +41,7 @@ function nodes118()
           magnitude = 1.0,
           voltage_limits = (min = min_volt, max = max_volt),
           base_voltage = base_volt,
+          input_basis = u"CU",
         )
         push!(buses, bus)
     end
@@ -126,7 +127,7 @@ end
 bus_thermal = []
 
 # Creating prime mover dict
-thermal_prime_mover_type = Dict{String, PrimeMovers}(
+thermal_prime_mover_type = Dict{String, PrimeMovers.Value}(
 "OT" => PrimeMovers.OT,
 "CC" => PrimeMovers.CC,
 "CT" => PrimeMovers.CT,
@@ -210,7 +211,7 @@ for i in 1:192
         heat_rate_curve = LinearCurve(heat_rate, heat_rate_base[i])
         fuel_curve = FuelCurve(; value_curve = heat_rate_curve, fuel_units = u"MMBtu", fuel_cost = fuel_prices[i], vom_cost = vom)
         cost = ThermalGenerationCost(;
-            variable = fuel_curve,
+            variable_operation_cost = fuel_curve,
             fixed = 0.00,
             start_up = thermal_gens[i, "Start Cost (dollar)"],
             shut_down = 0.0)
@@ -220,7 +221,7 @@ for i in 1:192
         heat_rate_curve = PiecewiseIncrementalCurve(heat_rate_base[i], load_point, heat_rate)
         fuel_curve = FuelCurve(; value_curve = heat_rate_curve, fuel_units = u"MMBtu", fuel_cost = fuel_prices[i], vom_cost = vom)
         cost = ThermalGenerationCost(;
-            variable = fuel_curve,
+            variable_operation_cost = fuel_curve,
             fixed = 0.0,
             start_up = thermal_gens[i, "Start Cost (dollar)"],
             shut_down = 0.0
@@ -231,7 +232,7 @@ elseif !ismissing(heat_rates[i,2]) && !ismissing(heat_rates[i,3]) && ismissing(h
         heat_rate_curve = PiecewiseIncrementalCurve(heat_rate_base[i], load_point, heat_rate)
         fuel_curve = FuelCurve(; value_curve = heat_rate_curve, fuel_units = u"MMBtu", fuel_cost = fuel_prices[i], vom_cost = vom)
         cost = ThermalGenerationCost(;
-            variable = fuel_curve,
+            variable_operation_cost = fuel_curve,
             fixed = 0.0,
             start_up = thermal_gens[i, "Start Cost (dollar)"],
             shut_down = 0.0
@@ -242,7 +243,7 @@ elseif !ismissing(heat_rates[i,2]) && !ismissing(heat_rates[i,3]) && ismissing(h
         heat_rate_curve = PiecewiseIncrementalCurve(heat_rate_base[i], load_point, heat_rate)
         fuel_curve = FuelCurve(; value_curve = heat_rate_curve, fuel_units = u"MMBtu", fuel_cost = fuel_prices[i], vom_cost = vom)
         cost = ThermalGenerationCost(;
-            variable = fuel_curve,
+            variable_operation_cost = fuel_curve,
             fixed = 0.0,
             start_up = thermal_gens[i, "Start Cost (dollar)"],
             shut_down = 0.0
@@ -253,7 +254,7 @@ elseif !ismissing(heat_rates[i,2]) && !ismissing(heat_rates[i,3]) && ismissing(h
         heat_rate_curve = PiecewiseIncrementalCurve(heat_rate_base[i], load_point, heat_rate)
         fuel_curve = FuelCurve(; value_curve = heat_rate_curve, fuel_units = u"MMBtu", fuel_cost = fuel_prices[i], vom_cost = vom)
         cost = ThermalGenerationCost(;
-            variable = fuel_curve,
+            variable_operation_cost = fuel_curve,
             fixed = 0.0,
             start_up = thermal_gens[i, "Start Cost (dollar)"],
             shut_down = 0.0
@@ -354,25 +355,25 @@ hydro1_15 = sort(CSV.read(hydro1_15_path, DataFrame), [:3])
 hydro36_39_path = joinpath(@__DIR__, "Hydro", "Hydro_nondispatchable.csv")
 hydro36_39 = CSV.read(hydro36_39_path, DataFrame)[21:68, 1:8]
 
-months = []
-values = []
+budget_months = []
+budget_values = []
 hydro_num = []
 
 for row in eachrow(hydro1_15)
 	if row[11] !== missing && row[4] == "Max Energy Month"
-		push!(months, lpad(row[11][2:end], 2, '0'))
-		push!(values, parse(Float64, row[5]))
+		push!(budget_months, lpad(row[11][2:end], 2, '0'))
+		push!(budget_values, parse(Float64, row[5]))
 		push!(hydro_num, row[3])
 	end
 end
 
 for row in eachrow(hydro36_39)
-	push!(months, lpad(row[8][2:end], 2, '0')) 
-	push!(values, row[3])
+	push!(budget_months, lpad(row[8][2:end], 2, '0')) 
+	push!(budget_values, row[3])
 	push!(hydro_num, row[1])
 end
 
-hydrobg = sort(DataFrame(Hydro=hydro_num, Month=months, Value=values), [:1, :2])
+hydrobg = sort(DataFrame(Hydro=hydro_num, Month=budget_months, Value=budget_values), [:1, :2])
 
 #constructing time series from budgets
 time_series_list = []
@@ -397,7 +398,7 @@ for i in 1:43
 		local hydro_TS = SingleTimeSeries(;
            name = "max_active_power",
            data = hydro_array,
-		   scaling_factor_multiplier = get_max_active_power, #assumption?
+		   component_base("active_power")...,
        	);
 		push!(hydro_DA_RT_TS, hydro_TS);
 	elseif 36<=i<=39
@@ -405,7 +406,7 @@ for i in 1:43
 		local hydro_TS = SingleTimeSeries(;
            name = "max_active_power",
            data = hydro_array,
-		   scaling_factor_multiplier = get_max_active_power, #assumption?
+		   component_base("active_power")...,
        	);
 		push!(hydro_DA_RT_TS, hydro_TS);
 	else
@@ -416,7 +417,7 @@ for i in 1:43
 		local hydro_TS = SingleTimeSeries(;
           name = "max_active_power",
           data = hydro_array,
-		  scaling_factor_multiplier = get_max_active_power, #assumption?
+		  component_base("active_power")...,
        );
 		push!(hydro_DA_RT_TS, hydro_TS);
 	end
@@ -495,7 +496,7 @@ for i in 1:43
     cost_curve = LinearCurve(0.0)
     value_curve = CostCurve(cost_curve)
     fixed = 0.0
-    cost_hydro = HydroGenerationCost(;variable = value_curve, fixed)
+    cost_hydro = HydroGenerationCost(;variable_operation_cost = value_curve, fixed)
 	local num = lpad(i, 3, '0')
     local bus_hydro = parse(Int, hydro_gens[i, "bus of connection"][4:6])
     local hydro = HydroDispatch(;
