@@ -304,6 +304,9 @@ wind_ts_DA = [
     0.069569628
 ]
 
+# A day of hydro output: RTS-GMLC's `322_HYDRO_1` day-ahead series (MW) over 52.5, the unit's
+# MVA rating. Used as a fraction of `max_active_power` for hydro generators, and of
+# `reservoir_inflow_mw` for the ENERGY reservoirs' inflow.
 hydro_inflow_ts_DA = [
     0.314300
     0.386684
@@ -720,45 +723,50 @@ thermal_generators5_uc_testing(nodes) = [
 ];
 
 
+# Natural units. Each plant is its own base, so its `max_active_power` profile is per unit
+# of `base_power`.
 renewable_generators5(nodes5) = [
-    RenewableDispatch(
-        "WindBusA",
-        true,
-        nodes5[5],
-        0.0,
-        0.0,
-        1.200,
-        PrimeMovers.WT,
-        (min = 0.0, max = 0.0),
-        1.0,
-        RenewableGenerationCost(CostCurve(LinearCurve(0.220))),
-        100.0,
+    RenewableDispatch(;
+        name = "WindBusA",
+        available = true,
+        bus = nodes5[5],
+        active_power = 0.0,
+        reactive_power = 0.0,
+        rating = 120.0,
+        prime_mover_type = PrimeMovers.WT,
+        reactive_power_limits = (min = 0.0, max = 0.0),
+        power_factor = 1.0,
+        operation_cost = RenewableGenerationCost(CostCurve(LinearCurve(0.220))),
+        base_power = 120.0,
+        input_basis = u"NU",
     ),
-    RenewableDispatch(
-        "WindBusB",
-        true,
-        nodes5[4],
-        0.0,
-        0.0,
-        1.200,
-        PrimeMovers.WT,
-        (min = 0.0, max = 0.0),
-        1.0,
-        RenewableGenerationCost(CostCurve(LinearCurve(0.220))),
-        100.0,
+    RenewableDispatch(;
+        name = "WindBusB",
+        available = true,
+        bus = nodes5[4],
+        active_power = 0.0,
+        reactive_power = 0.0,
+        rating = 120.0,
+        prime_mover_type = PrimeMovers.WT,
+        reactive_power_limits = (min = 0.0, max = 0.0),
+        power_factor = 1.0,
+        operation_cost = RenewableGenerationCost(CostCurve(LinearCurve(0.220))),
+        base_power = 120.0,
+        input_basis = u"NU",
     ),
-    RenewableDispatch(
-        "WindBusC",
-        true,
-        nodes5[3],
-        0.0,
-        0.0,
-        1.20,
-        PrimeMovers.WT,
-        (min = -0.800, max = 0.800),
-        1.0,
-        RenewableGenerationCost(CostCurve(LinearCurve(0.220))),
-        100.0,
+    RenewableDispatch(;
+        name = "WindBusC",
+        available = true,
+        bus = nodes5[3],
+        active_power = 0.0,
+        reactive_power = 0.0,
+        rating = 120.0,
+        prime_mover_type = PrimeMovers.WT,
+        reactive_power_limits = (min = -80.0, max = 80.0),
+        power_factor = 1.0,
+        operation_cost = RenewableGenerationCost(CostCurve(LinearCurve(0.220))),
+        base_power = 120.0,
+        input_basis = u"NU",
     ),
 ];
 
@@ -769,14 +777,14 @@ hydro_generators5(nodes5) = [
         bus = nodes5[2],
         active_power = 0.0,
         reactive_power = 0.0,
-        rating = 6.0,
+        rating = 600.0,
         prime_mover_type = PrimeMovers.HY,
-        active_power_limits = (min = 0.0, max = 6.0),
-        reactive_power_limits = (min = 0.0, max = 6.0),
+        active_power_limits = (min = 0.0, max = 600.0),
+        reactive_power_limits = (min = 0.0, max = 600.0),
         ramp_limits = nothing,
         time_limits = nothing,
-        base_power = 100.0,
-        input_basis = u"CU",
+        base_power = 600.0,
+        input_basis = u"NU",
     ),
     HydroTurbine(;
         name = "HydroEnergyReservoirTurbine",
@@ -784,18 +792,18 @@ hydro_generators5(nodes5) = [
         bus = nodes5[3],
         active_power = 0.0,
         reactive_power = 0.0,
-        rating = 7.0,
-        active_power_limits = (min = 0.0, max = 7.0),
-        reactive_power_limits = (min = 0.0, max = 7.0),
-        ramp_limits = (up = 7.0, down = 7.0),
+        rating = 700.0,
+        active_power_limits = (min = 0.0, max = 700.0),
+        reactive_power_limits = (min = 0.0, max = 700.0),
+        ramp_limits = (up = 700.0, down = 700.0),
         time_limits = nothing,
         operation_cost = HydroGenerationCost(
             CostCurve(LinearCurve(0.15)), 0.0),
-        base_power = 100.0,
+        base_power = 700.0,
         conversion_factor = 1.0,
         outflow_limits = nothing,
         powerhouse_elevation = 0.0,
-        input_basis = u"CU",
+        input_basis = u"NU",
     )
 ];
 
@@ -992,39 +1000,41 @@ loadbus4_ts_DA = [
     0.717847996
 ]
 
+# Natural units. Each load is its own base, so its `max_active_power` profile is per unit
+# of `base_power`.
 loads5(nodes5) = [
-    PowerLoad(
-        "Bus2",
-        true,
-        nodes5[2],
-
-        3.0,
-        0.9861,
-        100.0,
-        3.0,
-        0.9861,
+    PowerLoad(;
+        name = "Bus2",
+        available = true,
+        bus = nodes5[2],
+        active_power = 300.0,
+        reactive_power = 98.61,
+        base_power = 300.0,
+        max_active_power = 300.0,
+        max_reactive_power = 98.61,
+        input_basis = u"NU",
     ),
-    PowerLoad(
-        "Bus3",
-        true,
-        nodes5[3],
-
-        3.0,
-        0.9861,
-        100.0,
-        3.0,
-        0.9861,
+    PowerLoad(;
+        name = "Bus3",
+        available = true,
+        bus = nodes5[3],
+        active_power = 300.0,
+        reactive_power = 98.61,
+        base_power = 300.0,
+        max_active_power = 300.0,
+        max_reactive_power = 98.61,
+        input_basis = u"NU",
     ),
-    PowerLoad(
-        "Bus4",
-        true,
-        nodes5[4],
-
-        4.0,
-        1.3147,
-        100.0,
-        4.0,
-        1.3147,
+    PowerLoad(;
+        name = "Bus4",
+        available = true,
+        bus = nodes5[4],
+        active_power = 400.0,
+        reactive_power = 131.47,
+        base_power = 400.0,
+        max_active_power = 400.0,
+        max_reactive_power = 131.47,
+        input_basis = u"NU",
     ),
 ];
 
@@ -1085,6 +1095,8 @@ reserve5(thermal_generators5) = [
     OfflineReserve("NonSpinningReserve", true, 0.5, maximum([gen.active_power_limits[:max] for gen in thermal_generators5]) .* 0.001),
 ]
 
+# A reserve's `requirement` is per unit of the 100 MVA system base. Its `"requirement"` profile
+# (`Reserve_ts`) is a fraction of that requirement.
 reserve5_re(renewable_generators5) = [
     OnlineReserve{ReserveUp}("Reserve3", true, 30, 1.0), # 100 MW on the 100 MVA system base
     OnlineReserve{ReserveDown}("Reserve4", true, 5, 0.5), # 50 MW
@@ -1139,10 +1151,17 @@ hydro_single_timeseries_DA = TimeSeries.TimeArray(
     vcat(TimeSeries.values(hydro_timeseries_DA[1][1]), TimeSeries.values(hydro_timeseries_DA[2][1]))
 )
 
-# Reservoir inflow in MW. The profile is a fraction of the reservoirs' 4 MW `inflow`.
+# The ENERGY reservoirs' `inflow` (MW). At its peak the inflow is about 45% of the 700 MW
+# turbine each reservoir feeds.
+reservoir_inflow_mw = 400.0
+
+# Reservoir inflow in MW. The profile is a fraction of `reservoir_inflow_mw`.
 reservoir_inflow_DA = [
-    [TimeSeries.TimeArray(DayAhead, 4.0 * hydro_inflow_ts_DA)],
-    [TimeSeries.TimeArray(DayAhead + Day(1), 4.0 * (ones(24) * 0.1 + hydro_inflow_ts_DA))],
+    [TimeSeries.TimeArray(DayAhead, reservoir_inflow_mw * hydro_inflow_ts_DA)],
+    [TimeSeries.TimeArray(
+        DayAhead + Day(1),
+        reservoir_inflow_mw * (ones(24) * 0.1 + hydro_inflow_ts_DA),
+    )],
 ];
 
 reservoir_inflow_single_ts_DA = TimeSeries.TimeArray(
@@ -1407,16 +1426,16 @@ hydro_turbines5_energy(nodes5) = [
         bus = nodes5[3],
         active_power = 0.0,
         reactive_power = 0.0,
-        rating = 7.0,
-        active_power_limits = (min = 0.0, max = 7.0),
-        reactive_power_limits = (min = 0.0, max = 7.0),
+        rating = 700.0,
+        active_power_limits = (min = 0.0, max = 700.0),
+        reactive_power_limits = (min = 0.0, max = 700.0),
         outflow_limits = nothing,
         ramp_limits = nothing,
         time_limits = nothing,
-        base_power = 100.0,
+        base_power = 700.0,
         powerhouse_elevation = 0.0,
         operation_cost = HydroGenerationCost(CostCurve(LinearCurve(0.15)), 0.0),
-        input_basis = u"CU",
+        input_basis = u"NU",
     )
 ]
 
@@ -1427,7 +1446,7 @@ hydro_reservoir5_energy() = [
         initial_level = 0.5,
         storage_level_limits = (min = 0.0, max = 5000.0), # in MWh
         spillage_limits = nothing,
-        inflow = 4.0, # in MW
+        inflow = reservoir_inflow_mw, # in MW
         outflow = 0.0, # in MW
         level_targets = 1.0,
         intake_elevation = 0.0,
@@ -1480,16 +1499,16 @@ hydro_turbines5_cascading_energy(nodes5) = [
         bus = nodes5[3],
         active_power = 0.0,
         reactive_power = 0.0,
-        rating = 7.0,
-        active_power_limits = (min = 0.0, max = 7.0),
-        reactive_power_limits = (min = 0.0, max = 7.0),
+        rating = 700.0,
+        active_power_limits = (min = 0.0, max = 700.0),
+        reactive_power_limits = (min = 0.0, max = 700.0),
         outflow_limits = nothing,
         ramp_limits = nothing,
         time_limits = nothing,
-        base_power = 100.0,
+        base_power = 700.0,
         powerhouse_elevation = 0.0,
         operation_cost = HydroGenerationCost(CostCurve(LinearCurve(0.15)), 0.0),
-        input_basis = u"CU",
+        input_basis = u"NU",
     ),
     HydroTurbine(;
         name = "HydroEnergyReservoir_turbine_downstream",
@@ -1497,16 +1516,16 @@ hydro_turbines5_cascading_energy(nodes5) = [
         bus = nodes5[3],
         active_power = 0.0,
         reactive_power = 0.0,
-        rating = 7.0,
-        active_power_limits = (min = 0.0, max = 7.0),
-        reactive_power_limits = (min = 0.0, max = 7.0),
+        rating = 700.0,
+        active_power_limits = (min = 0.0, max = 700.0),
+        reactive_power_limits = (min = 0.0, max = 700.0),
         outflow_limits = nothing,
         ramp_limits = nothing,
         time_limits = nothing,
-        base_power = 100.0,
+        base_power = 700.0,
         powerhouse_elevation = 0.0,
         operation_cost = HydroGenerationCost(CostCurve(LinearCurve(0.15)), 0.0),
-        input_basis = u"CU",
+        input_basis = u"NU",
     ),
 ]
 
@@ -1517,7 +1536,7 @@ hydro_reservoir5_cascading_energy() = [
         initial_level = 0.5,
         storage_level_limits = (min = 0.0, max = 5000.0), # in MWh
         spillage_limits = nothing,
-        inflow = 4.0, # in MW
+        inflow = reservoir_inflow_mw, # in MW
         outflow = 0.0, # in MW
         level_targets = 1.0,
         intake_elevation = 0.0,
@@ -1530,7 +1549,7 @@ hydro_reservoir5_cascading_energy() = [
         initial_level = 0.5,
         storage_level_limits = (min = 0.0, max = 5000.0), # in MWh
         spillage_limits = nothing,
-        inflow = 4.0, # in MW
+        inflow = reservoir_inflow_mw, # in MW
         outflow = 0.0, # in MW
         level_targets = 1.0,
         intake_elevation = 0.0,
