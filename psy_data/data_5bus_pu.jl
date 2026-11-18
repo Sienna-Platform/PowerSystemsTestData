@@ -1052,13 +1052,15 @@ interruptible(nodes5) = [InterruptiblePowerLoad(
 # Natural Units: First vector: Power in MW, Second Vector: Slopes in $/MWh
 ORDC_cost = CostCurve(PiecewiseIncrementalCurve(0.0, [0.0, 20.0, 40.0, 60.0, 80.0], [150.0, 27.5, 24.5, 0.5]))
 
+# A reserve's `requirement` is in MW. Its `"requirement"` profile (`Reserve_ts`) is a fraction
+# of that requirement.
 # Keyword form: `OnlineReserve`'s positional order differs from the old `ConstantReserve`.
 constant_reserve5() =
     OnlineReserve{ReserveUp}(;
         name = "ReserveUp",
         available = true,
         time_frame = 300,
-        requirement = 1.0,
+        requirement = 100.0,
         sustained_time = 3600.0,
         max_output_fraction = 1.0,
         max_participation_factor = 1.0,
@@ -1066,58 +1068,44 @@ constant_reserve5() =
     )
 
 
+largest_unit_mw(generators) =
+    maximum(get_active_power_limits(gen, u"MW").max for gen in generators)
+
 # The ORDC carries its demand curve on `variable`; non-spinning is `OfflineReserve` (no direction).
 reserve5(thermal_generators5) = [
-    OnlineReserve{ReserveUp}(
-        "Reserve1",
-        true,
-        0.6,
-        maximum([gen.active_power_limits[:max] for gen in thermal_generators5]) .* 0.001,
-    ),
-    OnlineReserve{ReserveDown}(
-        "Reserve2",
-        true,
-        0.3,
-        maximum([gen.active_power_limits[:max] for gen in thermal_generators5]) .* 0.005,
-    ),
-    OnlineReserve{ReserveUp}(
-        "Reserve11",
-        true,
-        0.8,
-        maximum([gen.active_power_limits[:max] for gen in thermal_generators5]) .* 0.001,
-    ),
+    OnlineReserve{ReserveUp}("Reserve1", true, 0.6, largest_unit_mw(thermal_generators5) * 0.001),
+    OnlineReserve{ReserveDown}("Reserve2", true, 0.3, largest_unit_mw(thermal_generators5) * 0.005),
+    OnlineReserve{ReserveUp}("Reserve11", true, 0.8, largest_unit_mw(thermal_generators5) * 0.001),
     OnlineReserve{ReserveUp}(;
         name = "ORDC1",
         available = true,
         time_frame = 0.6,
         variable = ORDC_cost,
     ),
-    OfflineReserve("NonSpinningReserve", true, 0.5, maximum([gen.active_power_limits[:max] for gen in thermal_generators5]) .* 0.001),
+    OfflineReserve("NonSpinningReserve", true, 0.5, largest_unit_mw(thermal_generators5) * 0.001),
 ]
 
-# A reserve's `requirement` is per unit of the 100 MVA system base. Its `"requirement"` profile
-# (`Reserve_ts`) is a fraction of that requirement.
 reserve5_re(renewable_generators5) = [
-    OnlineReserve{ReserveUp}("Reserve3", true, 30, 1.0), # 100 MW on the 100 MVA system base
-    OnlineReserve{ReserveDown}("Reserve4", true, 5, 0.5), # 50 MW
+    OnlineReserve{ReserveUp}("Reserve3", true, 30, 100.0),
+    OnlineReserve{ReserveDown}("Reserve4", true, 5, 50.0),
     OnlineReserve{ReserveUp}(; name = "ORDC1", available = true, time_frame = 0.6, variable = ORDC_cost),
 ]
 reserve5_hy(hydro_generators5) = [
-    OnlineReserve{ReserveUp}("Reserve5", true, 30, 1.0), # 100 MW on the 100 MVA system base
-    OnlineReserve{ReserveDown}("Reserve6", true, 5, 0.5), # 50 MW
+    OnlineReserve{ReserveUp}("Reserve5", true, 30, 100.0),
+    OnlineReserve{ReserveDown}("Reserve6", true, 5, 50.0),
     OnlineReserve{ReserveUp}(; name = "ORDC1", available = true, time_frame = 0.6, variable = ORDC_cost),
 ]
 
 reserve5_il(interruptible_loads) = [
-    OnlineReserve{ReserveUp}("Reserve7", true, 30, 1.0), # 100 MW on the 100 MVA system base
-    OnlineReserve{ReserveDown}("Reserve8", true, 5, 0.5), # 50 MW
+    OnlineReserve{ReserveUp}("Reserve7", true, 30, 100.0),
+    OnlineReserve{ReserveDown}("Reserve8", true, 5, 50.0),
     OnlineReserve{ReserveUp}(; name = "ORDC1", available = true, time_frame = 0.6, variable = ORDC_cost),
 ]
 
 
 reserve5_phes(phes5) = [
-    OnlineReserve{ReserveUp}("Reserve9", true, 30, 1.0), # 100 MW on the 100 MVA system base
-    OnlineReserve{ReserveDown}("Reserve10", true, 5, 0.5), # 50 MW
+    OnlineReserve{ReserveUp}("Reserve9", true, 30, 100.0),
+    OnlineReserve{ReserveDown}("Reserve10", true, 5, 50.0),
     OnlineReserve{ReserveUp}(; name = "ORDC1", available = true, time_frame = 0.6, variable = ORDC_cost),
 ]
 
