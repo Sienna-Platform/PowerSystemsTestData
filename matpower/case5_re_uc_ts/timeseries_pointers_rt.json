@@ -1,0 +1,62 @@
+[
+    {
+        "simulation": "REAL_TIME",
+        "resolution": 3600,
+        "category": "Generator",
+        "component_name": "SolarBusC",
+        "module": "PowerSystems",
+        "type": "SingleTimeSeries",
+        "name": "max_active_power",
+        "units": "MW",
+        "quantity_kind": "active_power",
+        "data_file": "./rt_solar.csv"
+    },
+    {
+        "simulation": "REAL_TIME",
+        "resolution": 3600,
+        "category": "Generator",
+        "component_name": "WindBusA",
+        "module": "PowerSystems",
+        "type": "SingleTimeSeries",
+        "name": "max_active_power",
+        "units": "MW",
+        "quantity_kind": "active_power",
+        "data_file": "./rt_wind.csv"
+    },
+    {
+        "simulation": "REAL_TIME",
+        "resolution": 3600,
+        "category": "ElectricLoad",
+        "component_name": "bus2",
+        "module": "PowerSystems",
+        "type": "SingleTimeSeries",
+        "name": "max_active_power",
+        "units": "MW",
+        "quantity_kind": "active_power",
+        "data_file": "./rt_load.csv"
+    },
+    {
+        "simulation": "REAL_TIME",
+        "resolution": 3600,
+        "category": "ElectricLoad",
+        "component_name": "bus3",
+        "module": "PowerSystems",
+        "type": "SingleTimeSeries",
+        "name": "max_active_power",
+        "units": "MW",
+        "quantity_kind": "active_power",
+        "data_file": "./rt_load.csv"
+    },
+    {
+        "simulation": "REAL_TIME",
+        "resolution": 3600,
+        "category": "ElectricLoad",
+        "component_name": "bus4",
+        "module": "PowerSystems",
+        "type": "SingleTimeSeries",
+        "name": "max_active_power",
+        "units": "MW",
+        "quantity_kind": "active_power",
+        "data_file": "./rt_load.csv"
+    }
+]
